@@ -57,11 +57,19 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/quick
 ```
 
 关于`config.yaml`中的文件服务器的配置，以宝塔为例，可参考如下图配置：
-![baota](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/baota.png)
+![baota](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/baota.png)
 
 ## 付费版联系
 
 付费版可以试用 3 天，请携带服务器`ip`联系`junlinyizhan@gmail.com`
+
+## 项目预览
+
+可访问 [君临驿站](https://aiok.me/user/#/register?i=4ME9Z)注册免费体验，带邀请码体验时间加 2 小时。
+![login](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/login.png)
+![register](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/register.png)
+![carlist](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/carlist.png)
+![chat](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/chat.png)
 
 ### 风险声明
 
