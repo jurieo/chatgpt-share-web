@@ -56,6 +56,9 @@
 curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/quick-install.sh | bash
 ```
 
+关于`config.yaml`中的文件服务器的配置，以宝塔为例，可参考如下图配置：
+![baota](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/baota.png)
+
 ## 付费版联系
 
 付费版可以试用 3 天，请携带服务器`ip`联系`junlinyizhan@gmail.com`
