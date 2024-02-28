@@ -61,7 +61,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/quick
 
 ## 付费版联系
 
-付费版可以试用 3 天，请携带服务器`ip`联系`junlinyizhan@gmail.com`
+付费版可以试用 3 天，请携带服务器`ip`联系[邮件联系我](mailto:junlinyizhan@gmail.com)或者[TG 联系我](https://t.me/ddjjsv)。
 
 ## 项目预览
 
