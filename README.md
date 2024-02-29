@@ -56,8 +56,29 @@
 curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/quick-install.sh | bash
 ```
 
+完成上面操作后，你需要进入目录`cd chatgpt-share-web`,修改`config.yaml`文件中的重要信息。
+
+- `FREE_TIER`: 注册用户免费体验时间，单位小时。
+- `COMMISSION_RATE`: 推广佣金比例。
+- `ALLOWED_WITHDRAWAL`: 最低提现金额。
+- `FILE_SERVER`: 文件服务器地址，以`https`开头,`/` 结尾。用于存放用户上传的收款码，此域名的根目录为 `docker-compose.yml` 对应文件映射的目录。默认是`/root/chatgpt-share-web/images`，你需要将 `FILE_SERVER` 对应的域名根目录绑定到此目录。
+- `FAKA_URL`：发卡地址，以`https`开头。配置后，在用户兑换页（未登陆），用户选车页，用户聊天页都可以跳转发卡地址，以 `https` 开头。
+- #### **邮箱配置，必须配置，否则用户无法注册，无法重置密码**
+- `MAIL_FROM`: 发件人邮箱。
+- `MAIL_PASS`: 邮箱密码，不一定是登陆密码。
+- `MAIL_HOST`: 邮箱服务器地址，默认`smtp.gmail.com`。
+- `MAIL_PORT`: 邮箱服务器端口，默认 `587`。
+- `MAIL_WHITELIST`: 注册邮箱白名单。清空: 关闭白名单 有值: 开启白名单`@gmail.com,@yahoo.com,@hotmail.com,@outlook.com,@icloud.com,@163.com,@126.com,@qq.com,@foxmail.com`
+- `SITE_NAME`: 站点名称，用于发送邮件的友好提示。
+
 关于`config.yaml`中的文件服务器的配置，以宝塔为例，可参考如下图配置：
 ![baota](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/baota.png)
+
+### 启动项目
+
+保存好上面的 `config.yaml` 配置文件，执行`./deploy.sh` 即可开启使用之旅。  
+访问后台管理系统，`http://ip+38300/xyhelper`，使用`admin`/`123456`登陆之后，及时修改密码。新建一个用户，将这个用户设置为管理员，可以在前端生成兑换码，审核用户提现等操作。  
+更多使用技巧，尽情探索吧。
 
 ## 付费版联系
 
