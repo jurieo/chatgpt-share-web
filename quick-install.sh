@@ -3,7 +3,7 @@ set -e
 
 ## 克隆仓库到本地
 echo "clone repository..."
-git clone https://github.com/jurieo/chatgpt-share-web.git chatgpt-share-web
+git clone -b deploy --depth=1 https://github.com/jurieo/chatgpt-share-web.git chatgpt-share-web
 
 ## 进入目录
 cd chatgpt-share-web
