@@ -53,7 +53,7 @@
 快速部署
 
 ```bash
-curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/quick-install.sh | bash
+curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/quick-install.sh | bash
 ```
 
 完成上面操作后，你需要进入目录`cd chatgpt-share-web`,修改`config.yaml`文件中的重要信息。
