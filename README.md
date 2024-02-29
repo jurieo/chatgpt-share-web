@@ -68,7 +68,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/quick
 - `MAIL_PASS`: 邮箱密码，不一定是登陆密码。
 - `MAIL_HOST`: 邮箱服务器地址，默认`smtp.gmail.com`。
 - `MAIL_PORT`: 邮箱服务器端口，默认 `587`。
-- `MAIL_WHITELIST`: 注册邮箱白名单。清空: 关闭白名单 有值: 开启白名单`@gmail.com,@yahoo.com,@hotmail.com,@outlook.com,@icloud.com,@163.com,@126.com,@qq.com,@foxmail.com`
+- `MAIL_WHITELIST`: 注册邮箱白名单。清空: 关闭白名单 有值: 开启白名单。默认`@gmail.com,@yahoo.com,@hotmail.com,@outlook.com,@icloud.com,@163.com,@126.com,@qq.com,@foxmail.com`
 - `SITE_NAME`: 站点名称，用于发送邮件的友好提示。
 
 关于`config.yaml`中的文件服务器的配置，以宝塔为例，可参考如下图配置：
@@ -76,13 +76,19 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/quick
 
 ### 启动项目
 
-保存好上面的 `config.yaml` 配置文件，执行`./deploy.sh` 即可开启使用之旅。  
-访问后台管理系统，`http://ip+38300/xyhelper`，使用`admin`/`123456`登陆之后，及时修改密码。新建一个用户，将这个用户设置为管理员，可以在前端生成兑换码，审核用户提现等操作。  
+保存好上面的 `config.yaml` 配置文件，执行
+
+```sh
+./deploy.sh
+```
+
+即可开启使用之旅。  
+访问后台管理系统，`http://ip:38300/xyhelper`，使用`admin`/`123456`登陆之后，及时修改密码。新建一个用户，将这个用户设置为管理员，可以在前端生成兑换码，审核用户提现等操作。  
 更多使用技巧，尽情探索吧。
 
 ## 付费版联系
 
-付费版可以试用 3 天，如需继续使用，联系[邮件联系我](mailto:junlinyizhan@gmail.com?subject=share付费版使用&body=我想付费使用share付费版，我的服务器ip是)或者[TG 联系我](https://t.me/ddjjsv)。
+付费版可以试用 3 天，如需继续使用，[邮件联系我](mailto:junlinyizhan@gmail.com?subject=share付费版使用&body=我想付费使用share付费版，我的服务器ip是)或者[TG 联系我](https://t.me/ddjjsv)。
 
 ## 项目预览
 
