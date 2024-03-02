@@ -10,6 +10,8 @@
 免费版本镜像为：https://hub.docker.com/r/jurieo/gpt-share-server  
 主要实现了以下功能：
 
+- [x] 官网 UI 一比一还原，每小时同步官网。
+- [x] 可使用官网的所有功能，GPTs，画图，高级代码分析，画图，插件，gpt-4-all 等。
 - [x] 左侧同步用户所有车的聊天记录，点击聊天记录，自动换车
 - [x] 右上角换车，抽屉弹出可用车，一键换车
 - [x] 禁止多设备登录
@@ -28,15 +30,12 @@
 在免费版的基础上增加如下功能：
 
 - [ ] gpt-4-mobile 模型，无限额度(已做，有封号风险，不开启)
-- [ ] 新增提现明细（最近 10 条）
-- [ ] 新增邀请明细（最近 10 条）
-- [ ] 支付相关(添加支付功能可能会损害第三方代理的利益，优先级很低)
-- [ ] 邀请人榜单
 - [x] 聊天记录备份到数据库，翻车不怕（大量账户为 wss，支持中）
-- [x] 新增用户注册验证邮箱（邮箱白名单）
+- [x] 用户注册验证邮箱（邮箱白名单）
 - [x] 用户通过邮箱注册
 - [x] 忘记密码，通过邮箱重置密码
-- [x] 新增邮箱配置
+- [x] 邮箱配置
+- [x] 兑换码支持按额度和频率限制，按账号类型（3.5，plus）限制，按使用时间限制
 - [x] 先登陆再选车，聊天页一键换车，自动换车
 - [x] 个人中心
 - [x] 用户通过推广获得付费用户返佣
@@ -58,8 +57,9 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 完成上面操作后，你需要进入目录`cd chatgpt-share-web`,修改`config.yaml`文件中的重要信息。
 
-- `FREE_TIER`: 注册用户免费体验时间，单位小时。
-- `COMMISSION_RATE`: 推广佣金比例。
+- `FREE_TIER`: 注册用户免费体验时间，单位小时，0 则没有。
+- `AFF_TIME`: 通过邀请码注册免费体验时间，单位小时。0 则没有。
+- `COMMISSION_RATE`: 佣金比例，0 则不返佣，前端无`推广有礼`的 tab。不影响之前的返现，但会影响之后注册的用户。
 - `ALLOWED_WITHDRAWAL`: 最低提现金额。
 - `FILE_SERVER`: 文件服务器地址，以`https`开头,`/` 结尾。用于存放用户上传的收款码，此域名的根目录为 `docker-compose.yml` 对应文件映射的目录。默认是`/root/chatgpt-share-web/images`，你需要将 `FILE_SERVER` 对应的域名根目录绑定到此目录。
 - `FAKA_URL`：发卡地址，以`https`开头。配置后，在用户兑换页（未登陆），用户选车页，用户聊天页都可以跳转发卡地址，以 `https` 开头。
@@ -84,11 +84,13 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 即可开启使用之旅。  
 访问后台管理系统，`http://ip:38300/xyhelper`，使用`admin`/`123456`登陆之后，及时修改密码。新建一个用户，将这个用户设置为管理员，可以在前端生成兑换码，审核用户提现等操作。  
-更多使用技巧，尽情探索吧。
+更多使用技巧，尽情探索吧。  
+可有偿部署 100 元/次。
 
 ## 付费版联系
 
 付费版可以试用 3 天，如需继续使用，[邮件联系我](mailto:junlinyizhan@gmail.com?subject=share付费版使用&body=我想付费使用share付费版，我的服务器ip是)或者[TG 联系我](https://t.me/ddjjsv)。
+![weixin](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/weixin.png)
 
 ## 项目预览
 
@@ -97,6 +99,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 ![register](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/register.png)
 ![carlist](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/carlist.png)
 ![chat](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/chat.png)
+![subtype](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/subtype.png)
 
 ### 风险声明
 
