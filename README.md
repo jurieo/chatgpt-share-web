@@ -1,7 +1,13 @@
 # chatgpt-share-web
 
 本项目是基于[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server)的二开项目。  
-感谢[xyhelper](https://github.com/xyhelper/)提供的项目支持，感谢`xyhelper` 提供的免费接入点。respect~  
+感谢[xyhelper](https://github.com/xyhelper/)提供的项目支持，感谢`xyhelper` 提供的免费接入点。respect~
+
+> [!NOTE]
+> 本项目使用者必须在遵循 OpenAI 的[使用条款](https://openai.com/policies/terms-of-use)以及**法律法规**的情况下使用，不得用于非法用途。
+>
+> 根据[《生成式人工智能服务管理暂行办法》](http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm)的要求，请勿对中国地区公众提供一切未经备案的生成式人工智能服务。
+
 本项目有免费版和付费版两个版本。
 
 ## 免费版
@@ -10,19 +16,19 @@
 免费版本镜像为：https://hub.docker.com/r/jurieo/gpt-share-server  
 主要实现了以下功能：
 
-- [x] 官网 UI 一比一还原，每小时同步官网。
-- [x] 可使用官网的所有功能，GPTs，画图，高级代码分析，画图，插件，gpt-4-all 等。
-- [x] 左侧同步用户所有车的聊天记录，点击聊天记录，自动换车
-- [x] 右上角换车，抽屉弹出可用车，一键换车
-- [x] 禁止多设备登录
-- [x] 聊天页可查看公告
-- [x] 聊天页订阅到期 7 天内有到期提醒，配置环境变量 FAKA_URL，用户可以点击此提醒，自行续费或购买。
-- [x] 只有一个车可用的时候，直接进入登陆页上车
-- [x] 支持单个用户限制额度,默认 1 小时 20 次。
-- [x] 登陆页可返回选车页
-- [x] 翻车不能上车
-- [x] 支持用户名密码登录
-- [x] 后台新增用户默认有效期一个月，默认 1 小时 20 次。
+- ✅ 官网 UI 一比一还原，每小时同步官网。
+- ✅ 可使用官网的所有功能，GPTs，画图，高级代码分析，画图，插件，gpt-4-all 等。
+- ✅ 左侧同步用户所有车的聊天记录，点击聊天记录，自动换车
+- ✅ 右上角换车，抽屉弹出可用车，一键换车
+- ✅ 禁止多设备登录
+- ✅ 聊天页可查看公告
+- ✅ 聊天页订阅到期 7 天内有到期提醒，配置环境变量 FAKA_URL，用户可以点击此提醒，自行续费或购买。
+- ✅ 只有一个车可用的时候，直接进入登陆页上车
+- ✅ 支持单个用户限制额度,默认 1 小时 20 次。
+- ✅ 登陆页可返回选车页
+- ✅ 翻车不能上车
+- ✅ 支持用户名密码登录
+- ✅ 后台新增用户默认有效期一个月，默认 1 小时 20 次。
 
 ## 付费版
 
@@ -30,21 +36,21 @@
 在免费版的基础上增加如下功能：
 
 - [ ] gpt-4-mobile 模型，无限额度(已做，有封号风险，不开启)
-- [x] 聊天记录备份到数据库，翻车不怕（大量账户为 wss，支持中）
-- [x] 用户注册验证邮箱（邮箱白名单）
-- [x] 用户通过邮箱注册
-- [x] 忘记密码，通过邮箱重置密码
-- [x] 邮箱配置
-- [x] 兑换码支持按额度和频率限制，按账号类型（3.5，plus）限制，按使用时间限制
-- [x] 先登陆再选车，聊天页一键换车，自动换车
-- [x] 个人中心
-- [x] 用户通过推广获得付费用户返佣
-- [x] 用户无感兑换码，解放手撸（可自行配置按月付，季付，周付等配置）
-- [x] 新增管理员审核，封禁用户
-- [x] 用户提现，审核
-- [x] 修改密码，忘记密码，重置密码
-- [x] 用户可设置为管理员
-- [x] 可配置新注册用户免费体验时长，通过邀请码注册再加 2 小时
+- ✅ 聊天记录备份到数据库，翻车不怕（大量账户为 wss，支持中）
+- ✅ 用户注册验证邮箱（邮箱白名单）
+- ✅ 用户通过邮箱注册
+- ✅ 忘记密码，通过邮箱重置密码
+- ✅ 邮箱配置
+- ✅ 兑换码支持按额度和频率限制，按账号类型（3.5，plus）限制，按使用时间限制
+- ✅ 先登陆再选车，聊天页一键换车，自动换车
+- ✅ 个人中心
+- ✅ 用户通过推广获得付费用户返佣
+- ✅ 用户无感兑换码，解放手撸（可自行配置按月付，季付，周付等配置）
+- ✅ 新增管理员审核，封禁用户
+- ✅ 用户提现，审核
+- ✅ 修改密码，忘记密码，重置密码
+- ✅ 用户可设置为管理员
+- ✅ 可配置新注册用户免费体验时长，通过邀请码注册再加 2 小时
 - [ ] 后续会根据反馈和需求继续添加更多功能。。
 
 ## 部署
@@ -72,7 +78,8 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 - `SITE_NAME`: 站点名称，用于发送邮件的友好提示。
 
 关于`config.yaml`中的文件服务器的配置，以宝塔为例，可参考如下图配置：
-![baota](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/baota.png)
+
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/baota.png" width="640">
 
 ### 启动项目
 
@@ -89,8 +96,10 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 ## 付费版联系
 
-付费版可以试用 3 天，如需继续使用，[邮件联系我](mailto:junlinyizhan@gmail.com?subject=share付费版使用&body=我想付费使用share付费版，我的服务器ip是)或者[TG 联系我](https://t.me/ddjjsv)。  
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/wechat.png" width="320">
+付费版可以试用 3 天，如需继续使用，[邮件联系我](mailto:junlinyizhan@gmail.com?subject=share付费版使用&body=我想付费使用share付费版，我的服务器ip是)或者[TG 联系我](https://t.me/ddjjsv)。
+
+- **微信**: asd0999701  
+  <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/wechat.png" width="320">
 
 ## 项目预览
 
