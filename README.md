@@ -90,7 +90,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 ## 付费版联系
 
 付费版可以试用 3 天，如需继续使用，[邮件联系我](mailto:junlinyizhan@gmail.com?subject=share付费版使用&body=我想付费使用share付费版，我的服务器ip是)或者[TG 联系我](https://t.me/ddjjsv)。
-![weixin](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/weixin.png)
+![weixin](https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/wechat.png)
 
 ## 项目预览
 
