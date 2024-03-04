@@ -98,9 +98,6 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 付费版可以试用 3 天，如需继续使用，[邮件联系我](mailto:junlinyizhan@gmail.com?subject=share付费版使用&body=我想付费使用share付费版，我的服务器ip是)或者[TG 联系我](https://t.me/ddjjsv)。
 
-- **微信**: asd0999701  
-  <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/wechat.png" width="320">
-
 ## 项目预览
 
 可访问 [君临驿站](https://aiok.me/user/#/register?i=4ME9Z)注册免费体验，带邀请码体验时间加 2 小时。
