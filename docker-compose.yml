@@ -39,7 +39,7 @@ services:
     volumes:
       - ./config.yaml:/app/config.yaml
       - ./data/chatgpt-share-server/:/app/data/
-      - /root/chatgpt-share-web/images:/root/share/images/ # 此处文件目录要配置为对应的config.yaml的 FILE_SERVER 域名根目录
+      - ./data/images:/app/resource/public/images/
 
     labels:
       - "com.centurylinklabs.watchtower.scope=xyhelper-chatgpt-share-server"

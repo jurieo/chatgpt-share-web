@@ -50,10 +50,6 @@ COMMISSION_RATE: 0.15
 # 最低提现金额
 ALLOWED_WITHDRAWAL: 40
 
-# 文件服务器地址，以https开头， / 结尾。用于存放用户上传的收款码，此域名的根目录为docker-compose.yml 对应文件映射的目录
-# 比如- /root/chatgpt-share-web/images:/root/share/images/ 那FILE_SERVER的根目录就是/root/chatgpt-share-web/images
-FILE_SERVER: ""
-
 # 发卡地址。配置后，在用户兑换页（未登陆），用户选车页，用户聊天页都可以跳转发卡地址
 FAKA_URL: ""
 
