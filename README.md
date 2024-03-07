@@ -55,7 +55,16 @@
 
 ## 部署
 
-快速部署
+### 免费版一键部署
+
+免费版本的部署和 `chatgpt-share-server` 保持一致，只需将镜像名称修改为`jurieo/chatgpt-share-server`。  
+更多部署详情请参考[chatgpt-share-server](https://chatgpt-share-server.xyhelper.cn/install/)。
+
+```bash
+curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy-free/quick-install.sh | bash
+```
+
+### 付费版部署
 
 ```bash
 curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/quick-install.sh | bash
@@ -66,8 +75,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 - `FREE_TIER`: 注册用户免费体验时间，单位小时，0 则没有。
 - `AFF_TIME`: 通过邀请码注册免费体验时间，单位小时。0 则没有。
 - `COMMISSION_RATE`: 佣金比例，0 则不返佣，前端无`推广有礼`的 tab。不影响之前的返现，但会影响之后注册的用户。
-- `ALLOWED_WITHDRAWAL`: 最低提现金额。
-- `FILE_SERVER`: 文件服务器地址，以`https`开头,`/` 结尾。用于存放用户上传的收款码，此域名的根目录为 `docker-compose.yml` 对应文件映射的目录。默认是`/root/chatgpt-share-web/images`，你需要将 `FILE_SERVER` 对应的域名根目录绑定到此目录。
+- `ALLOWED_WITHDRAWAL`: 最低提现金额，0 则无限制。
 - `FAKA_URL`：发卡地址，以`https`开头。配置后，在用户兑换页（未登陆），用户选车页，用户聊天页都可以跳转发卡地址，以 `https` 开头。
 - #### **邮箱配置，必须配置，否则用户无法注册，无法重置密码**
 - `MAIL_FROM`: 发件人邮箱。
@@ -76,10 +84,6 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 - `MAIL_PORT`: 邮箱服务器端口，默认 `587`。
 - `MAIL_WHITELIST`: 注册邮箱白名单。清空: 关闭白名单 有值: 开启白名单。默认`@gmail.com,@yahoo.com,@hotmail.com,@outlook.com,@icloud.com,@163.com,@126.com,@qq.com,@foxmail.com`
 - `SITE_NAME`: 站点名称，用于发送邮件的友好提示。
-
-关于`config.yaml`中的文件服务器的配置，以宝塔为例，可参考如下图配置：
-
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/baota.png" width="640">
 
 ### 启动项目
 
