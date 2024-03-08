@@ -60,7 +60,7 @@ services:
     image: containrrr/watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: --scope xyhelper-chatgpt-share-server --cleanup
+    command: --scope xyhelper-chatgpt-share-server --cleanup --interval 3600
     restart: always
     environment:
       - TZ=Asia/Shanghai
