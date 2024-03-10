@@ -111,7 +111,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 可访问 [君临驿站](https://aiok.me/user/#/register?i=4ME9Z)注册免费体验，带邀请码体验时间加 2 小时。
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/login.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/register.png" width="640">
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/carlist.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/carlist1.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/chat1.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/subtype.png" width="640">
 
