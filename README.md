@@ -12,8 +12,8 @@
 
 ## 免费版
 
-免费但暂不开源。会同步 `chatgpt-share-server` 的全部功能。  
-免费版本镜像为：https://hub.docker.com/r/jurieo/gpt-share-server  
+免费但不开源。会同步 `chatgpt-share-server` 的全部功能。  
+镜像为：https://hub.docker.com/r/jurieo/gpt-share-server  
 主要实现了以下功能：
 
 - ✅ 官网 UI 一比一还原，每小时同步官网。
@@ -60,11 +60,15 @@
 免费版本的部署和 `chatgpt-share-server` 保持一致，只需将镜像名称修改为`jurieo/chatgpt-share-server`。  
 更多部署详情请参考[chatgpt-share-server](https://chatgpt-share-server.xyhelper.cn/install/)。
 
+#### 一键部署脚本
+
 ```bash
 curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy-free/quick-install.sh | bash
 ```
 
 ### 付费版部署
+
+付费版有一些配置需要简单设置，所以需要先拉取一些配置文件。
 
 ```bash
 curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/quick-install.sh | bash
@@ -77,7 +81,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 - `COMMISSION_RATE`: 佣金比例，0 则不返佣，前端无`推广有礼`的 tab。不影响之前的返现，但会影响之后注册的用户。
 - `ALLOWED_WITHDRAWAL`: 最低提现金额，0 则无限制。
 - `FAKA_URL`：发卡地址，以`https`开头。配置后，在用户兑换页（未登陆），用户选车页，用户聊天页都可以跳转发卡地址，以 `https` 开头。
-- #### **邮箱配置，必须配置，否则用户无法注册，无法重置密码**
+- #### **邮箱配置，必须配置，否则用户无法注册，无法重置密码，若不配置，无法启动。**
 - `MAIL_FROM`: 发件人邮箱。
 - `MAIL_PASS`: 邮箱密码，不一定是登陆密码。
 - `MAIL_HOST`: 邮箱服务器地址，默认`smtp.gmail.com`。
@@ -87,7 +91,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 ### 启动项目
 
-保存好上面的 `config.yaml` 配置文件，执行
+保存好上面的 `config.yaml` 配置文件，执行以下命令（手动更新也是此命令）。
 
 ```sh
 ./deploy.sh
