@@ -80,6 +80,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 - `ENABLE_MORE_GPT`: 是否开启无限模式,默认关闭。字面意思，懂的都懂，有封号风险。
 - `FREE_TIER`: 注册用户免费体验时间，单位小时，0 则没有。
 - `AFF_TIME`: 通过邀请码注册免费体验时间，单位小时。0 则没有。
+- `REGISTER_PLUS`: 刚注册的用户是否可以使用plus。默认false。
 - `COMMISSION_RATE`: 佣金比例，0 则不返佣，前端无`推广有礼`的 tab。不影响之前的返现，但会影响之后注册的用户。
 - `ALLOWED_WITHDRAWAL`: 最低提现金额，0 则无限制。
 - `FAKA_URL`：发卡地址，以`https`开头。配置后，在用户兑换页（未登陆），用户选车页，用户聊天页都可以跳转发卡地址，以 `https` 开头。
