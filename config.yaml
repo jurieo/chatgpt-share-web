@@ -56,6 +56,9 @@ FAKA_URL: ""
 # 是否开启无限模式,默认关闭。字面意思，懂的都懂，有封号风险
 ENABLE_MORE_GPT: false
 
+# 刚注册的用户是否可以使用plus。默认false
+REGISTER_PLUS: false
+
 # 邮箱配置，必须配置，否则用户无法注册，无法重置密码
 MAIL_FROM: "" # 发件人邮箱
 MAIL_PASS: "" # 邮箱密码，一般不是登陆密码
