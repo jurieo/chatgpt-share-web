@@ -102,7 +102,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 ```
 
 即可开启使用之旅。  
-访问后台管理系统，`http://ip:38300/xyhelper`，使用`admin`/`123456`登陆之后，及时修改密码。新建一个用户，将这个用户设置为管理员，可以在前端生成兑换码，审核用户提现等操作。  
+访问后台管理系统，`http://ip:38300/shareadmin`，使用`admin`/`123456`登陆之后，及时修改密码。新建一个用户，将这个用户设置为管理员，可以在前端生成兑换码，审核用户提现等操作。  
 更多使用技巧，尽情探索吧。  
 可有偿部署 100 元/次。
 
