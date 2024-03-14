@@ -37,7 +37,7 @@
 
 - ✅ gpt-4-mobile 模型，无限额度(默认关闭)
 - ✅ 聊天记录备份到数据库，翻车后聊天记录仅供查看，不能继续聊天。
-- ✅ 可以给用户分配他只能特定使用的车。plus类型高于分配的车。比如给用户分配了plus车，但他不是plus则无法使用该车。
+- ✅ 可以给用户分配他只能特定使用的车。plus 类型高于分配的车。比如给用户分配了 plus 车，但他不是 plus 则无法使用该车。
 - ✅ 用户注册验证邮箱后缀（邮箱白名单）
 - ✅ 用户通过邮箱注册
 - ✅ 忘记密码，通过邮箱重置密码
@@ -81,7 +81,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 - `ENABLE_MORE_GPT`: 是否开启无限模式,默认关闭。字面意思，懂的都懂，有封号风险。
 - `FREE_TIER`: 注册用户免费体验时间，单位小时，0 则没有。
 - `AFF_TIME`: 通过邀请码注册免费体验时间，单位小时。0 则没有。
-- `REGISTER_PLUS`: 刚注册的用户是否可以使用plus。默认false。
+- `REGISTER_PLUS`: 刚注册的用户是否可以使用 plus。默认 false。
 - `COMMISSION_RATE`: 佣金比例，0 则不返佣，前端无`推广有礼`的 tab。不影响之前的返现，但会影响之后注册的用户。
 - `ALLOWED_WITHDRAWAL`: 最低提现金额，0 则无限制。
 - `FAKA_URL`：发卡地址，以`https`开头。配置后，在用户兑换页（未登陆），用户选车页，用户聊天页都可以跳转发卡地址，以 `https` 开头。
@@ -89,7 +89,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 - `MAIL_FROM`: 发件人邮箱。
 - `MAIL_PASS`: 邮箱密码，不一定是登陆密码。
 - `MAIL_HOST`: 邮箱服务器地址，默认`smtp.gmail.com`。
-- `MAIL_PORT`: 邮箱服务器端口，默认 `587`。
+- `MAIL_PORT`: 邮箱服务器端口，默认 `587`,暂时只支持 `TLS(587)`,不支持 `SSL(465)`。
 - `MAIL_WHITELIST`: 注册邮箱白名单。清空: 关闭白名单 有值: 开启白名单。默认`@gmail.com,@yahoo.com,@hotmail.com,@outlook.com,@icloud.com,@163.com,@126.com,@qq.com,@foxmail.com`
 - `SITE_NAME`: 站点名称，用于发送邮件的友好提示。
 
