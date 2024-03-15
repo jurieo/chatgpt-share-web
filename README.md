@@ -87,9 +87,9 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 - `FAKA_URL`：发卡地址，以`https`开头。配置后，在用户兑换页（未登陆），用户选车页，用户聊天页都可以跳转发卡地址，以 `https` 开头。
 - #### **邮箱配置，必须配置，否则用户无法注册，无法重置密码，若不配置，无法启动。**
 - `MAIL_FROM`: 发件人邮箱。
-- `MAIL_PASS`: 邮箱密码，不一定是登陆密码。
+- `MAIL_PASS`: SMTP 授权码，谷歌邮箱为应用专用密码（在账号-安全性-开启两步验证后可开启应用专用密码）。
 - `MAIL_HOST`: 邮箱服务器地址，默认`smtp.gmail.com`。
-- `MAIL_PORT`: 邮箱服务器端口，默认 `587`,暂时只支持 `TLS(587)`,不支持 `SSL(465)`。
+- `MAIL_PORT`: 邮箱服务器端口，默认 `587`,支持 `TLS(587)`和 `SSL(465)`。
 - `MAIL_WHITELIST`: 注册邮箱白名单。清空: 关闭白名单 有值: 开启白名单。默认`@gmail.com,@yahoo.com,@hotmail.com,@outlook.com,@icloud.com,@163.com,@126.com,@qq.com,@foxmail.com`
 - `SITE_NAME`: 站点名称，用于发送邮件的友好提示。
 
