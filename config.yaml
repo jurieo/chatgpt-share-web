@@ -61,9 +61,9 @@ REGISTER_PLUS: false
 
 # 邮箱配置，必须配置，否则用户无法注册，无法重置密码
 MAIL_FROM: "" # 发件人邮箱
-MAIL_PASS: "" # 邮箱密码，一般不是登陆密码
+MAIL_PASS: "" # SMTP 授权码，谷歌邮箱为应用专用密码（在账号-安全性-开启两步验证后可开启应用专用密码）。
 MAIL_HOST: "smtp.gmail.com" # 邮箱服务器地址
-MAIL_PORT: "587" # 邮箱服务器端口,暂时只支持TLS(587),不支持SSL(465)
+MAIL_PORT: "587" # 邮箱服务器端口,支持TLS(587)和SSL(465)
 # 注册邮箱白名单。清空: 关闭白名单 有值: 开启白名单
 MAIL_WHITELIST: "@gmail.com,@yahoo.com,@hotmail.com,@outlook.com,@icloud.com,@163.com,@126.com,@qq.com,@foxmail.com"
 SITE_NAME: "" #站点名称，用于发送邮件的友好提示
