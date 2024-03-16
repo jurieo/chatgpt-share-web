@@ -62,7 +62,7 @@ tag 为`undefined`即为 plus 版。更新较频繁。
 
 ### 免费版和 pro 版一键部署
 
-本版本的部署和 `chatgpt-share-server` 保持一致，只需将镜像名称修改为`jurieo/chatgpt-share-server`。  
+本版本的部署和 `chatgpt-share-server` 保持一致，只需将镜像名称修改为`jurieo/gpt-share-server`。  
 更多部署详情请参考[chatgpt-share-server](https://chatgpt-share-server.xyhelper.cn/install/)。
 
 #### 免费版和 pro 版一键部署脚本
@@ -110,7 +110,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 更多使用技巧，尽情探索吧。  
 可有偿部署 100 元/次。
 
-## plus 版联系
+## 授权联系
 
 `plus` 版可以试用 3 天，如需继续使用，[邮件联系我](mailto:junlinyizhan@gmail.com?subject=share plus 版使用&body=我想付费使用 share plus 版，我的服务器 ip 是)或者[TG 联系我](https://t.me/jurieo_bot)。
 
