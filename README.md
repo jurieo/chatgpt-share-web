@@ -8,11 +8,12 @@
 >
 > 根据[《生成式人工智能服务管理暂行办法》](http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm)的要求，请勿对中国地区公众提供一切未经备案的生成式人工智能服务。
 
-本项目有免费版和付费版两个版本。
+由于发现一些利用免费版本恶意收费的现象，现在免费版本将进行限制。  
+本项目有免费版（用户 5 人内），`pro` 版本（用户超过 5 人）和 `plus`版本（全部功能，以前的付费版） 三个版本。
 
-## 免费版
+## 免费版和 pro 版
 
-免费版本但不开源。会同步 `chatgpt-share-server` 的全部功能。  
+免费版本和 `pro` 版本唯一区别是免费版本用户限制为 5 人内，`pro` 版本不限制用户数。其余功能一模一样。会同步 `chatgpt-share-server` 的全部功能。  
 镜像为：https://hub.docker.com/r/jurieo/gpt-share-server  
 主要实现了以下功能：
 
@@ -30,11 +31,11 @@
 - ✅ 支持用户名密码登录
 - ✅ 后台新增用户默认有效期一个月，默认 1 小时 20 次。
 
-免费版本的用户不得超过 3 人，超过 3 人即需进行授权使用。
+特别提示：免费版本的用户不得超过 5 人，超过 5 人即需升级为`pro`版进行授权才能使用。
 
-## 付费版
+## plus 版
 
-付费版不开源，tag 为`undefined`即为付费版。更新较频繁。  
+tag 为`undefined`即为 plus 版。更新较频繁。  
 在免费版的基础上增加如下功能：
 
 - ✅ gpt-4-mobile 模型，无限额度(默认关闭)
@@ -59,20 +60,21 @@
 
 ## 部署
 
-### 免费版一键部署
+### 免费版和 pro 版一键部署
 
-免费版本的部署和 `chatgpt-share-server` 保持一致，只需将镜像名称修改为`jurieo/chatgpt-share-server`。  
+本版本的部署和 `chatgpt-share-server` 保持一致，只需将镜像名称修改为`jurieo/chatgpt-share-server`。  
 更多部署详情请参考[chatgpt-share-server](https://chatgpt-share-server.xyhelper.cn/install/)。
 
-#### 一键部署脚本
+#### 免费版和 pro 版一键部署脚本
 
 ```bash
 curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy-free/quick-install.sh | bash
 ```
 
-### 付费版部署
+### plus 版部署
 
-付费版有一些配置需要简单设置，所以需要先拉取一些配置文件。
+`plus`版有一些配置需要简单设置，所以需要先拉取一些配置文件。  
+拉取配置文件
 
 ```bash
 curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/quick-install.sh | bash
@@ -108,13 +110,13 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 更多使用技巧，尽情探索吧。  
 可有偿部署 100 元/次。
 
-## 付费版联系
+## plus 版联系
 
-付费版可以试用 3 天，如需继续使用，[邮件联系我](mailto:junlinyizhan@gmail.com?subject=share付费版使用&body=我想付费使用share付费版，我的服务器ip是)或者[TG 联系我](https://t.me/ddjjsv)。
+`plus` 版可以试用 3 天，如需继续使用，[邮件联系我](mailto:junlinyizhan@gmail.com?subject=share plus 版使用&body=我想付费使用 share plus 版，我的服务器 ip 是)或者[TG 联系我](https://t.me/jurieo_bot)。
 
 ## 项目预览
 
-可访问 [君临驿站](https://aiok.me/user/#/register?i=4ME9Z)注册免费体验，带邀请码体验时间加 2 小时。
+可访问[君临驿站](https://aiok.me/user/#/register?i=4ME9Z)注册体验。
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/login.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/register.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/carlist1.png" width="640">
