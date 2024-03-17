@@ -81,4 +81,4 @@ SITE_NAME: "" #站点名称，用于发送邮件的友好提示
 EpayId: "" #商户id
 EpayKey: "" #商户key
 PayAddress: "" #支付地址
-PayType: "alipay,wxpay"
+PayType: "" # alipay,wxpay
