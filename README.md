@@ -93,13 +93,21 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 - `COMMISSION_RATE`: 佣金比例，0 则不返佣，前端无`推广有礼`的 tab。不影响之前的返现，但会影响之后注册的用户。
 - `ALLOWED_WITHDRAWAL`: 最低提现金额，0 则无限制。
 - `FAKA_URL`：发卡地址，以`https`开头。配置后，在用户兑换页（未登陆），用户选车页，用户聊天页都可以跳转发卡地址，以 `https` 开头。
+- `DISALLOW_MUTI_DEVICE`：是否禁止多设备登录，默认 `true`
+- `DISALLOW_ROAM`：是否关闭会话漫游 true 关闭 false 开启，默认 `false`
+- `FILE_SERVER`：文件服务器，默认为空，则表示上传和下载都走 `share` 服务器。可选`https://files.oaiusercontent.com`
 - #### **邮箱配置，必须配置，否则用户无法注册，无法重置密码，若不配置，无法启动。**
 - `MAIL_FROM`: 发件人邮箱。
 - `MAIL_PASS`: SMTP 授权码，谷歌邮箱为应用专用密码（在账号-安全性-开启两步验证后可开启应用专用密码）。
 - `MAIL_HOST`: 邮箱服务器地址，默认`smtp.gmail.com`。
 - `MAIL_PORT`: 邮箱服务器端口，默认 `587`,支持 `TLS(587)`和 `SSL(465)`。
 - `MAIL_WHITELIST`: 注册邮箱白名单。清空: 关闭白名单 有值: 开启白名单。默认`@gmail.com,@yahoo.com,@hotmail.com,@outlook.com,@icloud.com,@163.com,@126.com,@qq.com,@foxmail.com`
-- `SITE_NAME`: 站点名称，用于发送邮件的友好提示。
+- `SITE_NAME`: 邮箱别名，用于发送邮件的友好提示。
+- #### 支付配置，目前仅支持易支付
+- `EpayId`: 商户 id。
+- `EpayKey`: 商户 key。
+- `PayAddress`: 支付地址。
+- `PayType`: 允许的支付类型，默认`alipay,wxpay`,表示支付宝和微信支付。
 
 ### 启动项目
 
