@@ -9,6 +9,7 @@ git clone -b deploy --depth=1 https://github.com/jurieo/chatgpt-share-web.git ch
 cd chatgpt-share-web
 
 chmod +x ./deploy.sh
+chmod +x ./restart.sh
 
 # docker compose pull
 # docker compose up -d --remove-orphans
