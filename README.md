@@ -107,7 +107,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 - `EpayId`: 商户 id。
 - `EpayKey`: 商户 key。
 - `PayAddress`: 支付地址。
-- `PayType`: 允许的支付类型，默认`alipay,wxpay`,表示支付宝和微信支付。
+- `PayType`: 允许的支付类型，默认空，可填`alipay,wxpay`，表示支付宝和微信支付，只有一个就填写其中一个。
 
 ### 启动项目
 
