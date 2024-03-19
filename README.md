@@ -108,8 +108,8 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 - #### 支付配置，目前仅支持易支付
 - `EpayId`: 商户 id。
 - `EpayKey`: 商户 key。
-- `EPayAddress`: 支付地址。
-- `EPayType`: 允许的支付类型，默认空，可填`alipay,wxpay`，表示支付宝和微信支付，只有一个就填写其中一个。
+- `EpayAddress`: 支付地址。
+- `EpayType`: 允许的支付类型，默认空，可填`alipay,wxpay`，表示支付宝和微信支付，只有一个就填写其中一个。
 
 ### 启动项目
 
