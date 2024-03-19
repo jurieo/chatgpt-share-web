@@ -80,5 +80,5 @@ SITE_NAME: "" #站点名称，用于发送邮件的友好提示
 # 支付配置，暂只支持易支付
 EpayId: "" #商户id
 EpayKey: "" #商户key
-EPayAddress: "" #支付地址
-EPayType: "" # alipay,wxpay
+EpayAddress: "" #支付地址
+EpayType: "" # 允许的支付类型，默认空，可填`alipay,wxpay`，表示支付宝和微信支付，只有一个就填写其中一个.
