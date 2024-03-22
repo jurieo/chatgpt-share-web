@@ -98,6 +98,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 - `DISALLOW_MUTI_DEVICE`：是否禁止多设备登录，默认 `true`
 - `DISALLOW_ROAM`：是否关闭会话漫游 true 关闭 false 开启，默认 `false`
 - `FILE_SERVER`：文件服务器，默认为空，则表示上传和下载都走 `share` 服务器。可选`https://files.oaiusercontent.com`
+- `AUTO_CLEAR_HISTORY`:是否开启自动清理历史记录,每隔 2 天自动清理 20 天之前创建的会话记录。默认`true`
 - #### **邮箱配置，必须配置，否则用户无法注册，无法重置密码，若不配置，无法启动。**
 - `MAIL_FROM`: 发件人邮箱。
 - `MAIL_PASS`: SMTP 授权码，谷歌邮箱为应用专用密码（在账号-安全性-开启两步验证后可开启应用专用密码）。
