@@ -68,8 +68,11 @@ DISALLOW_ROAM: false
 # 文件服务器 https://files.oaiusercontent.com
 FILE_SERVER: ""
 
+# 是否开启自动清理历史记录,每隔2天自动清理20天之前创建的会话记录。默认开启
+AUTO_CLEAR_HISTORY: true
+
 # 邮箱配置，必须配置，否则用户无法注册，无法重置密码
-MAIL_FROM: "" # 发件人邮箱
+MAIL_FROM: "" # 发件人邮箱，支持gmail和qq邮箱
 MAIL_PASS: "" # SMTP 授权码，谷歌邮箱为应用专用密码（在账号-安全性-开启两步验证后可开启应用专用密码）。
 MAIL_HOST: "smtp.gmail.com" # 邮箱服务器地址
 MAIL_PORT: "587" # 邮箱服务器端口,支持TLS(587)和SSL(465)
