@@ -16,6 +16,7 @@
 本项目有免费版（用户 5 人内），`pro` 版本（用户超过 5 人）和 `plus`版本（全部功能，以前的付费版） 三个版本。
 
 免费版本和 `pro` 版本唯一区别是免费版本用户限制为 5 人内，`pro` 版本不限制用户数。其余功能一模一样。会同步 `chatgpt-share-server` 的全部功能。  
+目前`pro`和`plus`版本均可免费使用 14 天。  
 镜像为：https://hub.docker.com/r/jurieo/gpt-share-server  
 主要实现了以下功能：
 
@@ -129,7 +130,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 ## 授权联系
 
-`pro`和`plus` 版可以试用 3 天，如需继续使用，[邮件联系我](mailto:junlinyizhan@gmail.com)或者[TG 联系我](https://t.me/jurieo_bot)。  
+`pro`和`plus` 版可以使用 14 天，如需继续使用，[邮件联系我](mailto:junlinyizhan@gmail.com)或者[TG 联系我](https://t.me/jurieo_bot)。  
 有任何问题请[加入 TG 交流群](https://t.me/chatgpt_share_web)
 
 ## 项目预览
