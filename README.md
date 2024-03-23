@@ -129,8 +129,8 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 ## 授权联系
 
-`pro`和`plus` 版可以试用 3 天，如需继续使用，[邮件联系我](mailto:junlinyizhan@gmail.com)或者[TG 联系我](https://t.me/jurieo_bot)。
-搞了个交流群，欢迎加入。[加入 TG 交流群](https://t.me/chatgpt_share_web)
+`pro`和`plus` 版可以试用 3 天，如需继续使用，[邮件联系我](mailto:junlinyizhan@gmail.com)或者[TG 联系我](https://t.me/jurieo_bot)。  
+有任何问题请[加入 TG 交流群](https://t.me/chatgpt_share_web)
 
 ## 项目预览
 
