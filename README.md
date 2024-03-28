@@ -1,7 +1,7 @@
 # chatgpt-share-web
 
-本项目是基于[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server)的二开项目。  
-感谢[xyhelper](https://github.com/xyhelper/)提供的项目支持，感谢`xyhelper` 提供的免费接入点。respect~
+本项目是基于 chatgpt-share-server 的二开项目。  
+感谢[xyhelper](https://github.com/xyhelper/)提供的支持，感谢`xyhelper` 提供的免费接入点。respect~
 
 > [!NOTE]
 > 本项目使用者必须在遵循 OpenAI 的[使用条款](https://openai.com/policies/terms-of-use)以及**法律法规**的情况下使用，不得用于非法用途。
