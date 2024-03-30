@@ -1,7 +1,7 @@
 # chatgpt-share-web
 
 本项目是基于 chatgpt-share-server 的二开项目。  
-感谢[xyhelper](https://github.com/xyhelper/)提供的支持，感谢`xyhelper` 提供的免费接入点。respect~
+感谢[xyhelper](https://github.com/xyhelper/)提供的支持，感谢`xyhelper` 提供的免费接入点(已开发完成自建网关，在你的用户量较少时仍建议使用`xyhelper`的免费网关)。respect~
 
 > [!NOTE]
 > 本项目使用者必须在遵循 OpenAI 的[使用条款](https://openai.com/policies/terms-of-use)以及**法律法规**的情况下使用，不得用于非法用途。
@@ -139,10 +139,12 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 可访问[君临驿站](https://aiok.me/user/#/register?i=4ME9Z)注册体验。
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/login.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/register.png" width="640">
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/carlist1.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/carlist.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/pay.png" width="640">
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/chat1.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/chat.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/subtype.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/editSubtype.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/addUser.png" width="640">
 
 ### 风险声明
 
