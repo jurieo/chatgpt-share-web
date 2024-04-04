@@ -40,7 +40,7 @@
 ## plus 版
 
 docker 镜像 tag 为`undefined`即为 plus 版。更新较频繁。  
-用户注册，登陆，购买，使用，一条龙服务，安心做你的甩手掌柜。  
+用户注册，登陆，推广，返佣，提现，购买，使用，一条龙服务，安心做你的甩手掌柜。  
 在免费版的基础上增加如下功能：
 
 - ✅ gpt-4-mobile 模型，无限额度(默认关闭,好像被官方和 pc 共享了，待验证)
@@ -84,14 +84,15 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy-fre
 
 ### plus 版部署
 
-`plus`版有一些配置需要简单设置，所以需要先拉取一些配置文件。  
-拉取配置文件
+`plus`版一键部署脚本。
 
 ```bash
 curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/quick-install.sh | bash
 ```
 
-完成上面操作后，你需要进入目录`cd chatgpt-share-web`,修改`config.yaml`文件中的重要信息。
+完成上面操作后，等待系统创建数据库，配置完成后，你就可以正常访问你的网站了。  
+但有很多个性化的配置，需要你根据实际情况进行设置。  
+首先，进入目录`cd chatgpt-share-web`,修改`config.yaml`文件中的重要信息。
 
 - `ENABLE_MORE_GPT`: 是否开启无限模式,默认关闭。字面意思，懂的都懂，有封号风险。
 - `FREE_TIER`: 注册用户免费体验时间，单位小时，0 则没有。
@@ -119,7 +120,13 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 ### 启动项目
 
-保存好上面的 `config.yaml` 配置文件，执行以下命令（手动更新也是此命令）。
+保存好上面的 `config.yaml` 配置文件，执行以下命令（注意：只要修改了配置文件，都是执行此命令更新，否则修改会不生效。后续会把配置文件在后台进行可视化配置）
+
+```sh
+./restart.sh
+```
+
+本系统默认定期检测更新，如果你需要迫切想要主动更新，则执行
 
 ```sh
 ./deploy.sh
