@@ -14,8 +14,8 @@ chmod +x ./backup.sh
 
 local_ipv4=$(curl -s4m8 http://ip.sb)
 
-# docker compose pull
-# docker compose up -d --remove-orphans
+docker compose pull
+docker compose up -d --remove-orphans
 
 ## 提示信息
 echo "请进入chatgpt-share-web目录 (cd chatgpt-share-web),修改config.yaml文件中的重要信息,然后执行以下命令"
