@@ -1,7 +1,6 @@
 # chatgpt-share-web
 
-本项目是基于 chatgpt-share-server 的二开项目。  
-感谢[xyhelper](https://github.com/xyhelper/)提供的支持，感谢`xyhelper` 提供的免费接入点(已开发完成自建网关，在你的用户量较少时仍建议使用`xyhelper`的免费网关)。respect~
+本项目需网关才能正常运行，网关一般情况下需付费购买。我已开发完成自建网关，[TG 联系我](https://t.me/jurieo_bot)。购买 `plus版本` 我会赠送一个免费的临时网关。
 
 > [!NOTE]
 > 本项目使用者必须在遵循 OpenAI 的[使用条款](https://openai.com/policies/terms-of-use)以及**法律法规**的情况下使用，不得用于非法用途。
@@ -140,7 +139,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 ## 授权联系
 
-`pro`和`plus` 版可以使用 14 天，如需继续使用，[邮件联系我](mailto:junlinyizhan@gmail.com)或者[TG 联系我](https://t.me/jurieo_bot)。  
+`pro`和`plus` 版可以使用 14 天，如需继续使用，[TG 联系我](https://t.me/jurieo_bot)。  
 有任何问题请[加入 TG 交流群](https://t.me/chatgpt_share_web)
 
 ## 项目预览
@@ -155,6 +154,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/editSubtype.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/addUser.png" width="640">
 
-### 风险声明
+### 特别说吗
 
+本项目是基于 `chatgpt-share-server` 的二开项目，感谢`xyhelper`。respect~  
 本项目仅供学习和研究使用，不鼓励用于商业用途。我们不对任何因使用本项目而导致的任何损失负责。
