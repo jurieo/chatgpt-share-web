@@ -154,7 +154,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/editSubtype.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/addUser.png" width="640">
 
-### 特别说吗
+### 特别说明
 
-本项目是基于 `chatgpt-share-server` 的二开项目，感谢`xyhelper`。respect~  
+特别鸣谢。本项目是基于 `chatgpt-share-server` 的二开项目，感谢`xyhelper`。respect~  
 本项目仅供学习和研究使用，不鼓励用于商业用途。我们不对任何因使用本项目而导致的任何损失负责。
