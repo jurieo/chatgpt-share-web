@@ -90,50 +90,8 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 ```
 
 完成上面操作后，等待系统创建数据库，配置完成后，你就可以正常访问你的网站了。  
-但有很多个性化的配置，需要你根据实际情况进行设置。  
-首先，进入目录`cd chatgpt-share-web`,修改`config.yaml`文件中的重要信息。
-
-- `ENABLE_MORE_GPT`: 是否开启无限模式,默认关闭。字面意思，懂的都懂，有封号风险。
-- `FREE_TIER`: 注册用户免费体验时间，单位小时，0 则没有。
-- `AFF_TIME`: 通过邀请码注册免费体验时间，单位小时。0 则没有。
-- `REGISTER_PLUS`: 刚注册的用户是否可以使用 plus。默认 false。
-- `COMMISSION_RATE`: 佣金比例，0 则不返佣，前端无`推广有礼`的 tab。不影响之前的返现，但会影响之后注册的用户。
-- `ALLOWED_WITHDRAWAL`: 最低提现金额，0 则无限制。
-- `FAKA_URL`：发卡地址，以`https`开头。配置后，在用户兑换页（未登陆），用户选车页，用户聊天页都可以跳转发卡地址，以 `https` 开头。
-- `DISALLOW_MUTI_DEVICE`：是否禁止多设备登录，默认 `true`
-- `DISALLOW_ROAM`：是否关闭会话漫游 true 关闭 false 开启，默认 `false`
-- `FILE_SERVER`：文件服务器，默认为空，则表示上传和下载都走 `share` 服务器。可选`https://files.oaiusercontent.com`
-- `AUTO_CLEAR_HISTORY`:是否开启自动清理历史记录,每隔 2 天自动清理 20 天之前创建的会话记录。默认`true`
-- `IS_SHOW_NOT_VALUED`:在用户前端是否展示不计价值的订阅类型，默认 `false`。开启后，用户端将展示后台配置的不计价值的订阅类型。不计价值的的订阅类型，其到期时间直接累加，不再进行等价换算
-- #### **邮箱配置，必须配置，否则用户无法注册，无法重置密码，若不配置，无法启动。**
-- `MAIL_FROM`: 发件人邮箱。
-- `MAIL_PASS`: SMTP 授权码，谷歌邮箱为应用专用密码（在账号-安全性-开启两步验证后可开启应用专用密码）。
-- `MAIL_HOST`: 邮箱服务器地址，默认`smtp.gmail.com`。
-- `MAIL_PORT`: 邮箱服务器端口，默认 `587`,支持 `TLS(587)`和 `SSL(465)`。
-- `MAIL_WHITELIST`: 注册邮箱白名单。清空: 关闭白名单 有值: 开启白名单。默认`@gmail.com,@yahoo.com,@hotmail.com,@outlook.com,@icloud.com,@163.com,@126.com,@qq.com,@foxmail.com`
-- `SITE_NAME`: 邮箱别名，用于发送邮件的友好提示。
-- #### 支付配置，目前仅支持易支付
-- `EpayId`: 商户 id。
-- `EpayKey`: 商户 key。
-- `EpayAddress`: 支付地址。
-- `EpayType`: 允许的支付类型，默认空，可填`alipay,wxpay`，表示支付宝和微信支付，只有一个就填写其中一个。
-
-### 启动项目
-
-保存好上面的 `config.yaml` 配置文件，执行以下命令（注意：只要修改了配置文件，都是执行此命令更新，否则修改会不生效。后续会把配置文件在后台进行可视化配置）
-
-```sh
-./restart.sh
-```
-
-本系统默认定期检测更新，如果你需要迫切想要主动更新，则执行
-
-```sh
-./deploy.sh
-```
-
-即可开启使用之旅。  
 访问后台管理系统，`http://ip:38300/shareadmin`，使用`admin`/`123456`登陆之后，及时修改密码。新建一个用户，将这个用户设置为管理员，可以在前端生成兑换码，审核用户提现等操作。  
+有很多个性化的配置，请登陆后台，【工作台-系统配置】根据实际情况进行设置。  
 更多使用技巧，尽情探索吧。  
 可有偿部署 200 元/次。
 
@@ -145,6 +103,8 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 ## 项目预览
 
 可访问[君临驿站](https://aiok.me/user/#/register?i=4ME9Z)注册体验。
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/newui.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/login.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/register.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/carlist.png" width="640">
