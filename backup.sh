@@ -14,7 +14,7 @@ CURRENT_DIR=$(pwd)
 LOG_PATH="${CURRENT_DIR}/csw-backup/backup.log"
 
 BACKUP="./csw-backup" # 备份目录相对路径
-BUCKET="oss://xpg-bt-backup/backup/${PARENT_DIR_NAME}/"
+BUCKET="oss://csw-buckt/backup/${PARENT_DIR_NAME}/"
 # 构造完整的crontab命令
 CRON_JOB="40 * * * * ${CURRENT_DIR}/backup.sh >> ${LOG_PATH} 2>&1"
 
