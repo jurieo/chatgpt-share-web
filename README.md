@@ -1,6 +1,6 @@
 # chatgpt-share-web
 
-本项目是基于 `xyhelper` 的二开项目，致敬～。本项目需网关才能正常对话，网关一般情况下需付费购买。[TG 联系我](https://t.me/jurieo_bot)购买本项目的 `plus版本` 我会赠送一个免费的临时网关。本项目的 docker 镜像为：[docker 镜像](https://hub.docker.com/r/jurieo/gpt-share-server)
+本项目是基于 [xyhelper](https://github.com/xyhelper/chatgpt-share-server) 的二开项目，致敬～。本项目需网关才能正常对话，网关一般情况下需付费购买。[TG 联系我](https://t.me/jurieo_bot)购买本项目的 `plus版本` 我会赠送一个免费的临时网关。本项目的 docker 镜像为：[docker 镜像](https://hub.docker.com/r/jurieo/gpt-share-server)
 
 > [!NOTE]
 > 本项目使用者必须在遵循 OpenAI 的[使用条款](https://openai.com/policies/terms-of-use)以及**法律法规**的情况下使用，不得用于非法用途。
