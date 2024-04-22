@@ -120,5 +120,5 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 ### 特别说明
 
-特别鸣谢。本项目是基于 `xyhelper` 的二开项目，感谢`xyhelper`。respect~  
+特别鸣谢。本项目是基于 [xyhelper](https://github.com/xyhelper/chatgpt-share-server) 的二开项目，感谢`xyhelper`。respect~  
 本项目仅供学习和研究使用，不鼓励用于商业用途。我们不对任何因使用本项目而导致的任何损失负责。
