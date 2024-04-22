@@ -51,14 +51,13 @@ docker 镜像 tag 为`undefined`即为 plus 版。更新较频繁。
 - ✅ 用户注册验证邮箱后缀（邮箱白名单）
 - ✅ 用户通过邮箱注册,重置密码,提现等。
 - ✅ 文件代理，再也不怕文件打不开了。
-- ✅ 邮箱配置
-- ✅ 所有配置均可在后台系统进行可视化配置。
+- ✅ 所有配置均可在后台系统进行可视化配置。基础配置，邮箱配置，支付配置，推广配置，网关及授权配置。
 - ✅ 重要数据支持导入导出。涉及到的菜单有账号管理，用户管理，订阅管理，兑换码管理。
 - ✅ 批量创建兑换码，兑换码支持按额度和频率限制，按账号类型（3.5，plus）限制，按使用时间限制
 - ✅ 先登陆再选车，登陆时可以快速上车（快速进入最空闲车的聊天页）
 - ✅ 聊天页一键换车，自动换车
 - ✅ 个人中心，车列表按空闲到繁忙排序
-- ✅ 用户通过推广获得付费用户返佣
+- ✅ 推广返佣。用户通过推广获得付费用户返佣
 - ✅ 用户无感兑换码，解放手撸（可自行配置按月付，季付，周付等配置）
 - ✅ 新增管理员审核，封禁用户
 - ✅ 用户提现，审核
@@ -67,6 +66,7 @@ docker 镜像 tag 为`undefined`即为 plus 版。更新较频繁。
 - ✅ 可配置新注册用户免费体验时长，通过邀请码注册再增加体验时间，可后台配置。
 - ✅ 新注册用户可设置使用限制。
 - ✅ 主题功能，新 UI 和经典 UI 可供选择。
+- ✅ 用户名/邮箱登陆
 - ✅ 每天都在增加更多功能。。
 
 ## 部署
@@ -107,12 +107,20 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 ## 项目预览
 
-可访问[君临驿站](https://aiok.me/user/#/register?i=4ME9Z)注册体验。
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config.png" width="640">
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/newui.png" width="640">
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/login.png" width="640">
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/register.png" width="640">
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/carlist.png" width="640">
+可访问[君临驿站](https://aiok.me/user/#/register?i=4ME9Z)注册体验。  
+本项目可配置选择 2 个主题。如果你有开发能力，可开发出更多主题。  
+**流行**
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-login.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-invite.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-carlist.png" width="640">
+
+**经典**
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-login.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-carlist.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-register.png" width="640">
+
+**后台**
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config1.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/pay.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/chat.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/subtype.png" width="640">
