@@ -109,17 +109,17 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 可访问[君临驿站](https://aiok.me/user/#/register?i=4ME9Z)注册体验。  
 本项目可配置选择 2 个主题。如果你有开发能力，可开发出更多主题。  
-**流行**
+**流行**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-login.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-invite.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-carlist.png" width="640">
 
-**经典**
+**经典**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-login.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-carlist.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-register.png" width="640">
 
-**后台**
+**后台**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config1.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/pay.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/chat.png" width="640">
