@@ -8,7 +8,12 @@
 
 [加入交流群](https://t.me/chatgpt_share_web)  
 本项目的 docker 镜像为：[docker 镜像](https://hub.docker.com/r/jurieo/gpt-share-server)  
-新功能可能没有及时更新到 github 上，可通过一键部署脚本体验最新系统。
+新功能可能没有及时更新到 github 上，可通过一键部署脚本体验最新系统。  
+`plus`版一键部署脚本。
+
+```bash
+curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/quick-install.sh | bash
+```
 
 > [!NOTE]
 > 本项目使用者必须在遵循 OpenAI 的[使用条款](https://openai.com/policies/terms-of-use)以及**法律法规**的情况下使用，不得用于非法用途。
