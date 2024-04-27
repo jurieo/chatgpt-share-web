@@ -1,6 +1,11 @@
 # chatgpt-share-web
 
-本项目是基于 `xyhelper` 的二开项目，致敬～。本项目需网关才能正常对话，网关一般情况下需付费购买。[TG 联系我](https://t.me/jurieo_bot)购买本项目的 `plus版本` 我会赠送一个免费的临时网关。本项目的 docker 镜像为：[docker 镜像](https://hub.docker.com/r/jurieo/gpt-share-server)  
+本项目是基于 `xyhelper` 的二开项目，致敬～。
+**本项目的`plus版本`在 0-20 人的有效用户内，授权价格为 ¥ 0.01/月，且依然送一个免费网关**。  
+有效用户指的是在你的用户系统中排除已经删除的、没有登录过的、已经过期超过一个月的用户。
+
+[加入交流群](https://t.me/chatgpt_share_web)  
+本项目的 docker 镜像为：[docker 镜像](https://hub.docker.com/r/jurieo/gpt-share-server)  
 新功能可能没有及时更新到 github 上，可通过一键部署脚本体验最新系统。
 
 > [!NOTE]
