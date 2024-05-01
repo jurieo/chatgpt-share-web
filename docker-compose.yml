@@ -40,6 +40,7 @@ services:
       - ./config.yaml:/app/config.yaml
       - ./data/chatgpt-share-server/:/app/data/
       - ./data/images:/app/resource/public/images/
+      - ./data/chatgpt-share-server/images:/app/public/uploads
 
     labels:
       - "com.centurylinklabs.watchtower.scope=jurieo-chatgpt-share-web"
