@@ -29,7 +29,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 本项目有免费版（用户 5 人内），`pro` 版本（用户超过 5 人）和 `plus`版本（包含注册，登陆，推广，返佣，提现，购买，使用等一条龙使用的全部功能） 三个版本。
 
 免费版本和 `pro` 版本唯一区别是免费版本用户限制为 5 人内，`pro` 版本不限制用户数。其余功能一模一样。会同步 `chatgpt-share-server` 的全部功能。  
-目前`pro`和`plus`版本均可免费使用 14 天。  
+目前`pro`免费使用 14 天，`plus`版本 0-20 人授权费用为 ¥0.01/月，推荐使用`plus`版本，功能强大，日常更新。  
 镜像为：https://hub.docker.com/r/jurieo/gpt-share-server  
 主要实现了以下功能：
 
@@ -115,24 +115,25 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 ## 授权联系
 
-`pro`和`plus` 版可以使用 14 天，如需继续使用，[TG 联系我](https://t.me/jurieo_bot)。  
+`pro`可以体验 14 天，`plus`版本`0-20`人授权费用为 ¥`0.01/月`，推荐使用`plus`版本，功能强大，日常更新。  
+[TG 联系我](https://t.me/jurieo_bot)，微信联系我：asd0999701。  
 有任何问题请[加入 TG 交流群](https://t.me/chatgpt_share_web)
 
 ## 项目预览
 
 可访问[君临驿站](https://aiok.me/user/#/register?i=4ME9Z)注册体验。  
 本项目可配置选择 2 个主题。如果你有开发能力，可开发出更多主题。  
-**流行**  
+**流行主题**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-login.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-invite.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-carlist.png" width="640">
 
-**经典**  
+**经典主题**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-login.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-carlist.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-register.png" width="640">
 
-**后台**  
+**后台管理**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config1.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/pay.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/chat.png" width="640">
@@ -143,4 +144,4 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 ### 特别说明
 
 特别鸣谢。本项目是基于 [xyhelper](https://github.com/xyhelper/chatgpt-share-server) 的二开项目，感谢`xyhelper`。respect~  
-本项目仅供学习和研究使用，不鼓励用于商业用途。我们不对任何因使用本项目而导致的任何损失负责。
+本项目仅供学习和研究使用。我们不对任何因使用本项目而导致的任何损失负责。
