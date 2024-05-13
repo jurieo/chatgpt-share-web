@@ -6,7 +6,7 @@ echo "clone repository..."
 
 # 检测 Docker 是否已安装
 if ! command -v docker &> /dev/null; then
-    echo "安装docker..."
+    echo "检测到没有安装docker，开始安装..."
     # 使用 curl 命令下载 Docker 安装脚本并执行
     curl -fsSL https://get.docker.com | sh
     
