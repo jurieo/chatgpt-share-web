@@ -37,6 +37,7 @@ services:
       # 内容审核及速率限制
       AUDIT_LIMIT_URL: "http://auditlimit:8080/audit_limit"
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
       - ./config.yaml:/app/config.yaml
       - ./data/chatgpt-share-server/:/app/data/
       - ./data/images:/app/resource/public/images/
