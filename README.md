@@ -37,6 +37,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 - ✅ 可自动保存聊天记录，左侧同步用户所在车的聊天记录，点击聊天记录，自动换车。
 - ✅ 可配置开启/关闭实时语音。
 - ✅ 实时语音可配置自部署的服务端。
+- ✅ 多功能商城
 - ✅ 可开启注册或仅邀请注册。
 - ✅ 用户使用量可配置显示。
 - ✅ 可批量生成用户，用户的有效期从第一次登录开始计算，方便直接售卖用户账号，降低注册门槛。
@@ -114,7 +115,8 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-register.png" width="640">
 
 **后台管理**  
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config1.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/store.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/pay.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/chat.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/subtype.png" width="640">
