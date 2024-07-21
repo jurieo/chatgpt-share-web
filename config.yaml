@@ -22,7 +22,7 @@ cool:
   eps: true
   file:
     mode: "local"
-    domain: "http://127.0.0.1:38300"
+    domain: "https://这里填写你的域名"
 
 modules:
   base:

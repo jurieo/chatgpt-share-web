@@ -32,7 +32,7 @@ CREATE TABLE `base_eps_admin` (
   `tag` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `dts` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26497 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=61158 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,7 +41,7 @@ CREATE TABLE `base_eps_admin` (
 
 LOCK TABLES `base_eps_admin` WRITE;
 /*!40000 ALTER TABLE `base_eps_admin` DISABLE KEYS */;
-INSERT INTO `base_eps_admin` VALUES (26349,'base','POST','/logout','/admin/base/comm','logout','',''),(26350,'base','GET','/permmenu','/admin/base/comm','permmenu','',''),(26351,'base','GET','/person','/admin/base/comm','person','',''),(26352,'base','POST','/personUpdate','/admin/base/comm','personUpdate','',''),(26353,'base','POST','/upload','/admin/base/comm','upload','',''),(26354,'base','GET','/uploadMode','/admin/base/comm','uploadMode','',''),(26355,'base','GET','/captcha','/admin/base/open','captcha','',''),(26356,'base','GET','/eps','/admin/base/open','eps','',''),(26357,'base','POST','/login','/admin/base/open','login','',''),(26358,'base','GET','/refreshToken','/admin/base/open','refreshToken','',''),(26359,'base','POST','/add','/admin/base/sys/department','add','',''),(26360,'base','POST','/delete','/admin/base/sys/department','delete','',''),(26361,'base','GET','/info','/admin/base/sys/department','info','',''),(26362,'base','POST','/list','/admin/base/sys/department','list','',''),(26363,'base','GET','/order','/admin/base/sys/department','order','',''),(26364,'base','POST','/page','/admin/base/sys/department','page','',''),(26365,'base','POST','/update','/admin/base/sys/department','update','',''),(26366,'base','POST','/add','/admin/base/sys/log','add','',''),(26367,'base','POST','/clear','/admin/base/sys/log','clear','',''),(26368,'base','POST','/delete','/admin/base/sys/log','delete','',''),(26369,'base','GET','/getKeep','/admin/base/sys/log','getKeep','',''),(26370,'base','GET','/info','/admin/base/sys/log','info','',''),(26371,'base','POST','/list','/admin/base/sys/log','list','',''),(26372,'base','POST','/page','/admin/base/sys/log','page','',''),(26373,'base','POST','/setKeep','/admin/base/sys/log','setKeep','',''),(26374,'base','POST','/update','/admin/base/sys/log','update','',''),(26375,'base','POST','/add','/admin/base/sys/menu','add','',''),(26376,'base','POST','/delete','/admin/base/sys/menu','delete','',''),(26377,'base','GET','/info','/admin/base/sys/menu','info','',''),(26378,'base','POST','/list','/admin/base/sys/menu','list','',''),(26379,'base','POST','/page','/admin/base/sys/menu','page','',''),(26380,'base','POST','/update','/admin/base/sys/menu','update','',''),(26381,'base','POST','/add','/admin/base/sys/param','add','',''),(26382,'base','POST','/delete','/admin/base/sys/param','delete','',''),(26383,'base','GET','/html','/admin/base/sys/param','html','',''),(26384,'base','GET','/info','/admin/base/sys/param','info','',''),(26385,'base','POST','/list','/admin/base/sys/param','list','',''),(26386,'base','POST','/page','/admin/base/sys/param','page','',''),(26387,'base','POST','/update','/admin/base/sys/param','update','',''),(26388,'base','POST','/add','/admin/base/sys/role','add','',''),(26389,'base','POST','/delete','/admin/base/sys/role','delete','',''),(26390,'base','GET','/info','/admin/base/sys/role','info','',''),(26391,'base','POST','/list','/admin/base/sys/role','list','',''),(26392,'base','POST','/page','/admin/base/sys/role','page','',''),(26393,'base','POST','/update','/admin/base/sys/role','update','',''),(26394,'base','POST','/add','/admin/base/sys/user','add','',''),(26395,'base','POST','/delete','/admin/base/sys/user','delete','',''),(26396,'base','GET','/info','/admin/base/sys/user','info','',''),(26397,'base','POST','/list','/admin/base/sys/user','list','',''),(26398,'base','GET','/move','/admin/base/sys/user','move','',''),(26399,'base','POST','/page','/admin/base/sys/user','page','',''),(26400,'base','POST','/update','/admin/base/sys/user','update','',''),(26401,'chatgpt','POST','/add','/admin/chatgpt/config','add','',''),(26402,'chatgpt','POST','/delete','/admin/chatgpt/config','delete','',''),(26403,'chatgpt','GET','/info','/admin/chatgpt/config','info','',''),(26404,'chatgpt','POST','/list','/admin/chatgpt/config','list','',''),(26405,'chatgpt','POST','/page','/admin/chatgpt/config','page','',''),(26406,'chatgpt','POST','/update','/admin/chatgpt/config','update','',''),(26407,'chatgpt','POST','/updateConfig','/admin/chatgpt/config','updateConfig','',''),(26408,'chatgpt','POST','/add','/admin/chatgpt/conversations','add','',''),(26409,'chatgpt','POST','/delete','/admin/chatgpt/conversations','delete','',''),(26410,'chatgpt','GET','/info','/admin/chatgpt/conversations','info','',''),(26411,'chatgpt','POST','/list','/admin/chatgpt/conversations','list','',''),(26412,'chatgpt','POST','/page','/admin/chatgpt/conversations','page','',''),(26413,'chatgpt','POST','/update','/admin/chatgpt/conversations','update','',''),(26414,'chatgpt','POST','/add','/admin/chatgpt/epaylogs','add','',''),(26415,'chatgpt','POST','/delete','/admin/chatgpt/epaylogs','delete','',''),(26416,'chatgpt','GET','/info','/admin/chatgpt/epaylogs','info','',''),(26417,'chatgpt','POST','/list','/admin/chatgpt/epaylogs','list','',''),(26418,'chatgpt','POST','/page','/admin/chatgpt/epaylogs','page','',''),(26419,'chatgpt','POST','/update','/admin/chatgpt/epaylogs','update','',''),(26420,'chatgpt','POST','/add','/admin/chatgpt/paylogs','add','',''),(26421,'chatgpt','POST','/delete','/admin/chatgpt/paylogs','delete','',''),(26422,'chatgpt','GET','/info','/admin/chatgpt/paylogs','info','',''),(26423,'chatgpt','POST','/list','/admin/chatgpt/paylogs','list','',''),(26424,'chatgpt','POST','/page','/admin/chatgpt/paylogs','page','',''),(26425,'chatgpt','POST','/update','/admin/chatgpt/paylogs','update','',''),(26426,'chatgpt','POST','/add','/admin/chatgpt/redemption','add','',''),(26427,'chatgpt','POST','/delete','/admin/chatgpt/redemption','delete','',''),(26428,'chatgpt','POST','/generate','/admin/chatgpt/redemption','generate','',''),(26429,'chatgpt','GET','/info','/admin/chatgpt/redemption','info','',''),(26430,'chatgpt','POST','/list','/admin/chatgpt/redemption','list','',''),(26431,'chatgpt','POST','/page','/admin/chatgpt/redemption','page','',''),(26432,'chatgpt','POST','/update','/admin/chatgpt/redemption','update','',''),(26433,'chatgpt','POST','/add','/admin/chatgpt/session','add','',''),(26434,'chatgpt','POST','/delete','/admin/chatgpt/session','delete','',''),(26435,'chatgpt','GET','/info','/admin/chatgpt/session','info','',''),(26436,'chatgpt','GET','/infobycarid','/admin/chatgpt/session','infobycarid','',''),(26437,'chatgpt','POST','/list','/admin/chatgpt/session','list','',''),(26438,'chatgpt','POST','/page','/admin/chatgpt/session','page','',''),(26439,'chatgpt','POST','/update','/admin/chatgpt/session','update','',''),(26440,'chatgpt','POST','/add','/admin/chatgpt/subtype','add','',''),(26441,'chatgpt','POST','/delete','/admin/chatgpt/subtype','delete','',''),(26442,'chatgpt','GET','/info','/admin/chatgpt/subtype','info','',''),(26443,'chatgpt','POST','/list','/admin/chatgpt/subtype','list','',''),(26444,'chatgpt','POST','/page','/admin/chatgpt/subtype','page','',''),(26445,'chatgpt','POST','/update','/admin/chatgpt/subtype','update','',''),(26446,'chatgpt','POST','/add','/admin/chatgpt/user','add','',''),(26447,'chatgpt','POST','/checkPay','/admin/chatgpt/user','checkPay','',''),(26448,'chatgpt','POST','/delete','/admin/chatgpt/user','delete','',''),(26449,'chatgpt','POST','/genUser','/admin/chatgpt/user','genUser','',''),(26450,'chatgpt','GET','/getPayConfig','/admin/chatgpt/user','getPayConfig','',''),(26451,'chatgpt','GET','/info','/admin/chatgpt/user','info','',''),(26452,'chatgpt','POST','/list','/admin/chatgpt/user','list','',''),(26453,'chatgpt','POST','/page','/admin/chatgpt/user','page','',''),(26454,'chatgpt','POST','/pay','/admin/chatgpt/user','pay','',''),(26455,'chatgpt','POST','/update','/admin/chatgpt/user','update','',''),(26456,'chatgpt','POST','/add','/admin/chatgpt/withdrawlogs','add','',''),(26457,'chatgpt','POST','/delete','/admin/chatgpt/withdrawlogs','delete','',''),(26458,'chatgpt','GET','/info','/admin/chatgpt/withdrawlogs','info','',''),(26459,'chatgpt','POST','/list','/admin/chatgpt/withdrawlogs','list','',''),(26460,'chatgpt','POST','/page','/admin/chatgpt/withdrawlogs','page','',''),(26461,'chatgpt','POST','/update','/admin/chatgpt/withdrawlogs','update','',''),(26462,'dict','POST','/add','/admin/dict/info','add','',''),(26463,'dict','POST','/data','/admin/dict/info','data','',''),(26464,'dict','POST','/delete','/admin/dict/info','delete','',''),(26465,'dict','GET','/info','/admin/dict/info','info','',''),(26466,'dict','POST','/list','/admin/dict/info','list','',''),(26467,'dict','POST','/page','/admin/dict/info','page','',''),(26468,'dict','POST','/update','/admin/dict/info','update','',''),(26469,'dict','POST','/add','/admin/dict/type','add','',''),(26470,'dict','POST','/delete','/admin/dict/type','delete','',''),(26471,'dict','GET','/info','/admin/dict/type','info','',''),(26472,'dict','POST','/list','/admin/dict/type','list','',''),(26473,'dict','POST','/page','/admin/dict/type','page','',''),(26474,'dict','POST','/update','/admin/dict/type','update','',''),(26475,'space','POST','/add','/admin/space/info','add','',''),(26476,'space','POST','/delete','/admin/space/info','delete','',''),(26477,'space','GET','/info','/admin/space/info','info','',''),(26478,'space','POST','/list','/admin/space/info','list','',''),(26479,'space','POST','/page','/admin/space/info','page','',''),(26480,'space','POST','/update','/admin/space/info','update','',''),(26481,'space','POST','/add','/admin/space/type','add','',''),(26482,'space','POST','/delete','/admin/space/type','delete','',''),(26483,'space','GET','/info','/admin/space/type','info','',''),(26484,'space','POST','/list','/admin/space/type','list','',''),(26485,'space','POST','/page','/admin/space/type','page','',''),(26486,'space','POST','/update','/admin/space/type','update','',''),(26487,'task','POST','/add','/admin/task/info','add','',''),(26488,'task','POST','/delete','/admin/task/info','delete','',''),(26489,'task','GET','/info','/admin/task/info','info','',''),(26490,'task','POST','/list','/admin/task/info','list','',''),(26491,'task','GET','/log','/admin/task/info','log','',''),(26492,'task','POST','/once','/admin/task/info','once','',''),(26493,'task','POST','/page','/admin/task/info','page','',''),(26494,'task','GET','/start','/admin/task/info','start','',''),(26495,'task','GET','/stop','/admin/task/info','stop','',''),(26496,'task','POST','/update','/admin/task/info','update','','');
+INSERT INTO `base_eps_admin` VALUES (60976,'base','POST','/logout','/admin/base/comm','logout','',''),(60977,'base','GET','/permmenu','/admin/base/comm','permmenu','',''),(60978,'base','GET','/person','/admin/base/comm','person','',''),(60979,'base','POST','/personUpdate','/admin/base/comm','personUpdate','',''),(60980,'base','POST','/upload','/admin/base/comm','upload','',''),(60981,'base','GET','/uploadMode','/admin/base/comm','uploadMode','',''),(60982,'base','GET','/captcha','/admin/base/open','captcha','',''),(60983,'base','GET','/eps','/admin/base/open','eps','',''),(60984,'base','POST','/login','/admin/base/open','login','',''),(60985,'base','GET','/refreshToken','/admin/base/open','refreshToken','',''),(60986,'base','POST','/add','/admin/base/sys/department','add','',''),(60987,'base','POST','/delete','/admin/base/sys/department','delete','',''),(60988,'base','GET','/info','/admin/base/sys/department','info','',''),(60989,'base','POST','/list','/admin/base/sys/department','list','',''),(60990,'base','GET','/order','/admin/base/sys/department','order','',''),(60991,'base','POST','/page','/admin/base/sys/department','page','',''),(60992,'base','POST','/update','/admin/base/sys/department','update','',''),(60993,'base','POST','/add','/admin/base/sys/log','add','',''),(60994,'base','POST','/clear','/admin/base/sys/log','clear','',''),(60995,'base','POST','/delete','/admin/base/sys/log','delete','',''),(60996,'base','GET','/getKeep','/admin/base/sys/log','getKeep','',''),(60997,'base','GET','/info','/admin/base/sys/log','info','',''),(60998,'base','POST','/list','/admin/base/sys/log','list','',''),(60999,'base','POST','/page','/admin/base/sys/log','page','',''),(61000,'base','POST','/setKeep','/admin/base/sys/log','setKeep','',''),(61001,'base','POST','/update','/admin/base/sys/log','update','',''),(61002,'base','POST','/add','/admin/base/sys/menu','add','',''),(61003,'base','POST','/delete','/admin/base/sys/menu','delete','',''),(61004,'base','GET','/info','/admin/base/sys/menu','info','',''),(61005,'base','POST','/list','/admin/base/sys/menu','list','',''),(61006,'base','POST','/page','/admin/base/sys/menu','page','',''),(61007,'base','POST','/update','/admin/base/sys/menu','update','',''),(61008,'base','POST','/add','/admin/base/sys/param','add','',''),(61009,'base','POST','/delete','/admin/base/sys/param','delete','',''),(61010,'base','GET','/html','/admin/base/sys/param','html','',''),(61011,'base','GET','/info','/admin/base/sys/param','info','',''),(61012,'base','POST','/list','/admin/base/sys/param','list','',''),(61013,'base','POST','/page','/admin/base/sys/param','page','',''),(61014,'base','POST','/update','/admin/base/sys/param','update','',''),(61015,'base','POST','/add','/admin/base/sys/role','add','',''),(61016,'base','POST','/delete','/admin/base/sys/role','delete','',''),(61017,'base','GET','/info','/admin/base/sys/role','info','',''),(61018,'base','POST','/list','/admin/base/sys/role','list','',''),(61019,'base','POST','/page','/admin/base/sys/role','page','',''),(61020,'base','POST','/update','/admin/base/sys/role','update','',''),(61021,'base','POST','/add','/admin/base/sys/user','add','',''),(61022,'base','POST','/delete','/admin/base/sys/user','delete','',''),(61023,'base','GET','/info','/admin/base/sys/user','info','',''),(61024,'base','POST','/list','/admin/base/sys/user','list','',''),(61025,'base','GET','/move','/admin/base/sys/user','move','',''),(61026,'base','POST','/page','/admin/base/sys/user','page','',''),(61027,'base','POST','/update','/admin/base/sys/user','update','',''),(61028,'chatgpt','POST','/add','/admin/chatgpt/config','add','',''),(61029,'chatgpt','POST','/delete','/admin/chatgpt/config','delete','',''),(61030,'chatgpt','GET','/info','/admin/chatgpt/config','info','',''),(61031,'chatgpt','POST','/list','/admin/chatgpt/config','list','',''),(61032,'chatgpt','POST','/page','/admin/chatgpt/config','page','',''),(61033,'chatgpt','GET','/sendTestEmail','/admin/chatgpt/config','sendTestEmail','',''),(61034,'chatgpt','POST','/update','/admin/chatgpt/config','update','',''),(61035,'chatgpt','POST','/updateConfig','/admin/chatgpt/config','updateConfig','',''),(61036,'chatgpt','POST','/add','/admin/chatgpt/conversations','add','',''),(61037,'chatgpt','POST','/delete','/admin/chatgpt/conversations','delete','',''),(61038,'chatgpt','POST','/importFile','/admin/chatgpt/conversations','importFile','',''),(61039,'chatgpt','GET','/info','/admin/chatgpt/conversations','info','',''),(61040,'chatgpt','POST','/list','/admin/chatgpt/conversations','list','',''),(61041,'chatgpt','POST','/page','/admin/chatgpt/conversations','page','',''),(61042,'chatgpt','POST','/update','/admin/chatgpt/conversations','update','',''),(61043,'chatgpt','POST','/add','/admin/chatgpt/epaylogs','add','',''),(61044,'chatgpt','POST','/checkPay','/admin/chatgpt/epaylogs','checkPay','',''),(61045,'chatgpt','POST','/delete','/admin/chatgpt/epaylogs','delete','',''),(61046,'chatgpt','GET','/info','/admin/chatgpt/epaylogs','info','',''),(61047,'chatgpt','POST','/list','/admin/chatgpt/epaylogs','list','',''),(61048,'chatgpt','POST','/page','/admin/chatgpt/epaylogs','page','',''),(61049,'chatgpt','POST','/update','/admin/chatgpt/epaylogs','update','',''),(61050,'chatgpt','POST','/add','/admin/chatgpt/gpts','add','',''),(61051,'chatgpt','POST','/delete','/admin/chatgpt/gpts','delete','',''),(61052,'chatgpt','GET','/info','/admin/chatgpt/gpts','info','',''),(61053,'chatgpt','POST','/list','/admin/chatgpt/gpts','list','',''),(61054,'chatgpt','POST','/page','/admin/chatgpt/gpts','page','',''),(61055,'chatgpt','POST','/update','/admin/chatgpt/gpts','update','',''),(61056,'chatgpt','GET','/welcome','/admin/chatgpt/gpts','welcome','',''),(61057,'chatgpt','POST','/add','/admin/chatgpt/paylogs','add','',''),(61058,'chatgpt','POST','/delete','/admin/chatgpt/paylogs','delete','',''),(61059,'chatgpt','GET','/info','/admin/chatgpt/paylogs','info','',''),(61060,'chatgpt','POST','/list','/admin/chatgpt/paylogs','list','',''),(61061,'chatgpt','POST','/page','/admin/chatgpt/paylogs','page','',''),(61062,'chatgpt','POST','/update','/admin/chatgpt/paylogs','update','',''),(61063,'chatgpt','POST','/add','/admin/chatgpt/redemption','add','',''),(61064,'chatgpt','POST','/delete','/admin/chatgpt/redemption','delete','',''),(61065,'chatgpt','POST','/generate','/admin/chatgpt/redemption','generate','',''),(61066,'chatgpt','POST','/importFile','/admin/chatgpt/redemption','importFile','',''),(61067,'chatgpt','GET','/info','/admin/chatgpt/redemption','info','',''),(61068,'chatgpt','POST','/list','/admin/chatgpt/redemption','list','',''),(61069,'chatgpt','POST','/page','/admin/chatgpt/redemption','page','',''),(61070,'chatgpt','POST','/update','/admin/chatgpt/redemption','update','',''),(61071,'chatgpt','POST','/add','/admin/chatgpt/session','add','',''),(61072,'chatgpt','POST','/batchAdd','/admin/chatgpt/session','batchAdd','',''),(61073,'chatgpt','POST','/delete','/admin/chatgpt/session','delete','',''),(61074,'chatgpt','POST','/importFile','/admin/chatgpt/session','importFile','',''),(61075,'chatgpt','GET','/info','/admin/chatgpt/session','info','',''),(61076,'chatgpt','GET','/infobycarid','/admin/chatgpt/session','infobycarid','',''),(61077,'chatgpt','POST','/list','/admin/chatgpt/session','list','',''),(61078,'chatgpt','POST','/page','/admin/chatgpt/session','page','',''),(61079,'chatgpt','POST','/update','/admin/chatgpt/session','update','',''),(61080,'chatgpt','POST','/add','/admin/chatgpt/subtype','add','',''),(61081,'chatgpt','POST','/delete','/admin/chatgpt/subtype','delete','',''),(61082,'chatgpt','POST','/importFile','/admin/chatgpt/subtype','importFile','',''),(61083,'chatgpt','GET','/info','/admin/chatgpt/subtype','info','',''),(61084,'chatgpt','POST','/list','/admin/chatgpt/subtype','list','',''),(61085,'chatgpt','POST','/page','/admin/chatgpt/subtype','page','',''),(61086,'chatgpt','POST','/update','/admin/chatgpt/subtype','update','',''),(61087,'chatgpt','POST','/add','/admin/chatgpt/user','add','',''),(61088,'chatgpt','POST','/changeIP','/admin/chatgpt/user','changeIP','',''),(61089,'chatgpt','POST','/checkPay','/admin/chatgpt/user','checkPay','',''),(61090,'chatgpt','POST','/delete','/admin/chatgpt/user','delete','',''),(61091,'chatgpt','POST','/genUser','/admin/chatgpt/user','genUser','',''),(61092,'chatgpt','GET','/getPayConfig','/admin/chatgpt/user','getPayConfig','',''),(61093,'chatgpt','GET','/getPayPrice','/admin/chatgpt/user','getPayPrice','',''),(61094,'chatgpt','POST','/importFile','/admin/chatgpt/user','importFile','',''),(61095,'chatgpt','GET','/info','/admin/chatgpt/user','info','',''),(61096,'chatgpt','POST','/list','/admin/chatgpt/user','list','',''),(61097,'chatgpt','GET','/listStore','/admin/chatgpt/user','listStore','',''),(61098,'chatgpt','POST','/page','/admin/chatgpt/user','page','',''),(61099,'chatgpt','POST','/pay','/admin/chatgpt/user','pay','',''),(61100,'chatgpt','POST','/storePay','/admin/chatgpt/user','storePay','',''),(61101,'chatgpt','POST','/update','/admin/chatgpt/user','update','',''),(61102,'chatgpt','POST','/add','/admin/chatgpt/withdrawlogs','add','',''),(61103,'chatgpt','POST','/delete','/admin/chatgpt/withdrawlogs','delete','',''),(61104,'chatgpt','GET','/info','/admin/chatgpt/withdrawlogs','info','',''),(61105,'chatgpt','POST','/list','/admin/chatgpt/withdrawlogs','list','',''),(61106,'chatgpt','POST','/page','/admin/chatgpt/withdrawlogs','page','',''),(61107,'chatgpt','POST','/update','/admin/chatgpt/withdrawlogs','update','',''),(61108,'chatgpt','POST','/withdrawlogsAudit','/admin/chatgpt/withdrawlogs','withdrawlogsAudit','',''),(61109,'claude','POST','/add','/admin/claude/claude_conversations','add','',''),(61110,'claude','POST','/delete','/admin/claude/claude_conversations','delete','',''),(61111,'claude','GET','/info','/admin/claude/claude_conversations','info','',''),(61112,'claude','POST','/list','/admin/claude/claude_conversations','list','',''),(61113,'claude','POST','/page','/admin/claude/claude_conversations','page','',''),(61114,'claude','POST','/update','/admin/claude/claude_conversations','update','',''),(61115,'claude','GET','/welcome','/admin/claude/claude_conversations','welcome','',''),(61116,'claude','POST','/add','/admin/claude/claude_session','add','',''),(61117,'claude','POST','/delete','/admin/claude/claude_session','delete','',''),(61118,'claude','GET','/info','/admin/claude/claude_session','info','',''),(61119,'claude','POST','/list','/admin/claude/claude_session','list','',''),(61120,'claude','POST','/page','/admin/claude/claude_session','page','',''),(61121,'claude','POST','/update','/admin/claude/claude_session','update','',''),(61122,'claude','GET','/welcome','/admin/claude/claude_session','welcome','',''),(61123,'dict','POST','/add','/admin/dict/info','add','',''),(61124,'dict','POST','/data','/admin/dict/info','data','',''),(61125,'dict','POST','/delete','/admin/dict/info','delete','',''),(61126,'dict','GET','/info','/admin/dict/info','info','',''),(61127,'dict','POST','/list','/admin/dict/info','list','',''),(61128,'dict','POST','/page','/admin/dict/info','page','',''),(61129,'dict','POST','/update','/admin/dict/info','update','',''),(61130,'dict','POST','/add','/admin/dict/type','add','',''),(61131,'dict','POST','/delete','/admin/dict/type','delete','',''),(61132,'dict','GET','/info','/admin/dict/type','info','',''),(61133,'dict','POST','/list','/admin/dict/type','list','',''),(61134,'dict','POST','/page','/admin/dict/type','page','',''),(61135,'dict','POST','/update','/admin/dict/type','update','',''),(61136,'space','POST','/add','/admin/space/info','add','',''),(61137,'space','POST','/delete','/admin/space/info','delete','',''),(61138,'space','GET','/info','/admin/space/info','info','',''),(61139,'space','POST','/list','/admin/space/info','list','',''),(61140,'space','POST','/page','/admin/space/info','page','',''),(61141,'space','POST','/update','/admin/space/info','update','',''),(61142,'space','POST','/add','/admin/space/type','add','',''),(61143,'space','POST','/delete','/admin/space/type','delete','',''),(61144,'space','GET','/info','/admin/space/type','info','',''),(61145,'space','POST','/list','/admin/space/type','list','',''),(61146,'space','POST','/page','/admin/space/type','page','',''),(61147,'space','POST','/update','/admin/space/type','update','',''),(61148,'task','POST','/add','/admin/task/info','add','',''),(61149,'task','POST','/delete','/admin/task/info','delete','',''),(61150,'task','GET','/info','/admin/task/info','info','',''),(61151,'task','POST','/list','/admin/task/info','list','',''),(61152,'task','GET','/log','/admin/task/info','log','',''),(61153,'task','POST','/once','/admin/task/info','once','',''),(61154,'task','POST','/page','/admin/task/info','page','',''),(61155,'task','GET','/start','/admin/task/info','start','',''),(61156,'task','GET','/stop','/admin/task/info','stop','',''),(61157,'task','POST','/update','/admin/task/info','update','','');
 /*!40000 ALTER TABLE `base_eps_admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -183,7 +183,7 @@ CREATE TABLE `base_sys_log` (
   KEY `IDX_938f886fb40e163db174b7f6c3` (`action`),
   KEY `IDX_24e18767659f8c7142580893f2` (`ip`),
   KEY `IDX_a03a27f75cf8d502b3060823e1` (`ipAddr`)
-) ENGINE=InnoDB AUTO_INCREMENT=1486 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -219,7 +219,7 @@ CREATE TABLE `base_sys_menu` (
   `isShow` int NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `idx_base_sys_menu_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=270 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=315 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -228,7 +228,7 @@ CREATE TABLE `base_sys_menu` (
 
 LOCK TABLES `base_sys_menu` WRITE;
 /*!40000 ALTER TABLE `base_sys_menu` DISABLE KEYS */;
-INSERT INTO `base_sys_menu` VALUES (1,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,NULL,'工作台','/',NULL,0,'icon-workbench',1,NULL,1,1),(2,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,NULL,'系统管理','/sys',NULL,0,'icon-system',2,NULL,1,1),(8,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,27,'菜单列表','/sys/menu',NULL,1,'icon-menu',2,'cool/modules/base/views/menu.vue',1,1),(10,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,8,'新增',NULL,'base:sys:menu:add',2,NULL,1,NULL,0,1),(11,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,8,'删除',NULL,'base:sys:menu:delete',2,NULL,2,NULL,0,1),(12,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,8,'修改',NULL,'base:sys:menu:update',2,NULL,3,NULL,0,1),(13,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,8,'查询',NULL,'base:sys:menu:page,base:sys:menu:list,base:sys:menu:info',2,NULL,4,NULL,0,1),(22,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,27,'角色列表','/sys/role',NULL,1,'icon-common',3,'cool/modules/base/views/role.vue',1,1),(23,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,22,'新增',NULL,'base:sys:role:add',2,NULL,1,NULL,0,1),(24,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,22,'删除',NULL,'base:sys:role:delete',2,NULL,2,NULL,0,1),(25,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,22,'修改',NULL,'base:sys:role:update',2,NULL,3,NULL,0,1),(26,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,22,'查询',NULL,'base:sys:role:page,base:sys:role:list,base:sys:role:info',2,NULL,4,NULL,0,1),(27,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,2,'权限管理',NULL,NULL,0,'icon-auth',1,NULL,0,1),(29,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,105,'请求日志','/sys/log',NULL,1,'icon-log',1,'cool/modules/base/views/log.vue',1,1),(30,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,29,'权限',NULL,'base:sys:log:page,base:sys:log:clear,base:sys:log:getKeep,base:sys:log:setKeep',2,NULL,1,NULL,0,1),(59,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'部门列表',NULL,'base:sys:department:list',2,NULL,0,NULL,1,1),(60,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'新增部门',NULL,'base:sys:department:add',2,NULL,0,NULL,1,1),(61,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'更新部门',NULL,'base:sys:department:update',2,NULL,0,NULL,1,1),(62,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'删除部门',NULL,'base:sys:department:delete',2,NULL,0,NULL,1,1),(63,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'部门排序',NULL,'base:sys:department:order',2,NULL,0,NULL,1,1),(65,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'用户转移',NULL,'base:sys:user:move',2,NULL,0,NULL,1,1),(78,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,2,'参数配置',NULL,NULL,0,'icon-common',4,NULL,1,1),(79,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,78,'参数列表','/sys/param',NULL,1,'icon-menu',0,'cool/modules/base/views/param.vue',1,1),(80,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,79,'新增',NULL,'base:sys:param:add',2,NULL,0,NULL,1,1),(81,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,79,'修改',NULL,'base:sys:param:info,base:sys:param:update',2,NULL,0,NULL,1,1),(82,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,79,'删除',NULL,'base:sys:param:delete',2,NULL,0,NULL,1,1),(83,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,79,'查看',NULL,'base:sys:param:page,base:sys:param:list,base:sys:param:info',2,NULL,0,NULL,1,1),(84,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,NULL,'通用',NULL,NULL,0,'icon-radioboxfill',99,NULL,1,0),(85,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,84,'图片上传',NULL,'space:info:page,space:info:list,space:info:info,space:info:add,space:info:delete,space:info:update,space:type:page,space:type:list,space:type:info,space:type:add,space:type:delete,space:type:update',2,NULL,1,NULL,1,1),(90,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,84,'客服聊天',NULL,'base:app:im:message:read,base:app:im:message:page,base:app:im:session:page,base:app:im:session:list,base:app:im:session:unreadCount,base:app:im:session:delete',2,NULL,0,NULL,1,1),(97,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,27,'用户列表','/sys/user',NULL,1,'icon-user',0,'cool/modules/base/views/user.vue',1,1),(98,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'新增',NULL,'base:sys:user:add',2,NULL,0,NULL,1,1),(99,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'删除',NULL,'base:sys:user:delete',2,NULL,0,NULL,1,1),(100,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'修改',NULL,'base:sys:user:delete,base:sys:user:update',2,NULL,0,NULL,1,1),(101,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'查询',NULL,'base:sys:user:page,base:sys:user:list,base:sys:user:info',2,NULL,0,NULL,1,1),(105,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,2,'监控管理',NULL,NULL,0,'icon-rank',6,NULL,1,1),(117,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,NULL,'任务管理',NULL,NULL,0,'icon-activity',5,NULL,1,1),(118,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,117,'任务列表','/task',NULL,1,'icon-menu',0,'cool/modules/task/views/task.vue',1,1),(119,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,118,'权限',NULL,'task:info:page,task:info:list,task:info:info,task:info:add,task:info:delete,task:info:update,task:info:stop,task:info:start,task:info:once,task:info:log',2,NULL,0,NULL,1,1),(197,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,NULL,'字典管理',NULL,NULL,0,'icon-log',3,NULL,1,1),(198,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,197,'字典列表','/dict/list',NULL,1,'icon-menu',1,'modules/dict/views/list.vue',1,1),(199,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'删除',NULL,'dict:info:delete',2,NULL,0,NULL,1,1),(200,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'修改',NULL,'dict:info:update,dict:info:info',2,NULL,0,NULL,1,1),(201,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'获得字典数据',NULL,'dict:info:data',2,NULL,0,NULL,1,1),(202,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'单个信息',NULL,'dict:info:info',2,NULL,0,NULL,1,1),(203,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'列表查询',NULL,'dict:info:list',2,NULL,0,NULL,1,1),(204,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'分页查询',NULL,'dict:info:page',2,NULL,0,NULL,1,1),(205,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'新增',NULL,'dict:info:add',2,NULL,0,NULL,1,1),(206,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'组权限',NULL,'dict:type:list,dict:type:update,dict:type:delete,dict:type:add',2,NULL,0,NULL,1,1),(207,'2024-01-01 19:37:47.375','2024-01-01 19:37:47.375',NULL,1,'账号管理','/chatgpt/session',NULL,1,'icon-command',1,'modules/chatgpt/views/session.vue',1,1),(208,'2024-01-01 19:37:48.749','2024-01-01 19:37:48.749',NULL,207,'add',NULL,'chatgpt:session:add',2,NULL,0,NULL,1,1),(209,'2024-01-01 19:37:48.749','2024-01-01 19:37:48.749',NULL,207,'delete',NULL,'chatgpt:session:delete',2,NULL,0,NULL,1,1),(210,'2024-01-01 19:37:48.749','2024-01-01 19:37:48.749',NULL,207,'info',NULL,'chatgpt:session:info',2,NULL,0,NULL,1,1),(211,'2024-01-01 19:37:48.749','2024-01-01 19:37:48.749',NULL,207,'list',NULL,'chatgpt:session:list',2,NULL,0,NULL,1,1),(212,'2024-01-01 19:37:48.749','2024-01-01 19:37:48.749',NULL,207,'page',NULL,'chatgpt:session:page',2,NULL,0,NULL,1,1),(213,'2024-01-01 19:37:48.749','2024-01-01 19:37:48.749',NULL,207,'update',NULL,'chatgpt:session:update,chatgpt:session:info',2,NULL,0,NULL,1,1),(214,'2024-01-01 19:53:18.214','2024-01-01 19:53:18.214',NULL,1,'用户管理','/chatgpt/user',NULL,1,'icon-user',2,'modules/chatgpt/views/user.vue',1,1),(215,'2024-01-01 19:53:19.581','2024-01-01 19:53:19.581',NULL,214,'add',NULL,'chatgpt:user:add',2,NULL,0,NULL,1,1),(216,'2024-01-01 19:53:19.581','2024-01-01 19:53:19.581',NULL,214,'delete',NULL,'chatgpt:user:delete',2,NULL,0,NULL,1,1),(217,'2024-01-01 19:53:19.581','2024-01-01 19:53:19.581',NULL,214,'info',NULL,'chatgpt:user:info',2,NULL,0,NULL,1,1),(218,'2024-01-01 19:53:19.581','2024-01-01 19:53:19.581',NULL,214,'list',NULL,'chatgpt:user:list',2,NULL,0,NULL,1,1),(219,'2024-01-01 19:53:19.581','2024-01-01 19:53:19.581',NULL,214,'page',NULL,'chatgpt:user:page',2,NULL,0,NULL,1,1),(220,'2024-01-01 19:53:19.581','2024-01-01 19:53:19.581',NULL,214,'update',NULL,'chatgpt:user:update,chatgpt:user:info',2,NULL,0,NULL,1,1),(221,'2024-01-07 12:29:55.677','2024-01-07 12:29:55.677',NULL,1,'会话管理','/chatgpt/conversations',NULL,1,'icon-menu',3,'modules/chatgpt/views/conversations.vue',1,1),(222,'2024-01-07 12:29:57.263','2024-01-07 12:29:57.263',NULL,221,'add',NULL,'chatgpt:conversations:add',2,NULL,0,NULL,1,1),(223,'2024-01-07 12:29:57.263','2024-01-07 12:29:57.263',NULL,221,'delete',NULL,'chatgpt:conversations:delete',2,NULL,0,NULL,1,1),(224,'2024-01-07 12:29:57.263','2024-01-07 12:29:57.263',NULL,221,'info',NULL,'chatgpt:conversations:info',2,NULL,0,NULL,1,1),(225,'2024-01-07 12:29:57.263','2024-01-07 12:29:57.263',NULL,221,'list',NULL,'chatgpt:conversations:list',2,NULL,0,NULL,1,1),(226,'2024-01-07 12:29:57.263','2024-01-07 12:29:57.263',NULL,221,'page',NULL,'chatgpt:conversations:page',2,NULL,0,NULL,1,1),(227,'2024-01-07 12:29:57.263','2024-01-07 12:29:57.263',NULL,221,'update',NULL,'chatgpt:conversations:update,chatgpt:conversations:info',2,NULL,0,NULL,1,1),(228,'2024-02-17 19:50:42.000','2024-02-17 20:05:02.067',NULL,1,'订阅类型','/chatgpt/subtype',NULL,1,'icon-card',4,'modules/chatgpt/views/subtype.vue',1,1),(229,'2024-02-17 19:50:42.846','2024-02-17 19:50:42.846',NULL,228,'add',NULL,'chatgpt:subtype:add',2,NULL,0,NULL,1,1),(230,'2024-02-17 19:50:42.846','2024-02-17 19:50:42.846',NULL,228,'delete',NULL,'chatgpt:subtype:delete',2,NULL,0,NULL,1,1),(231,'2024-02-17 19:50:42.846','2024-02-17 19:50:42.846',NULL,228,'info',NULL,'chatgpt:subtype:info',2,NULL,0,NULL,1,1),(232,'2024-02-17 19:50:42.846','2024-02-17 19:50:42.846',NULL,228,'list',NULL,'chatgpt:subtype:list',2,NULL,0,NULL,1,1),(233,'2024-02-17 19:50:42.846','2024-02-17 19:50:42.846',NULL,228,'page',NULL,'chatgpt:subtype:page',2,NULL,0,NULL,1,1),(234,'2024-02-17 19:50:42.846','2024-02-17 19:50:42.846',NULL,228,'update',NULL,'chatgpt:subtype:update,chatgpt:subtype:info',2,NULL,0,NULL,1,1),(235,'2024-02-17 20:02:33.386','2024-02-17 20:02:33.386',NULL,1,'兑换码','/chatgpt/redemption',NULL,1,'icon-command',5,'modules/chatgpt/views/redemption.vue',1,1),(236,'2024-02-17 20:02:33.523','2024-02-17 20:02:33.523',NULL,235,'add',NULL,'chatgpt:redemption:add',2,NULL,0,NULL,1,1),(237,'2024-02-17 20:02:33.523','2024-02-17 20:02:33.523',NULL,235,'delete',NULL,'chatgpt:redemption:delete',2,NULL,0,NULL,1,1),(238,'2024-02-17 20:02:33.523','2024-02-17 20:02:33.523',NULL,235,'info',NULL,'chatgpt:redemption:info',2,NULL,0,NULL,1,1),(239,'2024-02-17 20:02:33.523','2024-02-17 20:02:33.523',NULL,235,'list',NULL,'chatgpt:redemption:list',2,NULL,0,NULL,1,1),(240,'2024-02-17 20:02:33.523','2024-02-17 20:02:33.523',NULL,235,'page',NULL,'chatgpt:redemption:page',2,NULL,0,NULL,1,1),(241,'2024-02-17 20:02:33.523','2024-02-17 20:02:33.523',NULL,235,'update',NULL,'chatgpt:redemption:update,chatgpt:redemption:info',2,NULL,0,NULL,1,1),(242,'2024-02-17 21:45:26.610','2024-02-17 21:45:26.610','2024-02-17 21:57:37.863',1,'兑换记录','/chatgpt/paylogs',NULL,1,'icon-log',6,'modules/chatgpt/views/paylogs.vue',1,1),(243,'2024-02-17 21:45:26.751','2024-02-17 21:45:26.751','2024-02-17 21:57:37.866',242,'add',NULL,'chatgpt:paylogs:add',2,NULL,0,NULL,1,1),(244,'2024-02-17 21:45:26.751','2024-02-17 21:45:26.751','2024-02-17 21:57:37.866',242,'delete',NULL,'chatgpt:paylogs:delete',2,NULL,0,NULL,1,1),(245,'2024-02-17 21:45:26.751','2024-02-17 21:45:26.751','2024-02-17 21:57:37.866',242,'info',NULL,'chatgpt:paylogs:info',2,NULL,0,NULL,1,1),(246,'2024-02-17 21:45:26.751','2024-02-17 21:45:26.751','2024-02-17 21:57:37.866',242,'list',NULL,'chatgpt:paylogs:list',2,NULL,0,NULL,1,1),(247,'2024-02-17 21:45:26.751','2024-02-17 21:45:26.751','2024-02-17 21:57:37.866',242,'page',NULL,'chatgpt:paylogs:page',2,NULL,0,NULL,1,1),(248,'2024-02-17 21:45:26.751','2024-02-17 21:45:26.751','2024-02-17 21:57:37.866',242,'update',NULL,'chatgpt:paylogs:update,chatgpt:paylogs:info',2,NULL,0,NULL,1,1),(249,'2024-02-17 21:58:08.860','2024-02-17 21:58:08.860','2024-02-17 22:01:17.658',1,'兑换记录','/chatgpt/paylogs',NULL,1,'icon-log',5,'modules/chatgpt/views/paylogs.vue',1,1),(250,'2024-02-17 21:58:09.022','2024-02-17 21:58:09.022','2024-02-17 22:01:17.661',249,'add',NULL,'chatgpt:paylogs:add',2,NULL,0,NULL,1,1),(251,'2024-02-17 21:58:09.022','2024-02-17 21:58:09.022','2024-02-17 22:01:17.661',249,'delete',NULL,'chatgpt:paylogs:delete',2,NULL,0,NULL,1,1),(252,'2024-02-17 21:58:09.022','2024-02-17 21:58:09.022','2024-02-17 22:01:17.661',249,'info',NULL,'chatgpt:paylogs:info',2,NULL,0,NULL,1,1),(253,'2024-02-17 21:58:09.022','2024-02-17 21:58:09.022','2024-02-17 22:01:17.661',249,'list',NULL,'chatgpt:paylogs:list',2,NULL,0,NULL,1,1),(254,'2024-02-17 21:58:09.022','2024-02-17 21:58:09.022','2024-02-17 22:01:17.661',249,'page',NULL,'chatgpt:paylogs:page',2,NULL,0,NULL,1,1),(255,'2024-02-17 21:58:09.022','2024-02-17 21:58:09.022','2024-02-17 22:01:17.661',249,'update',NULL,'chatgpt:paylogs:update,chatgpt:paylogs:info',2,NULL,0,NULL,1,1),(256,'2024-02-17 21:58:35.151','2024-02-17 21:58:35.151',NULL,1,'提现记录','/chatgpt/withdrawlogs',NULL,1,'icon-wallet',6,'modules/chatgpt/views/withdrawlogs.vue',1,1),(257,'2024-02-17 21:58:35.325','2024-02-17 21:58:35.325',NULL,256,'add',NULL,'chatgpt:withdrawlogs:add',2,NULL,0,NULL,1,1),(258,'2024-02-17 21:58:35.325','2024-02-17 21:58:35.325',NULL,256,'delete',NULL,'chatgpt:withdrawlogs:delete',2,NULL,0,NULL,1,1),(259,'2024-02-17 21:58:35.325','2024-02-17 21:58:35.325',NULL,256,'info',NULL,'chatgpt:withdrawlogs:info',2,NULL,0,NULL,1,1),(260,'2024-02-17 21:58:35.325','2024-02-17 21:58:35.325',NULL,256,'list',NULL,'chatgpt:withdrawlogs:list',2,NULL,0,NULL,1,1),(261,'2024-02-17 21:58:35.325','2024-02-17 21:58:35.325',NULL,256,'page',NULL,'chatgpt:withdrawlogs:page',2,NULL,0,NULL,1,1),(262,'2024-02-17 21:58:35.325','2024-02-17 21:58:35.325',NULL,256,'update',NULL,'chatgpt:withdrawlogs:update,chatgpt:withdrawlogs:info',2,NULL,0,NULL,1,1),(263,'2024-02-17 22:01:36.942','2024-02-17 22:01:36.942',NULL,1,'兑换记录','/chatgpt/paylogs',NULL,1,'icon-log',5,'modules/chatgpt/views/paylogs.vue',1,1),(264,'2024-02-17 22:01:37.076','2024-02-17 22:01:37.076',NULL,263,'add',NULL,'chatgpt:paylogs:add',2,NULL,0,NULL,1,1),(265,'2024-02-17 22:01:37.076','2024-02-17 22:01:37.076',NULL,263,'delete',NULL,'chatgpt:paylogs:delete',2,NULL,0,NULL,1,1),(266,'2024-02-17 22:01:37.076','2024-02-17 22:01:37.076',NULL,263,'info',NULL,'chatgpt:paylogs:info',2,NULL,0,NULL,1,1),(267,'2024-02-17 22:01:37.076','2024-02-17 22:01:37.076',NULL,263,'list',NULL,'chatgpt:paylogs:list',2,NULL,0,NULL,1,1),(268,'2024-02-17 22:01:37.076','2024-02-17 22:01:37.076',NULL,263,'page',NULL,'chatgpt:paylogs:page',2,NULL,0,NULL,1,1),(269,'2024-02-17 22:01:37.076','2024-02-17 22:01:37.076',NULL,263,'update',NULL,'chatgpt:paylogs:update,chatgpt:paylogs:info',2,NULL,0,NULL,1,1),(270,'2024-03-18 09:15:19.652','2024-03-18 09:15:19.652',NULL,1,'支付记录','/chatgpt/epaylogs',NULL,1,'icon-log',9,'modules/chatgpt/views/epaylogs.vue',1,1),(271,'2024-03-18 09:15:19.774','2024-03-18 09:15:19.774',NULL,270,'add',NULL,'chatgpt:epaylogs:add',2,NULL,0,NULL,1,1),(272,'2024-03-18 09:15:19.774','2024-03-18 09:15:19.774',NULL,270,'delete',NULL,'chatgpt:epaylogs:delete',2,NULL,0,NULL,1,1),(273,'2024-03-18 09:15:19.774','2024-03-18 09:15:19.774',NULL,270,'info',NULL,'chatgpt:epaylogs:info',2,NULL,0,NULL,1,1),(274,'2024-03-18 09:15:19.774','2024-03-18 09:15:19.774',NULL,270,'list',NULL,'chatgpt:epaylogs:list',2,NULL,0,NULL,1,1),(275,'2024-03-18 09:15:19.774','2024-03-18 09:15:19.774',NULL,270,'page',NULL,'chatgpt:epaylogs:page',2,NULL,0,NULL,1,1),(276,'2024-03-18 09:15:19.774','2024-03-18 09:15:19.774',NULL,270,'update',NULL,'chatgpt:epaylogs:update,chatgpt:epaylogs:info',2,NULL,0,NULL,1,1),(284,'2024-04-14 17:12:58.757','2024-04-14 17:12:58.757',NULL,1,'系统配置','/chatgpt/sys-config',NULL,1,'icon-system',10,'modules/chatgpt/views/config.vue',1,1),(291,'2024-06-23 16:24:50.000','2024-06-24 14:47:16.392',NULL,NULL,'功能商城','/chatgpt/store',NULL,1,'icon-cart',0,'modules/chatgpt/views/store.vue',1,1);
+INSERT INTO `base_sys_menu` VALUES (1,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,NULL,'工作台','/',NULL,0,'icon-workbench',1,NULL,1,1),(2,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,NULL,'系统管理','/sys',NULL,0,'icon-system',2,NULL,1,1),(8,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,27,'菜单列表','/sys/menu',NULL,1,'icon-menu',2,'cool/modules/base/views/menu.vue',1,1),(10,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,8,'新增',NULL,'base:sys:menu:add',2,NULL,1,NULL,0,1),(11,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,8,'删除',NULL,'base:sys:menu:delete',2,NULL,2,NULL,0,1),(12,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,8,'修改',NULL,'base:sys:menu:update',2,NULL,3,NULL,0,1),(13,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,8,'查询',NULL,'base:sys:menu:page,base:sys:menu:list,base:sys:menu:info',2,NULL,4,NULL,0,1),(22,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,27,'角色列表','/sys/role',NULL,1,'icon-common',3,'cool/modules/base/views/role.vue',1,1),(23,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,22,'新增',NULL,'base:sys:role:add',2,NULL,1,NULL,0,1),(24,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,22,'删除',NULL,'base:sys:role:delete',2,NULL,2,NULL,0,1),(25,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,22,'修改',NULL,'base:sys:role:update',2,NULL,3,NULL,0,1),(26,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,22,'查询',NULL,'base:sys:role:page,base:sys:role:list,base:sys:role:info',2,NULL,4,NULL,0,1),(27,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,2,'权限管理',NULL,NULL,0,'icon-auth',1,NULL,0,1),(29,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,105,'请求日志','/sys/log',NULL,1,'icon-log',1,'cool/modules/base/views/log.vue',1,1),(30,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,29,'权限',NULL,'base:sys:log:page,base:sys:log:clear,base:sys:log:getKeep,base:sys:log:setKeep',2,NULL,1,NULL,0,1),(59,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'部门列表',NULL,'base:sys:department:list',2,NULL,0,NULL,1,1),(60,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'新增部门',NULL,'base:sys:department:add',2,NULL,0,NULL,1,1),(61,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'更新部门',NULL,'base:sys:department:update',2,NULL,0,NULL,1,1),(62,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'删除部门',NULL,'base:sys:department:delete',2,NULL,0,NULL,1,1),(63,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'部门排序',NULL,'base:sys:department:order',2,NULL,0,NULL,1,1),(65,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'用户转移',NULL,'base:sys:user:move',2,NULL,0,NULL,1,1),(78,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,2,'参数配置',NULL,NULL,0,'icon-common',4,NULL,1,1),(79,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,78,'参数列表','/sys/param',NULL,1,'icon-menu',0,'cool/modules/base/views/param.vue',1,1),(80,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,79,'新增',NULL,'base:sys:param:add',2,NULL,0,NULL,1,1),(81,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,79,'修改',NULL,'base:sys:param:info,base:sys:param:update',2,NULL,0,NULL,1,1),(82,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,79,'删除',NULL,'base:sys:param:delete',2,NULL,0,NULL,1,1),(83,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,79,'查看',NULL,'base:sys:param:page,base:sys:param:list,base:sys:param:info',2,NULL,0,NULL,1,1),(84,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,NULL,'通用',NULL,NULL,0,'icon-radioboxfill',99,NULL,1,0),(85,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,84,'图片上传',NULL,'space:info:page,space:info:list,space:info:info,space:info:add,space:info:delete,space:info:update,space:type:page,space:type:list,space:type:info,space:type:add,space:type:delete,space:type:update',2,NULL,1,NULL,1,1),(90,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,84,'客服聊天',NULL,'base:app:im:message:read,base:app:im:message:page,base:app:im:session:page,base:app:im:session:list,base:app:im:session:unreadCount,base:app:im:session:delete',2,NULL,0,NULL,1,1),(97,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,27,'用户列表','/sys/user',NULL,1,'icon-user',0,'cool/modules/base/views/user.vue',1,1),(98,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'新增',NULL,'base:sys:user:add',2,NULL,0,NULL,1,1),(99,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'删除',NULL,'base:sys:user:delete',2,NULL,0,NULL,1,1),(100,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'修改',NULL,'base:sys:user:delete,base:sys:user:update',2,NULL,0,NULL,1,1),(101,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,97,'查询',NULL,'base:sys:user:page,base:sys:user:list,base:sys:user:info',2,NULL,0,NULL,1,1),(105,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,2,'监控管理',NULL,NULL,0,'icon-rank',6,NULL,1,1),(117,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,NULL,'任务管理',NULL,NULL,0,'icon-activity',5,NULL,1,1),(118,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,117,'任务列表','/task',NULL,1,'icon-menu',0,'cool/modules/task/views/task.vue',1,1),(119,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,118,'权限',NULL,'task:info:page,task:info:list,task:info:info,task:info:add,task:info:delete,task:info:update,task:info:stop,task:info:start,task:info:once,task:info:log',2,NULL,0,NULL,1,1),(197,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,NULL,'字典管理',NULL,NULL,0,'icon-log',3,NULL,1,1),(198,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,197,'字典列表','/dict/list',NULL,1,'icon-menu',1,'modules/dict/views/list.vue',1,1),(199,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'删除',NULL,'dict:info:delete',2,NULL,0,NULL,1,1),(200,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'修改',NULL,'dict:info:update,dict:info:info',2,NULL,0,NULL,1,1),(201,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'获得字典数据',NULL,'dict:info:data',2,NULL,0,NULL,1,1),(202,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'单个信息',NULL,'dict:info:info',2,NULL,0,NULL,1,1),(203,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'列表查询',NULL,'dict:info:list',2,NULL,0,NULL,1,1),(204,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'分页查询',NULL,'dict:info:page',2,NULL,0,NULL,1,1),(205,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'新增',NULL,'dict:info:add',2,NULL,0,NULL,1,1),(206,'2024-01-01 13:14:56.605','2024-01-01 13:14:56.605',NULL,198,'组权限',NULL,'dict:type:list,dict:type:update,dict:type:delete,dict:type:add',2,NULL,0,NULL,1,1),(207,'2024-01-01 19:37:47.000','2024-07-16 01:13:58.789',NULL,1,'Openai账号','/chatgpt/session',NULL,1,'icon-command',1,'modules/chatgpt/views/session.vue',1,1),(208,'2024-01-01 19:37:48.749','2024-01-01 19:37:48.749',NULL,207,'add',NULL,'chatgpt:session:add',2,NULL,0,NULL,1,1),(209,'2024-01-01 19:37:48.749','2024-01-01 19:37:48.749',NULL,207,'delete',NULL,'chatgpt:session:delete',2,NULL,0,NULL,1,1),(210,'2024-01-01 19:37:48.749','2024-01-01 19:37:48.749',NULL,207,'info',NULL,'chatgpt:session:info',2,NULL,0,NULL,1,1),(211,'2024-01-01 19:37:48.749','2024-01-01 19:37:48.749',NULL,207,'list',NULL,'chatgpt:session:list',2,NULL,0,NULL,1,1),(212,'2024-01-01 19:37:48.749','2024-01-01 19:37:48.749',NULL,207,'page',NULL,'chatgpt:session:page',2,NULL,0,NULL,1,1),(213,'2024-01-01 19:37:48.749','2024-01-01 19:37:48.749',NULL,207,'update',NULL,'chatgpt:session:update,chatgpt:session:info',2,NULL,0,NULL,1,1),(214,'2024-01-01 19:53:18.214','2024-01-01 19:53:18.214',NULL,1,'用户管理','/chatgpt/user',NULL,1,'icon-user',2,'modules/chatgpt/views/user.vue',1,1),(215,'2024-01-01 19:53:19.581','2024-01-01 19:53:19.581',NULL,214,'add',NULL,'chatgpt:user:add',2,NULL,0,NULL,1,1),(216,'2024-01-01 19:53:19.581','2024-01-01 19:53:19.581',NULL,214,'delete',NULL,'chatgpt:user:delete',2,NULL,0,NULL,1,1),(217,'2024-01-01 19:53:19.581','2024-01-01 19:53:19.581',NULL,214,'info',NULL,'chatgpt:user:info',2,NULL,0,NULL,1,1),(218,'2024-01-01 19:53:19.581','2024-01-01 19:53:19.581',NULL,214,'list',NULL,'chatgpt:user:list',2,NULL,0,NULL,1,1),(219,'2024-01-01 19:53:19.581','2024-01-01 19:53:19.581',NULL,214,'page',NULL,'chatgpt:user:page',2,NULL,0,NULL,1,1),(220,'2024-01-01 19:53:19.581','2024-01-01 19:53:19.581',NULL,214,'update',NULL,'chatgpt:user:update,chatgpt:user:info',2,NULL,0,NULL,1,1),(221,'2024-01-07 12:29:55.000','2024-07-19 12:55:56.017',NULL,1,'Openai会话','/chatgpt/conversations',NULL,1,'icon-menu',3,'modules/chatgpt/views/conversations.vue',1,1),(222,'2024-01-07 12:29:57.263','2024-01-07 12:29:57.263',NULL,221,'add',NULL,'chatgpt:conversations:add',2,NULL,0,NULL,1,1),(223,'2024-01-07 12:29:57.263','2024-01-07 12:29:57.263',NULL,221,'delete',NULL,'chatgpt:conversations:delete',2,NULL,0,NULL,1,1),(224,'2024-01-07 12:29:57.263','2024-01-07 12:29:57.263',NULL,221,'info',NULL,'chatgpt:conversations:info',2,NULL,0,NULL,1,1),(225,'2024-01-07 12:29:57.263','2024-01-07 12:29:57.263',NULL,221,'list',NULL,'chatgpt:conversations:list',2,NULL,0,NULL,1,1),(226,'2024-01-07 12:29:57.263','2024-01-07 12:29:57.263',NULL,221,'page',NULL,'chatgpt:conversations:page',2,NULL,0,NULL,1,1),(227,'2024-01-07 12:29:57.263','2024-01-07 12:29:57.263',NULL,221,'update',NULL,'chatgpt:conversations:update,chatgpt:conversations:info',2,NULL,0,NULL,1,1),(228,'2024-02-17 19:50:42.000','2024-02-17 20:05:02.067',NULL,1,'订阅类型','/chatgpt/subtype',NULL,1,'icon-card',4,'modules/chatgpt/views/subtype.vue',1,1),(229,'2024-02-17 19:50:42.846','2024-02-17 19:50:42.846',NULL,228,'add',NULL,'chatgpt:subtype:add',2,NULL,0,NULL,1,1),(230,'2024-02-17 19:50:42.846','2024-02-17 19:50:42.846',NULL,228,'delete',NULL,'chatgpt:subtype:delete',2,NULL,0,NULL,1,1),(231,'2024-02-17 19:50:42.846','2024-02-17 19:50:42.846',NULL,228,'info',NULL,'chatgpt:subtype:info',2,NULL,0,NULL,1,1),(232,'2024-02-17 19:50:42.846','2024-02-17 19:50:42.846',NULL,228,'list',NULL,'chatgpt:subtype:list',2,NULL,0,NULL,1,1),(233,'2024-02-17 19:50:42.846','2024-02-17 19:50:42.846',NULL,228,'page',NULL,'chatgpt:subtype:page',2,NULL,0,NULL,1,1),(234,'2024-02-17 19:50:42.846','2024-02-17 19:50:42.846',NULL,228,'update',NULL,'chatgpt:subtype:update,chatgpt:subtype:info',2,NULL,0,NULL,1,1),(235,'2024-02-17 20:02:33.386','2024-02-17 20:02:33.386',NULL,1,'兑换码','/chatgpt/redemption',NULL,1,'icon-command',5,'modules/chatgpt/views/redemption.vue',1,1),(236,'2024-02-17 20:02:33.523','2024-02-17 20:02:33.523',NULL,235,'add',NULL,'chatgpt:redemption:add',2,NULL,0,NULL,1,1),(237,'2024-02-17 20:02:33.523','2024-02-17 20:02:33.523',NULL,235,'delete',NULL,'chatgpt:redemption:delete',2,NULL,0,NULL,1,1),(238,'2024-02-17 20:02:33.523','2024-02-17 20:02:33.523',NULL,235,'info',NULL,'chatgpt:redemption:info',2,NULL,0,NULL,1,1),(239,'2024-02-17 20:02:33.523','2024-02-17 20:02:33.523',NULL,235,'list',NULL,'chatgpt:redemption:list',2,NULL,0,NULL,1,1),(240,'2024-02-17 20:02:33.523','2024-02-17 20:02:33.523',NULL,235,'page',NULL,'chatgpt:redemption:page',2,NULL,0,NULL,1,1),(241,'2024-02-17 20:02:33.523','2024-02-17 20:02:33.523',NULL,235,'update',NULL,'chatgpt:redemption:update,chatgpt:redemption:info',2,NULL,0,NULL,1,1),(242,'2024-02-17 21:45:26.610','2024-02-17 21:45:26.610','2024-02-17 21:57:37.863',1,'兑换记录','/chatgpt/paylogs',NULL,1,'icon-log',6,'modules/chatgpt/views/paylogs.vue',1,1),(243,'2024-02-17 21:45:26.751','2024-02-17 21:45:26.751','2024-02-17 21:57:37.866',242,'add',NULL,'chatgpt:paylogs:add',2,NULL,0,NULL,1,1),(244,'2024-02-17 21:45:26.751','2024-02-17 21:45:26.751','2024-02-17 21:57:37.866',242,'delete',NULL,'chatgpt:paylogs:delete',2,NULL,0,NULL,1,1),(245,'2024-02-17 21:45:26.751','2024-02-17 21:45:26.751','2024-02-17 21:57:37.866',242,'info',NULL,'chatgpt:paylogs:info',2,NULL,0,NULL,1,1),(246,'2024-02-17 21:45:26.751','2024-02-17 21:45:26.751','2024-02-17 21:57:37.866',242,'list',NULL,'chatgpt:paylogs:list',2,NULL,0,NULL,1,1),(247,'2024-02-17 21:45:26.751','2024-02-17 21:45:26.751','2024-02-17 21:57:37.866',242,'page',NULL,'chatgpt:paylogs:page',2,NULL,0,NULL,1,1),(248,'2024-02-17 21:45:26.751','2024-02-17 21:45:26.751','2024-02-17 21:57:37.866',242,'update',NULL,'chatgpt:paylogs:update,chatgpt:paylogs:info',2,NULL,0,NULL,1,1),(249,'2024-02-17 21:58:08.860','2024-02-17 21:58:08.860','2024-02-17 22:01:17.658',1,'兑换记录','/chatgpt/paylogs',NULL,1,'icon-log',5,'modules/chatgpt/views/paylogs.vue',1,1),(250,'2024-02-17 21:58:09.022','2024-02-17 21:58:09.022','2024-02-17 22:01:17.661',249,'add',NULL,'chatgpt:paylogs:add',2,NULL,0,NULL,1,1),(251,'2024-02-17 21:58:09.022','2024-02-17 21:58:09.022','2024-02-17 22:01:17.661',249,'delete',NULL,'chatgpt:paylogs:delete',2,NULL,0,NULL,1,1),(252,'2024-02-17 21:58:09.022','2024-02-17 21:58:09.022','2024-02-17 22:01:17.661',249,'info',NULL,'chatgpt:paylogs:info',2,NULL,0,NULL,1,1),(253,'2024-02-17 21:58:09.022','2024-02-17 21:58:09.022','2024-02-17 22:01:17.661',249,'list',NULL,'chatgpt:paylogs:list',2,NULL,0,NULL,1,1),(254,'2024-02-17 21:58:09.022','2024-02-17 21:58:09.022','2024-02-17 22:01:17.661',249,'page',NULL,'chatgpt:paylogs:page',2,NULL,0,NULL,1,1),(255,'2024-02-17 21:58:09.022','2024-02-17 21:58:09.022','2024-02-17 22:01:17.661',249,'update',NULL,'chatgpt:paylogs:update,chatgpt:paylogs:info',2,NULL,0,NULL,1,1),(256,'2024-02-17 21:58:35.151','2024-02-17 21:58:35.151',NULL,1,'提现记录','/chatgpt/withdrawlogs',NULL,1,'icon-wallet',6,'modules/chatgpt/views/withdrawlogs.vue',1,1),(257,'2024-02-17 21:58:35.325','2024-02-17 21:58:35.325',NULL,256,'add',NULL,'chatgpt:withdrawlogs:add',2,NULL,0,NULL,1,1),(258,'2024-02-17 21:58:35.325','2024-02-17 21:58:35.325',NULL,256,'delete',NULL,'chatgpt:withdrawlogs:delete',2,NULL,0,NULL,1,1),(259,'2024-02-17 21:58:35.325','2024-02-17 21:58:35.325',NULL,256,'info',NULL,'chatgpt:withdrawlogs:info',2,NULL,0,NULL,1,1),(260,'2024-02-17 21:58:35.325','2024-02-17 21:58:35.325',NULL,256,'list',NULL,'chatgpt:withdrawlogs:list',2,NULL,0,NULL,1,1),(261,'2024-02-17 21:58:35.325','2024-02-17 21:58:35.325',NULL,256,'page',NULL,'chatgpt:withdrawlogs:page',2,NULL,0,NULL,1,1),(262,'2024-02-17 21:58:35.325','2024-02-17 21:58:35.325',NULL,256,'update',NULL,'chatgpt:withdrawlogs:update,chatgpt:withdrawlogs:info',2,NULL,0,NULL,1,1),(263,'2024-02-17 22:01:36.942','2024-02-17 22:01:36.942',NULL,1,'兑换记录','/chatgpt/paylogs',NULL,1,'icon-log',5,'modules/chatgpt/views/paylogs.vue',1,1),(264,'2024-02-17 22:01:37.076','2024-02-17 22:01:37.076',NULL,263,'add',NULL,'chatgpt:paylogs:add',2,NULL,0,NULL,1,1),(265,'2024-02-17 22:01:37.076','2024-02-17 22:01:37.076',NULL,263,'delete',NULL,'chatgpt:paylogs:delete',2,NULL,0,NULL,1,1),(266,'2024-02-17 22:01:37.076','2024-02-17 22:01:37.076',NULL,263,'info',NULL,'chatgpt:paylogs:info',2,NULL,0,NULL,1,1),(267,'2024-02-17 22:01:37.076','2024-02-17 22:01:37.076',NULL,263,'list',NULL,'chatgpt:paylogs:list',2,NULL,0,NULL,1,1),(268,'2024-02-17 22:01:37.076','2024-02-17 22:01:37.076',NULL,263,'page',NULL,'chatgpt:paylogs:page',2,NULL,0,NULL,1,1),(269,'2024-02-17 22:01:37.076','2024-02-17 22:01:37.076',NULL,263,'update',NULL,'chatgpt:paylogs:update,chatgpt:paylogs:info',2,NULL,0,NULL,1,1),(270,'2024-03-18 09:15:19.652','2024-03-18 09:15:19.652',NULL,1,'支付记录','/chatgpt/epaylogs',NULL,1,'icon-log',9,'modules/chatgpt/views/epaylogs.vue',1,1),(271,'2024-03-18 09:15:19.774','2024-03-18 09:15:19.774',NULL,270,'add',NULL,'chatgpt:epaylogs:add',2,NULL,0,NULL,1,1),(272,'2024-03-18 09:15:19.774','2024-03-18 09:15:19.774',NULL,270,'delete',NULL,'chatgpt:epaylogs:delete',2,NULL,0,NULL,1,1),(273,'2024-03-18 09:15:19.774','2024-03-18 09:15:19.774',NULL,270,'info',NULL,'chatgpt:epaylogs:info',2,NULL,0,NULL,1,1),(274,'2024-03-18 09:15:19.774','2024-03-18 09:15:19.774',NULL,270,'list',NULL,'chatgpt:epaylogs:list',2,NULL,0,NULL,1,1),(275,'2024-03-18 09:15:19.774','2024-03-18 09:15:19.774',NULL,270,'page',NULL,'chatgpt:epaylogs:page',2,NULL,0,NULL,1,1),(276,'2024-03-18 09:15:19.774','2024-03-18 09:15:19.774',NULL,270,'update',NULL,'chatgpt:epaylogs:update,chatgpt:epaylogs:info',2,NULL,0,NULL,1,1),(277,'2024-04-14 17:11:20.000','2024-04-14 17:31:24.812','2024-04-17 10:54:48.615',1,'系统配置','/chatgpt/config',NULL,1,'icon-system',10,'modules/chatgpt/views/oldconfig.vue',1,1),(278,'2024-04-14 17:11:20.440','2024-04-14 17:11:20.440','2024-04-17 10:54:48.618',277,'add',NULL,'chatgpt:config:add',2,NULL,0,NULL,1,1),(279,'2024-04-14 17:11:20.440','2024-04-14 17:11:20.440','2024-04-17 10:54:48.618',277,'delete',NULL,'chatgpt:config:delete',2,NULL,0,NULL,1,1),(280,'2024-04-14 17:11:20.440','2024-04-14 17:11:20.440','2024-04-17 10:54:48.618',277,'info',NULL,'chatgpt:config:info',2,NULL,0,NULL,1,1),(281,'2024-04-14 17:11:20.440','2024-04-14 17:11:20.440','2024-04-17 10:54:48.618',277,'list',NULL,'chatgpt:config:list',2,NULL,0,NULL,1,1),(282,'2024-04-14 17:11:20.440','2024-04-14 17:11:20.440','2024-04-17 10:54:48.618',277,'page',NULL,'chatgpt:config:page',2,NULL,0,NULL,1,1),(283,'2024-04-14 17:11:20.440','2024-04-14 17:11:20.440','2024-04-17 10:54:48.618',277,'update',NULL,'chatgpt:config:update,chatgpt:config:info',2,NULL,0,NULL,1,1),(284,'2024-04-14 17:12:58.000','2024-04-17 11:06:51.588',NULL,1,'系统配置','/chatgpt/sys-config',NULL,1,'icon-system',10,'modules/chatgpt/views/config.vue',1,1),(285,'2024-04-14 17:12:58.909','2024-04-14 17:12:58.909',NULL,284,'add',NULL,'chatgpt:config:add',2,NULL,0,NULL,1,1),(286,'2024-04-14 17:12:58.909','2024-04-14 17:12:58.909',NULL,284,'delete',NULL,'chatgpt:config:delete',2,NULL,0,NULL,1,1),(287,'2024-04-14 17:12:58.909','2024-04-14 17:12:58.909',NULL,284,'info',NULL,'chatgpt:config:info',2,NULL,0,NULL,1,1),(288,'2024-04-14 17:12:58.909','2024-04-14 17:12:58.909',NULL,284,'list',NULL,'chatgpt:config:list',2,NULL,0,NULL,1,1),(289,'2024-04-14 17:12:58.909','2024-04-14 17:12:58.909',NULL,284,'page',NULL,'chatgpt:config:page',2,NULL,0,NULL,1,1),(290,'2024-04-14 17:12:58.909','2024-04-14 17:12:58.909',NULL,284,'update',NULL,'chatgpt:config:update,chatgpt:config:info',2,NULL,0,NULL,1,1),(291,'2024-06-23 16:24:50.000','2024-06-24 14:47:16.392',NULL,NULL,'功能商城','/chatgpt/store',NULL,1,'icon-cart',0,'modules/chatgpt/views/store.vue',1,1),(292,'2024-06-23 16:24:50.847','2024-06-23 16:24:50.847',NULL,291,'add',NULL,'chatgpt:chatgpt_store:add',2,NULL,0,NULL,1,1),(293,'2024-06-23 16:24:50.847','2024-06-23 16:24:50.847',NULL,291,'delete',NULL,'chatgpt:chatgpt_store:delete',2,NULL,0,NULL,1,1),(294,'2024-06-23 16:24:50.847','2024-06-23 16:24:50.847',NULL,291,'info',NULL,'chatgpt:chatgpt_store:info',2,NULL,0,NULL,1,1),(295,'2024-06-23 16:24:50.847','2024-06-23 16:24:50.847',NULL,291,'list',NULL,'chatgpt:chatgpt_store:list',2,NULL,0,NULL,1,1),(296,'2024-06-23 16:24:50.847','2024-06-23 16:24:50.847',NULL,291,'page',NULL,'chatgpt:chatgpt_store:page',2,NULL,0,NULL,1,1),(297,'2024-06-23 16:24:50.847','2024-06-23 16:24:50.847',NULL,291,'update',NULL,'chatgpt:chatgpt_store:update,chatgpt:chatgpt_store:info',2,NULL,0,NULL,1,1),(298,'2024-06-23 16:24:50.847','2024-06-23 16:24:50.847',NULL,291,'welcome',NULL,'chatgpt:chatgpt_store:welcome',2,NULL,0,NULL,1,1),(299,'2024-07-15 11:46:11.996','2024-07-15 11:46:11.996',NULL,1,'Claude账号','/claude/claude_session',NULL,1,'icon-log',1,'modules/claude/views/claude_session.vue',1,1),(300,'2024-07-15 11:46:12.139','2024-07-15 11:46:12.139',NULL,299,'add',NULL,'claude:claude_session:add',2,NULL,0,NULL,1,1),(301,'2024-07-15 11:46:12.139','2024-07-15 11:46:12.139',NULL,299,'delete',NULL,'claude:claude_session:delete',2,NULL,0,NULL,1,1),(302,'2024-07-15 11:46:12.139','2024-07-15 11:46:12.139',NULL,299,'info',NULL,'claude:claude_session:info',2,NULL,0,NULL,1,1),(303,'2024-07-15 11:46:12.139','2024-07-15 11:46:12.139',NULL,299,'list',NULL,'claude:claude_session:list',2,NULL,0,NULL,1,1),(304,'2024-07-15 11:46:12.139','2024-07-15 11:46:12.139',NULL,299,'page',NULL,'claude:claude_session:page',2,NULL,0,NULL,1,1),(305,'2024-07-15 11:46:12.139','2024-07-15 11:46:12.139',NULL,299,'update',NULL,'claude:claude_session:update,claude:claude_session:info',2,NULL,0,NULL,1,1),(306,'2024-07-15 11:46:12.139','2024-07-15 11:46:12.139',NULL,299,'welcome',NULL,'claude:claude_session:welcome',2,NULL,0,NULL,1,1),(307,'2024-07-16 01:12:37.000','2024-07-19 12:56:22.633',NULL,1,'Claude会话','/claude/claude_conversations',NULL,1,'icon-time',2,'modules/claude/views/claude_conversations.vue',1,1),(308,'2024-07-16 01:12:37.204','2024-07-16 01:12:37.204',NULL,307,'add',NULL,'claude:claude_conversations:add',2,NULL,0,NULL,1,1),(309,'2024-07-16 01:12:37.204','2024-07-16 01:12:37.204',NULL,307,'delete',NULL,'claude:claude_conversations:delete',2,NULL,0,NULL,1,1),(310,'2024-07-16 01:12:37.204','2024-07-16 01:12:37.204',NULL,307,'info',NULL,'claude:claude_conversations:info',2,NULL,0,NULL,1,1),(311,'2024-07-16 01:12:37.204','2024-07-16 01:12:37.204',NULL,307,'list',NULL,'claude:claude_conversations:list',2,NULL,0,NULL,1,1),(312,'2024-07-16 01:12:37.204','2024-07-16 01:12:37.204',NULL,307,'page',NULL,'claude:claude_conversations:page',2,NULL,0,NULL,1,1),(313,'2024-07-16 01:12:37.204','2024-07-16 01:12:37.204',NULL,307,'update',NULL,'claude:claude_conversations:update,claude:claude_conversations:info',2,NULL,0,NULL,1,1),(314,'2024-07-16 01:12:37.204','2024-07-16 01:12:37.204',NULL,307,'welcome',NULL,'claude:claude_conversations:welcome',2,NULL,0,NULL,1,1);
 /*!40000 ALTER TABLE `base_sys_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -252,7 +252,7 @@ CREATE TABLE `base_sys_param` (
   PRIMARY KEY (`id`),
   KEY `idx_base_sys_param_deleted_at` (`deleted_at`),
   KEY `IDX_cf19b5e52d8c71caa9c4534454` (`keyName`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -261,7 +261,7 @@ CREATE TABLE `base_sys_param` (
 
 LOCK TABLES `base_sys_param` WRITE;
 /*!40000 ALTER TABLE `base_sys_param` DISABLE KEYS */;
-INSERT INTO `base_sys_param` VALUES (1,'2024-01-01 13:14:58.771','2024-01-01 13:14:58.771',NULL,'text','富文本参数','<p><strong class=\"ql-size-huge\">111xxxxx2222<span class=\"ql-cursor\"></span></strong></p>',0,NULL),(2,'2024-01-01 13:14:58.771','2024-01-01 13:14:58.771',NULL,'json','JSON参数','{\n    code: 111\n}',0,NULL),(3,'2024-02-15 19:08:28.597','2024-02-15 19:08:28.597',NULL,'notice','公告','',0,NULL),(4,'2024-04-09 13:13:59.000','2024-04-09 13:18:59.859',NULL,'loginNotice','登陆页公告','',0,NULL);
+INSERT INTO `base_sys_param` VALUES (1,'2024-01-01 13:14:58.771','2024-01-01 13:14:58.771',NULL,'text','富文本参数','<p><strong class=\"ql-size-huge\">111xxxxx2222<span class=\"ql-cursor\">﻿﻿</span></strong></p>',0,NULL),(2,'2024-01-01 13:14:58.771','2024-01-01 13:14:58.771',NULL,'json','JSON参数','{\n    code: 111\n}',0,NULL),(3,'2024-02-15 19:08:28.000','2024-07-17 14:44:56.002',NULL,'notice','公告','<p style=\"text-align: left;\">公告二字</p>',0,NULL),(4,'2024-04-09 13:13:59.000','2024-07-03 12:03:57.528',NULL,'loginNotice','登陆页公告','<p>登陆公告，哈哈哈</p>',0,NULL),(5,'2024-06-30 11:10:16.000','2024-06-30 14:40:08.146',NULL,'FAQ','常见问题','<p style=\"text-align: center;\"><span style=\"color: rgb(225, 60, 57); background-color: rgb(252, 251, 207);\"><strong>管理员暂未配置常见问题</strong></span></p>',0,NULL);
 /*!40000 ALTER TABLE `base_sys_param` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -443,22 +443,16 @@ CREATE TABLE `chatgpt_config` (
   `key` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'key',
   `value` longtext COLLATE utf8mb4_unicode_ci COMMENT '值',
   `defaultValue` longtext COLLATE utf8mb4_unicode_ci COMMENT '默认值',
-  `remark` longtext COLLATE utf8mb4_unicode_ci COMMENT '备注',
   `isLock` tinyint(1) DEFAULT '0' COMMENT '锁定编辑',
+  `remark` longtext COLLATE utf8mb4_unicode_ci COMMENT '备注',
   PRIMARY KEY (`id`),
   KEY `idx_chatgpt_config_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `chatgpt_config`
 --
-
-LOCK TABLES `chatgpt_config` WRITE;
-/*!40000 ALTER TABLE `chatgpt_config` DISABLE KEYS */;
-INSERT INTO `chatgpt_config` VALUES (1,'2024-04-13 23:04:35.000','2024-04-13 23:04:40.000',NULL,'CHATPROXY',NULL,NULL,'网关',0),(2,'2024-04-13 23:06:50.000','2024-04-15 22:11:24.875',NULL,'FAKA_URL','',NULL,'发卡地址',0),(3,'2024-04-13 23:07:38.000','2024-04-13 23:07:40.000',NULL,'AUTHKEY',NULL,NULL,'AUTHKEY',0),(4,'2024-04-13 23:09:03.000','2024-04-13 23:09:05.000',NULL,'ArkoseUrl','/v2/',NULL,NULL,0),(5,'2024-04-13 23:10:25.000','2024-04-13 23:10:27.000',NULL,'AssetPrefix','https://static.openoai.net',NULL,'静态资源域名',0),(6,'2024-04-13 23:11:14.000','2024-04-14 17:28:05.874',NULL,'OauthUrl',NULL,NULL,'',0),(7,'2024-04-13 23:11:49.000','2024-04-14 21:05:45.035',NULL,'AuditLimitUrl','http://auditlimit:8080/audit_limit',NULL,'限速器地址',0),(8,'2024-04-13 23:13:30.000','2024-04-13 23:13:32.000',NULL,'APIAUTH',NULL,NULL,'API认证',0),(9,'2024-04-13 23:13:46.000','2024-04-13 23:13:48.000',NULL,'FREE_TIER','0',NULL,'免费体验时间',0),(10,'2024-04-13 23:51:21.000','2024-04-14 17:27:47.248',NULL,'AFF_TIME','1',NULL,'用户通过邀请码注册，免费体验时间，单位小时。0 则没有',0),(11,'2024-04-13 23:51:44.000','2024-04-14 17:28:29.735',NULL,'COMMISSION_RATE','0',NULL,'佣金比例，0.2则为20%。',0),(12,'2024-04-13 23:52:35.000','2024-04-13 23:52:37.000',NULL,'ALLOWED_WITHDRAWAL','0',NULL,'提现门槛',0),(13,'2024-04-13 23:55:55.000','2024-04-14 17:21:09.350',NULL,'Mail_From',NULL,NULL,'发件人邮箱',0),(14,'2024-04-13 23:56:06.000','2024-04-13 23:57:14.000','2024-04-14 17:21:12.741','Mail_From',NULL,NULL,NULL,0),(15,'2024-04-13 23:56:09.000','2024-04-14 17:21:00.049',NULL,'Mail_Pass',NULL,NULL,'邮箱密码',0),(16,'2024-04-13 23:56:10.000','2024-04-14 17:26:33.530',NULL,'Mail_Host','smtp.gmail.com',NULL,'邮箱服务器smtp地址',0),(17,'2024-04-13 23:56:12.000','2024-04-14 17:26:08.273',NULL,'Mail_Port','587',NULL,'邮箱服务器端口，默认 587,支持 TLS(587)和 SSL(465)',0),(18,'2024-04-13 23:56:14.000','2024-04-14 17:20:19.325',NULL,'Mail_Whitelist','@gmail.com,@yahoo.com,@hotmail.com,@outlook.com,@icloud.com,@163.com,@126.com,@qq.com,@foxmail.com',NULL,'发邮件白名单',0),(19,'2024-04-13 23:56:16.000','2024-04-14 17:25:24.507',NULL,'SiteName','',NULL,'站点名称',0),(20,'2024-04-13 23:56:19.000','2024-04-14 17:28:44.790',NULL,'DISALLOW_ROAM','0',NULL,NULL,0),(21,'2024-04-13 23:56:21.000','2024-04-15 21:38:52.816',NULL,'FILESERVER','https://files.openoai.net',NULL,'文件服务器',0),(22,'2024-04-13 23:56:27.000','2024-04-14 17:24:42.904',NULL,'ENABLE_MORE_GPT','0',NULL,'将gpt-4请求为gpt-mobile-4',0),(23,'2024-04-13 23:56:25.000','2024-04-14 17:24:49.241',NULL,'REGISTER_PLUS','true',NULL,'注册用户是否授予plus权限',0),(24,'2024-04-13 23:56:30.000','2024-04-15 21:38:31.024',NULL,'DISALLOW_MUTI_DEVICE','true',NULL,'是否禁用多设备登陆',0),(25,'2024-04-13 23:56:32.000','2024-04-15 21:38:31.013',NULL,'AUTO_CLEAR_HISTORY','true',NULL,'自动清理20天之前的聊天记录',0),(26,'2024-04-13 23:56:33.000','2024-04-15 21:38:31.018',NULL,'IS_SHOW_NOT_VALUED','true',NULL,'用户前端显示不计价值的订阅类型',0),(27,'2024-04-13 23:56:35.000','2024-04-14 17:25:04.511',NULL,'EpayId','',NULL,'易支付商户ID',0),(28,'2024-04-13 23:56:37.000','2024-04-14 17:22:04.663',NULL,'EpayKey',NULL,NULL,'易支付商户key',0),(29,'2024-04-13 23:56:39.000','2024-04-14 17:22:11.195',NULL,'EpayAddress',NULL,NULL,'易支付请求地址',0),(30,'2024-04-13 23:56:41.000','2024-04-14 17:22:44.152',NULL,'EpayType','',NULL,'支付类型，alipay,wxpay或其中一个',0),(31,'2024-04-13 23:56:41.000','2024-04-14 17:22:44.152',NULL,'REGISTER_PER','1h',NULL,'注册用户限制周期',0),(32,'2024-04-13 23:56:41.000','2024-04-14 17:22:44.152',NULL,'REGISTER_LIMIT','40',NULL,'',0);
-/*!40000 ALTER TABLE `chatgpt_config` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `chatgpt_conversations`
@@ -479,21 +473,12 @@ CREATE TABLE `chatgpt_conversations` (
   `content` longtext COLLATE utf8mb4_unicode_ci COMMENT '对话内容',
   `chatgptaccountid` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'ChatGPT-Account-ID',
   PRIMARY KEY (`id`),
+  UNIQUE KEY `uni_chatgpt_conversations_convid` (`convid`),
   KEY `idx_chatgpt_conversations_conv_id` (`convid`),
   KEY `idx_chatgpt_conversations_email` (`email`),
   KEY `idx_chatgpt_conversations_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=78704 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `chatgpt_conversations`
---
-
-LOCK TABLES `chatgpt_conversations` WRITE;
-/*!40000 ALTER TABLE `chatgpt_conversations` DISABLE KEYS */;
-/*!40000 ALTER TABLE `chatgpt_conversations` ENABLE KEYS */;
-UNLOCK TABLES;
-
 --
 -- Table structure for table `chatgpt_epaylogs`
 --
@@ -506,27 +491,40 @@ CREATE TABLE `chatgpt_epaylogs` (
   `createTime` datetime(3) NOT NULL COMMENT '创建时间',
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
-  `userToken` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'userToken',
-  `money` bigint NOT NULL COMMENT '支付金额',
-  `tradeNo` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '订单号',
+  `userToken` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'userToken',
+  `money` double NOT NULL COMMENT '支付金额',
+  `tradeNo` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '订单号',
   `subTypeId` bigint NOT NULL COMMENT '订阅类型',
   `days` bigint NOT NULL COMMENT '有效天数',
   `status` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '订单状态',
   `remark` longtext COLLATE utf8mb4_unicode_ci COMMENT '备注',
   PRIMARY KEY (`id`),
-  KEY `idx_chatgpt_epaylogs_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  KEY `idx_chatgpt_epaylogs_deleted_at` (`deleted_at`),
+  KEY `idx_chatgpt_epaylogs_user_token` (`userToken`),
+  KEY `idx_chatgpt_epaylogs_trade_no` (`tradeNo`)
+) ENGINE=InnoDB AUTO_INCREMENT=136 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `chatgpt_epaylogs`
+-- Table structure for table `chatgpt_gpts`
 --
 
-LOCK TABLES `chatgpt_epaylogs` WRITE;
-/*!40000 ALTER TABLE `chatgpt_epaylogs` DISABLE KEYS */;
-/*!40000 ALTER TABLE `chatgpt_epaylogs` ENABLE KEYS */;
-UNLOCK TABLES;
-
+DROP TABLE IF EXISTS `chatgpt_gpts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `chatgpt_gpts` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `createTime` datetime(3) NOT NULL COMMENT '创建时间',
+  `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
+  `deleted_at` datetime(3) DEFAULT NULL,
+  `gptsId` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'gptsId',
+  `content` longtext COLLATE utf8mb4_unicode_ci COMMENT '内容',
+  `remark` longtext COLLATE utf8mb4_unicode_ci COMMENT '备注',
+  PRIMARY KEY (`id`),
+  KEY `idx_chatgpt_gpts_deleted_at` (`deleted_at`),
+  KEY `idx_chatgpt_gpts_gpts_id` (`gptsId`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 --
 -- Table structure for table `chatgpt_paylogs`
 --
@@ -547,18 +545,8 @@ CREATE TABLE `chatgpt_paylogs` (
   `remark` longtext COLLATE utf8mb4_unicode_ci COMMENT '备注',
   PRIMARY KEY (`id`),
   KEY `idx_chatgpt_paylogs_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `chatgpt_paylogs`
---
-
-LOCK TABLES `chatgpt_paylogs` WRITE;
-/*!40000 ALTER TABLE `chatgpt_paylogs` DISABLE KEYS */;
-/*!40000 ALTER TABLE `chatgpt_paylogs` ENABLE KEYS */;
-UNLOCK TABLES;
-
 --
 -- Table structure for table `chatgpt_redemption`
 --
@@ -572,7 +560,7 @@ CREATE TABLE `chatgpt_redemption` (
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
   `userId` bigint NOT NULL COMMENT '创建用户id',
-  `key` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'key',
+  `key` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'key',
   `status` bigint NOT NULL COMMENT '状态',
   `subTypeId` bigint NOT NULL COMMENT '订阅类型',
   `redeemedTime` datetime(3) DEFAULT NULL COMMENT '兑换时间',
@@ -581,19 +569,12 @@ CREATE TABLE `chatgpt_redemption` (
   `limit` bigint NOT NULL DEFAULT '20' COMMENT '额度',
   `per` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '1h' COMMENT '限制',
   `isPlus` tinyint(1) DEFAULT '1' COMMENT 'PLUS',
+  `genUserToken` longtext COLLATE utf8mb4_unicode_ci COMMENT '生成者',
   PRIMARY KEY (`id`),
-  KEY `idx_chatgpt_redemption_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=156 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  KEY `idx_chatgpt_redemption_deleted_at` (`deleted_at`),
+  KEY `idx_chatgpt_redemption_key` (`key`)
+) ENGINE=InnoDB AUTO_INCREMENT=193 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `chatgpt_redemption`
---
-
-LOCK TABLES `chatgpt_redemption` WRITE;
-/*!40000 ALTER TABLE `chatgpt_redemption` DISABLE KEYS */;
-/*!40000 ALTER TABLE `chatgpt_redemption` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `chatgpt_session`
@@ -615,20 +596,12 @@ CREATE TABLE `chatgpt_session` (
   `officialSession` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci COMMENT '官方session',
   `remark` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci COMMENT '备注',
   `sort` bigint DEFAULT '0' COMMENT '排序',
+  `isTeam` tinyint(1) DEFAULT '0' COMMENT 'TEAM',
+  `accountId` longtext COLLATE utf8mb4_unicode_ci COMMENT '账户id',
   PRIMARY KEY (`id`),
   KEY `idx_chatgpt_session_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `chatgpt_session`
---
-
-LOCK TABLES `chatgpt_session` WRITE;
-/*!40000 ALTER TABLE `chatgpt_session` DISABLE KEYS */;
-
-/*!40000 ALTER TABLE `chatgpt_session` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `chatgpt_subtype`
@@ -644,25 +617,18 @@ CREATE TABLE `chatgpt_subtype` (
   `deleted_at` datetime(3) DEFAULT NULL,
   `name` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '名称',
   `validDays` bigint NOT NULL COMMENT '有效天数',
-  `money` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '订阅金额',
+  `money` double NOT NULL COMMENT '订阅金额',
   `remark` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci COMMENT '备注',
   `limit` bigint NOT NULL DEFAULT '20' COMMENT '额度',
   `per` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '1h' COMMENT '限制',
   `isPlus` tinyint(1) DEFAULT '1' COMMENT 'PLUS',
   `isNotValued` tinyint(1) DEFAULT '0' COMMENT '不计价值',
+  `isNotCommission` tinyint(1) DEFAULT '0' COMMENT '不计佣金',
+  `subType` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'chatgpt' COMMENT '订阅类型，chatgpt或者claude',
   PRIMARY KEY (`id`),
   KEY `idx_chatgpt_subtype_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `chatgpt_subtype`
---
-
-LOCK TABLES `chatgpt_subtype` WRITE;
-/*!40000 ALTER TABLE `chatgpt_subtype` DISABLE KEYS */;
-/*!40000 ALTER TABLE `chatgpt_subtype` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `chatgpt_user`
@@ -676,15 +642,17 @@ CREATE TABLE `chatgpt_user` (
   `createTime` datetime(3) NOT NULL COMMENT '创建时间',
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
-  `userToken` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'UserToken',
+  `userToken` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'UserToken',
   `password` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '密码',
   `expireTime` datetime(3) DEFAULT NULL COMMENT '过期时间',
+  `lastActiveTime` datetime(3) DEFAULT NULL COMMENT '最后登陆时间',
   `isPlus` tinyint(1) DEFAULT '0' COMMENT 'PLUS',
+  `isBackupData` tinyint(1) DEFAULT '1' COMMENT '聊天数据是否备份',
   `isAdmin` tinyint(1) DEFAULT '0' COMMENT '是否为管理员',
   `remark` longtext COLLATE utf8mb4_unicode_ci COMMENT '备注',
   `sessionId` longtext COLLATE utf8mb4_unicode_ci COMMENT 'sessionId',
   `email` longtext COLLATE utf8mb4_unicode_ci COMMENT 'email',
-  `carids` longtext COLLATE utf8mb4_unicode_ci COMMENT '所属车队',
+  `carids` longtext COLLATE utf8mb4_unicode_ci COMMENT 'chatgpt车队',
   `limit` bigint DEFAULT '20' COMMENT '限制',
   `per` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT '1h' COMMENT '时间段',
   `subTypeId` bigint DEFAULT '0' COMMENT '用户订阅类型id',
@@ -695,21 +663,18 @@ CREATE TABLE `chatgpt_user` (
   `affCount` bigint DEFAULT '0' COMMENT '推广人数',
   `receiptFile` longtext COLLATE utf8mb4_unicode_ci COMMENT '收款码',
   `status` bigint DEFAULT '1' COMMENT '状态',
+  `userType` bigint DEFAULT '1' COMMENT '账号类型',
   `inviterId` bigint DEFAULT NULL COMMENT '邀请人的Id',
-  `isBackupData` tinyint(1) DEFAULT '1' COMMENT '聊天数据是否备份',
+  `affRate` double DEFAULT NULL COMMENT '返佣比例',
+  `gptsIds` longtext COLLATE utf8mb4_unicode_ci COMMENT 'gptsIds',
+  `claudeCarids` longtext COLLATE utf8mb4_unicode_ci COMMENT 'claude车队',
+  `claudeExpireTime` datetime(3) DEFAULT NULL COMMENT 'claude过期时间',
+  `isPro` tinyint(1) DEFAULT '0' COMMENT 'PRO',
   PRIMARY KEY (`id`),
-  KEY `idx_chatgpt_user_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  KEY `idx_chatgpt_user_deleted_at` (`deleted_at`),
+  KEY `idx_chatgpt_user_user_token` (`userToken`)
+) ENGINE=InnoDB AUTO_INCREMENT=1050 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `chatgpt_user`
---
-
-LOCK TABLES `chatgpt_user` WRITE;
-/*!40000 ALTER TABLE `chatgpt_user` DISABLE KEYS */;
-/*!40000 ALTER TABLE `chatgpt_user` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `chatgpt_withdrawlogs`
@@ -723,23 +688,74 @@ CREATE TABLE `chatgpt_withdrawlogs` (
   `createTime` datetime(3) NOT NULL COMMENT '创建时间',
   `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
   `deleted_at` datetime(3) DEFAULT NULL,
-  `userId` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '提现者Id',
-  `money` bigint NOT NULL COMMENT '提现金额',
+  `userId` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '提现者Id',
+  `money` double NOT NULL COMMENT '提现金额',
   `status` bigint NOT NULL COMMENT '提现状态',
   `remark` longtext COLLATE utf8mb4_unicode_ci COMMENT '备注',
+  `receiptFile` longtext COLLATE utf8mb4_unicode_ci COMMENT '收款码',
+  `userToken` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '提现人',
   PRIMARY KEY (`id`),
-  KEY `idx_chatgpt_withdrawlogs_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  KEY `idx_chatgpt_withdrawlogs_deleted_at` (`deleted_at`),
+  KEY `idx_chatgpt_withdrawlogs_user_id` (`userId`),
+  KEY `idx_chatgpt_withdrawlogs_user_token` (`userToken`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `chatgpt_withdrawlogs`
+-- Table structure for table `claude_conversations`
 --
 
-LOCK TABLES `chatgpt_withdrawlogs` WRITE;
-/*!40000 ALTER TABLE `chatgpt_withdrawlogs` DISABLE KEYS */;
-/*!40000 ALTER TABLE `chatgpt_withdrawlogs` ENABLE KEYS */;
-UNLOCK TABLES;
+DROP TABLE IF EXISTS `claude_conversations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `claude_conversations` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `createTime` datetime(3) NOT NULL COMMENT '创建时间',
+  `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
+  `deleted_at` datetime(3) DEFAULT NULL,
+  `userToken` longtext COLLATE utf8mb4_unicode_ci COMMENT 'UserToken',
+  `convId` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '会话id',
+  `currentLeafId` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '当前会话节点id',
+  `orgId` longtext COLLATE utf8mb4_unicode_ci COMMENT '组织id',
+  `name` text COLLATE utf8mb4_unicode_ci COMMENT '会话标题',
+  `usesArtifacts` tinyint(1) DEFAULT '0' COMMENT 'usesArtifacts',
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '官网账号邮箱',
+  `content` longtext COLLATE utf8mb4_unicode_ci COMMENT '对话内容',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uni_claude_conversations_conv_id` (`convId`),
+  KEY `idx_claude_conversations_deleted_at` (`deleted_at`),
+  KEY `idx_claude_conversations_conv_id` (`convId`),
+  KEY `idx_claude_conversations_email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `claude_session`
+--
+
+DROP TABLE IF EXISTS `claude_session`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `claude_session` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `createTime` datetime(3) NOT NULL COMMENT '创建时间',
+  `updateTime` datetime(3) NOT NULL COMMENT '更新时间',
+  `deleted_at` datetime(3) DEFAULT NULL,
+  `email` longtext COLLATE utf8mb4_unicode_ci COMMENT '邮箱',
+  `organizationsId` longtext COLLATE utf8mb4_unicode_ci COMMENT '组织id',
+  `status` tinyint(1) DEFAULT '0' COMMENT '状态',
+  `isPro` tinyint(1) DEFAULT '0' COMMENT 'Pro',
+  `carID` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '车名',
+  `sessionKey` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'sessionKey',
+  `remark` longtext COLLATE utf8mb4_unicode_ci COMMENT '备注',
+  `officialSession` longtext COLLATE utf8mb4_unicode_ci COMMENT '官方session',
+  `orgId` longtext COLLATE utf8mb4_unicode_ci COMMENT '组织id',
+  `displayName` longtext COLLATE utf8mb4_unicode_ci COMMENT '显示名字',
+  PRIMARY KEY (`id`),
+  KEY `idx_claude_session_session_key` (`sessionKey`),
+  KEY `idx_claude_session_deleted_at` (`deleted_at`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Table structure for table `dict_info`
@@ -897,7 +913,7 @@ CREATE TABLE `task_info` (
 
 LOCK TABLES `task_info` WRITE;
 /*!40000 ALTER TABLE `task_info` DISABLE KEYS */;
-INSERT INTO `task_info` VALUES (1,'2024-01-01 13:15:00.083','2024-02-28 17:04:38.081',NULL,NULL,NULL,'清理日志','1 2 3 * * *',NULL,NULL,'每天03:02:01执行清理缓存任务',1,NULL,NULL,NULL,'BaseFuncClearLog(false)',0,'2024-02-29 03:02:01.000',0);
+INSERT INTO `task_info` VALUES (1,'2024-01-01 13:15:00.083','2024-07-19 00:24:37.204',NULL,NULL,NULL,'清理日志','1 2 3 * * *',NULL,NULL,'每天03:02:01执行清理缓存任务',1,NULL,NULL,NULL,'BaseFuncClearLog(false)',0,'2024-07-19 03:02:01.000',0);
 /*!40000 ALTER TABLE `task_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -918,17 +934,9 @@ CREATE TABLE `task_log` (
   `detail` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci COMMENT '详情',
   PRIMARY KEY (`id`),
   KEY `idx_task_log_deleted_at` (`deleted_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `task_log`
---
-
-LOCK TABLES `task_log` WRITE;
-/*!40000 ALTER TABLE `task_log` DISABLE KEYS */;
-/*!40000 ALTER TABLE `task_log` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -939,4 +947,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-16  9:18:53
+-- Dump completed on 2024-07-19 12:59:52
