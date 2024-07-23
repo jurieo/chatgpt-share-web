@@ -1,8 +1,11 @@
 # chatgpt-share-web
 
+## Claude + ChatGPT = Share
+
 **❤ 本项目已支持实时语音**  
 **❤ 本项目已支持 GPTS 隔离**  
 **❤ 本项目已支持跨车聊天**
+**❤ 本项目已支持 Claude**
 
 [加入交流群](https://t.me/chatgpt_share_web)  
 本项目的 docker 镜像为：[docker 镜像](https://hub.docker.com/r/jurieo/gpt-share-server)  
