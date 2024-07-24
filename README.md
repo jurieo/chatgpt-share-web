@@ -1,10 +1,10 @@
 # chatgpt-share-web
 
-## Claude + ChatGPT = Share
+## Share = Claude + ChatGPT
 
 **❤ 本项目已支持实时语音**  
 **❤ 本项目已支持 GPTS 隔离**  
-**❤ 本项目已支持跨车聊天**
+**❤ 本项目已支持跨车聊天**  
 **❤ 本项目已支持 Claude**
 
 [加入交流群](https://t.me/chatgpt_share_web)  
@@ -34,6 +34,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 - ✅ 官网 UI 一比一还原。
 - ✅ 可使用官网的所有功能，GPTs，画图，高级代码分析，画图，插件，gpt-4-all 等。
+- ✅ 支持 Claude
 - ✅ 支持跨车聊天，当前聊天记录被号主删除或者其他意外丢失，用户可换车继续当前的会话。
 - ✅ 车队过期自动切换为有效且最空闲的车。
 - ✅ 可自动保存聊天记录，左侧同步用户所在车的聊天记录，点击聊天记录，自动换车。
@@ -106,30 +107,34 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 可访问[君临驿站](https://aiok.me/user/#/register?i=4ME9Z)注册体验。  
 本项目可配置选择 2 个主题。如果你有开发能力，可开发出更多主题。  
+**后台管理**  
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config1.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config2.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/store.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/claude.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/chat.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/subtype.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/editSubtype.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/addUser.png" width="640">
+
 **流行主题**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-login.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-carlist.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-claude.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-invite.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-pay.png" width="640">
 
 **经典主题**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-login.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-carlist.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-claude.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-register.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme1-pay.png" width="640">
-
-**后台管理**  
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config.png" width="640">
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/store.png" width="640">
-
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/chat.png" width="640">
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/subtype.png" width="640">
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/editSubtype.png" width="640">
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/addUser.png" width="640">
 
 ### 特别说明
 
 **❤ 本项目在 `20` 人以内的有效用户内，授权活动价格为 ¥9.9/月 ❤**。  
 有效用户指的是在你的用户系统中排除已经删除的、注册后没有登录过的、订阅已经过期超过一个月的用户。  
 特别鸣谢:本项目是基于 xyhelper 的二开项目（已闭源），感谢`xyhelper`。respect~  
+Claude 已支持，授权费用和 share 独立，不按用户数计费。  
 本项目仅供学习和研究使用。我们不对任何因使用本项目而导致的任何损失负责。
