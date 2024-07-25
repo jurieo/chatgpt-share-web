@@ -22,7 +22,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 >
 > 根据[《生成式人工智能服务管理暂行办法》](http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm)的要求，请勿对中国地区公众提供一切未经备案的生成式人工智能服务。
 
-## 点点 Star 不迷路 ❤ 有问题请联系 TG
+## 点点 Star 送 4 天授权 ❤ 有问题请联系 TG
 
 [加入 TG 交流群](https://t.me/chatgpt_share_web)
 
