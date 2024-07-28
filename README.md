@@ -112,6 +112,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config2.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/store.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/claude.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/claude-artifacts.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/chat.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/subtype.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/editSubtype.png" width="640">
