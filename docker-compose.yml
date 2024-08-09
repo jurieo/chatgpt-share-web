@@ -22,6 +22,7 @@ services:
       TZ: Asia/Shanghai # 指定时区
     volumes:
       - ./data/redis/:/data/
+    command: redis-server --appendonly yes
 
   gpt-share-server:
     image: jurieo/gpt-share-server:undefined #商业版标签是undefined，免费版是latest
