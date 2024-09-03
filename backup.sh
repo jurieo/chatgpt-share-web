@@ -30,7 +30,7 @@ mkdir -p "${BACKUP}"
 
 echo "正在压缩文件"
 # 创建备份
-tar -czf "${BACKUP}/${PARENT_DIR_NAME}-${DATETIME}.tar.gz" --exclude="csw-backup"  --exclude="data/mysql/binlog.*"  .
+tar -czf "${BACKUP}/${PARENT_DIR_NAME}-${DATETIME}.tar.gz" --exclude="csw-backup"  .
 
 echo "文件压缩成功"
 echo "正在上传文件到OSS"
