@@ -12,8 +12,9 @@
 本项目的 docker 镜像为：[docker 镜像](https://hub.docker.com/r/jurieo/gpt-share-server)  
 新功能可能没有及时更新到 github 上，可通过一键部署脚本体验最新系统，一键脚本部署是通过 docker 部署的，不会污染物理环境。  
 本项目需要网关才能正常使用，新部署的服务器，后台会自动生成一个体验网关，有效期 1 天，欢迎使用。  
-有任何使用问题或者合作交流，请加我微信：asd0999701  
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/wx.png" width="320">
+有任何使用问题或者合作交流，请加我微信：asd0999701
+
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/wx.png" width="280">
 
 ### 一键部署脚本
 
