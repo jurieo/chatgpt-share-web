@@ -11,10 +11,10 @@
 [加入交流群](https://t.me/chatgpt_share_web)  
 本项目的 docker 镜像为：[docker 镜像](https://hub.docker.com/r/jurieo/gpt-share-server)  
 新功能可能没有及时更新到 github 上，可通过一键部署脚本体验最新系统，一键脚本部署是通过 docker 部署的，不会污染物理环境。  
-本项目需要网关才能正常使用，新部署的服务器，后台会自动生成一个体验网关，有效期 1 天，欢迎使用。  
+本项目需要网关才能正常使用，新部署的服务器，后台会自动生成一个体验网关，欢迎使用。  
 有任何使用问题或者合作交流，请加我微信：asd0999701
 
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/wx.png" width="280">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/wx.png" width="200">
 
 ### 一键部署脚本
 
@@ -139,8 +139,8 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 ### 特别说明
 
-**❤ 本项目在 `20` 人以内的有效用户内，授权活动价格为 ¥9.9/月 ❤**。  
-有效用户指的是在你的用户系统中排除已经删除的、注册后没有登录过的、订阅已经过期超过一个月的用户。  
-特别鸣谢:本项目是基于 xyhelper 的二开项目（已闭源），感谢`xyhelper`。respect~  
+**❤ 本项目在 `20` 人以内的有效用户内，授权活动价格为 ¥9.9/首月 ❤**。  
+有效用户指的是在你的用户系统中排除已经删除的、注册后没有登录过的、订阅已经过期超过一个月的用户。
+
 Claude 已支持，授权费用和 share 独立，不按用户数计费。  
 本项目仅供学习和研究使用。我们不对任何因使用本项目而导致的任何损失负责。
