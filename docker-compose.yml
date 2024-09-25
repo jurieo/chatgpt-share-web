@@ -1,7 +1,7 @@
 services:
   mysql:
     image: mysql:8
-    command: --mysql-native-password=ON --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci   --binlog-expire-logs-seconds=25920
+    command: --mysql-native-password=ON --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --binlog-expire-logs-seconds=25920
     restart: always
     volumes:
       - ./data/mysql/:/var/lib/mysql/
@@ -24,7 +24,7 @@ services:
     command: redis-server --appendonly yes
 
   gpt-share-server:
-    image: jurieo/gpt-share-server:undefined #商业版标签是undefined，免费版是latest
+    image: jurieo/gpt-share-server:undefined #商业版标签是undefined
     restart: always
     ports:
       - 38300:8001
@@ -36,24 +36,14 @@ services:
       - ./data/chatgpt-share-server/:/app/data/
       - ./data/images:/app/resource/public/images/
       - ./data/chatgpt-share-server/images:/app/public/uploads
+      # - ./data/keywords.txt:/app/data/keywords.txt # 关键词文件，每行一个。自定义的时候打开此行
+      # 如需其他映射，请在此后继续添加。
 
     labels:
       - "com.centurylinklabs.watchtower.scope=jurieo-chatgpt-share-web"
     depends_on:
       - mysql
       - redis
-
-  # 已经内置限速服务。使用我二开的auditlimit可以按单个用户限制使用次数。
-  # auditlimit:
-  #   image: jurieo/auditlimit
-  #   restart: always
-  #   # ports:
-  #   #   - 9611:8080
-  #   environment:
-  #     LIMIT: 40 # 限制每个userToken允许的次数
-  #     PER: "3h" # 限制周期 1s, 1m, 1h, 1d, 1w, 1y
-  #   labels:
-  #     - "com.centurylinklabs.watchtower.scope=jurieo-chatgpt-share-web"
 
   watchtower:
     image: containrrr/watchtower
