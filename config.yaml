@@ -37,3 +37,6 @@ modules:
         enable: 1
       log:
         enable: 1
+
+server:
+  sessionMaxAge: "7d" # Session有效期。默认为24小时
