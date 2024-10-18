@@ -38,5 +38,10 @@ modules:
       log:
         enable: 1
 
-server:
-  sessionMaxAge: "7d" # Session有效期。默认为24小时
+logger:
+  path: "./logs/"
+  file: "{Y-m-d}.log"
+  level: "all"
+  stdout: true
+  rotateSize: 50 * 1024 * 1024
+  rotateExpire: 90 * 24 * 3600
