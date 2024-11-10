@@ -35,9 +35,11 @@ services:
       - ./config.yaml:/app/config.yaml
       - ./data/chatgpt-share-server/:/app/data/
       - ./data/chatgpt-share-server/logs/:/app/logs/
-      - ./data/images:/app/resource/public/images/
+      - ./data/chatgpt-share-server/images:/app/resource/public/images/
       - ./data/chatgpt-share-server/images:/app/public/uploads
-      # - ./data/keywords.txt:/app/data/keywords.txt # 关键词文件，每行一个。自定义的时候打开此行
+      - ./data/keywords.txt:/app/data/keywords.txt # 关键词文件，每行一个。自定义的时候打开此行
+      - ./data/claudeExtend.js:/app/resource/public/claudeExtend.js # 在claude页需额外执行的脚本
+      - ./data/chatgptExtend.js:/app/resource/public/chatgptExtend.js # 在chatgpt页需额外执行的脚本
       # 如需其他映射，请在此后继续添加。
 
     labels:
