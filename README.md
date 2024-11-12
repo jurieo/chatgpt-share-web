@@ -89,7 +89,8 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 > [!IMPORTANT]
 > 部署本项目推荐使用海外 VPS 且对服务器要求较高,至少需要 2 核 2G 才能稳定运行。本项目推荐使用如下 VPS 供你起航。[高性价比 VPS 推荐 1](https://my.racknerd.com/aff.php?aff=7367&pid=828)，[高性价比 VPS 推荐 2](https://my.racknerd.com/aff.php?aff=7367&pid=829)。  
-> 如果你的用户较多(超过 50 人)，性能和速度稳定必不可少，可选择[高性能 VPS 推荐 1](https://bandwagonhost.com/aff.php?aff=74796&pid=88)，[高性能 VPS 推荐 2](https://bandwagonhost.com/aff.php?aff=74796&pid=87)。
+> 如果你的用户较多(超过 50 人)，性能和速度稳定必不可少，可选择[高性能 VPS 推荐 1](https://bandwagonhost.com/aff.php?aff=74796&pid=88)，[高性能 VPS 推荐 2](https://bandwagonhost.com/aff.php?aff=74796&pid=87)。  
+> [更多优秀的VPS](https://bwh88.net/cart.php?aff=74796&a=confproduct&i=1)
 
 ### 一键部署脚本
 
