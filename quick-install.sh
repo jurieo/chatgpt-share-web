@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+# set -e
 
 SHAREDIR="chatgpt-share-web"
 
@@ -73,16 +73,37 @@ function main() {
 
   if [ -d "$SHAREDIR" ]; then
     # 目录存在，询问是否覆盖
-    read -p "目录 '$SHAREDIR' 已存在。是否覆盖安装？(y/n): " choice
-    choice=$(echo "$choice" | tr '[:upper:]' '[:lower:]') # 将输入转化为小写
+    read -p "目录 '$SHAREDIR' 已存在。是否覆盖安装？(y/n): (输入y覆盖安装，也可以直接输入您想安装的目录): " choice
+    choice=$(echo "$choice" | tr '[:upper:]' '[:lower:]') # 将输入转为小写
+
     if [ "$choice" == "y" ]; then
-      rm -rf "$SHAREDIR"
-      Install_Share
-    else
-      echo "不进行覆盖，安装已取消。如有需要请重新执行安装脚本。"
+      cd $SHAREDIR
+      docker compose down
+      cd ..
+
+      echo "正在删除旧目录 '$SHAREDIR' ..."
+      rm -rf "$SHAREDIR" # 删除现有目录及其内容
+      Install_Share      # 执行安装操作
+    elif [ "$choice" == "n" ]; then
+      echo "安装已取消。"
       exit 1
+    else
+      # 输入的是新的目录路径
+      # 询问用户是否确认将 share 安装到新的路径
+      read -p "是否将 share 安装到新的路径 '$choice'？(y/n): " confirm_choice
+      confirm_choice=$(echo "$confirm_choice" | tr '[:upper:]' '[:lower:]') # 将输入转为小写
+
+      if [ "$confirm_choice" == "y" ]; then
+        SHAREDIR="$choice" # 将新目录路径赋值给 SHAREDIR
+        echo "将使用 '$SHAREDIR' 路径进行安装。"
+        Install_Share # 执行安装操作
+      else
+        echo "安装已取消。"
+        exit 1
+      fi
     fi
   else
+    # 目录不存在，直接执行安装
     Install_Share
   fi
 
