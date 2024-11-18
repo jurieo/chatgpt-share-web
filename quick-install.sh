@@ -98,7 +98,7 @@ function main() {
         echo "将使用 '$SHAREDIR' 路径进行安装。"
         Install_Share # 执行安装操作
       else
-        echo "安装已取消。"
+        echo "安装已取消"
         exit 1
       fi
     fi
