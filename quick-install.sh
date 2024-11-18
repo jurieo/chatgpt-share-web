@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-ShareDir="chatgpt-share-web"
+SHAREDIR="chatgpt-share-web"
 
 function Check_Root() {
   if [[ $EUID -ne 0 ]]; then
@@ -13,10 +13,10 @@ function Check_Root() {
 function Install_Share() {
   ## 克隆仓库到本地
   echo "clone repository..."
-  git clone -b deploy --depth=1 https://github.com/jurieo/chatgpt-share-web.git $ShareDir
+  git clone -b deploy --depth=1 https://github.com/jurieo/chatgpt-share-web.git $SHAREDIR
 
   ## 进入目录
-  cd $ShareDir
+  cd $SHAREDIR
   RUN_BASE_DIR=$(pwd)
   sed -i -e "s#BASE_DIR=.*#BASE_DIR=${RUN_BASE_DIR}#g" ./sharectl
   cp ./sharectl /usr/local/bin && chmod +x /usr/local/bin/sharectl
@@ -71,14 +71,14 @@ function main() {
   Check_Root
   Install_Docker
 
-  if [ -d "$ShareDir" ]; then
+  if [ -d "$SHAREDIR" ]; then
     # 目录存在，询问是否覆盖
-    read -p "目录 '$ShareDir' 已存在。是否覆盖安装？(y/n): " choice
+    read -p "目录 '$SHAREDIR' 已存在。是否覆盖安装？(y/n): " choice
     if [[ $choice == "y" || $choice == "Y" ]]; then
-      rm -rf $ShareDir
+      rm -rf $SHAREDIR
       Install_Share
     else
-      echo "不进行覆盖，安装已取消"
+      echo "不进行覆盖，安装已取消。如有需要请重新执行安装脚本。"
       exit 1
     fi
   else
