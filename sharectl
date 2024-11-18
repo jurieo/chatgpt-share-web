@@ -1,0 +1,54 @@
+#!/bin/bash
+action=$1
+target=$2
+args=$@
+
+BASE_DIR=/root/chatgpt-share-web
+
+function usage() {
+    echo "share 控制脚本"
+    echo
+    echo "Usage: "
+    echo "  ./sharectl [COMMAND] [ARGS...]"
+    echo "  ./sharectl --help"
+    echo
+    echo "Commands: "
+    echo "  update              更新share，会拉取最新镜像"
+    echo "  restart             强制重启share服务，会拉取最新镜像"
+}
+function update() {
+    cd $BASE_DIR
+    # ./deploy.sh
+    docker compose pull
+    docker compose up -d --remove-orphans
+}
+function restart() {
+    cd $BASE_DIR
+    # ./restart.sh
+    docker compose pull
+    docker compose up -d --remove-orphans --force-recreate
+}
+
+function main() {
+    case "${action}" in
+    update)
+        update
+        ;;
+    restart)
+        restart
+        ;;
+    help)
+        usage
+        ;;
+    --help)
+        usage
+        ;;
+    "")
+        usage
+        ;;
+    *)
+        echo "不支持的参数，请使用 help 或 --help 参数获取帮助"
+        ;;
+    esac
+}
+main
