@@ -57,13 +57,13 @@ function Show_Result() {
   echo ""
   echo "请访问: http://${local_ipv4}:38300 开始使用！"
   echo "管理员后台地址: http://${local_ipv4}:38300/shareadmin"
-  echo "后台管理员账号/密码: 【admin/123456】，请及时修改管理员密码"
+  echo "后台管理员账号/密码:【 admin/123456 】,请及时修改管理员密码"
   echo "现在，还有很多个性化的配置，请登陆后台，在【工作台-系统配置】里根据实际情况进行设置。"
   echo "通过反代服务器的38300端口，即可使用域名访问您的服务。"
   echo "您可以在任何目录使用'sharectl'命令来管理服务，例如：sharectl restart"
-  echo "有任何问题请加入TG群: https://t.me/chatgpt_share_web或添加作者v：asd0999701"
+  echo "有任何问题请加入TG群: https://t.me/chatgpt_share_web 或添加作者v：asd0999701"
   echo ""
-  echo "=============================================================== "
+  echo "==================================================================== "
   echo ""
 }
 
