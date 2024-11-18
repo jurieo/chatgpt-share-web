@@ -53,14 +53,14 @@ function Show_Result() {
   ## 提示信息
   local_ipv4=$(curl -s4m8 http://ip.sb)
   echo ""
-  echo "=================感谢您的耐心等待，部署已完成！====================== "
+  echo "================= 感谢您的耐心等待，部署已完成！====================== "
   echo ""
   echo "请访问: http://${local_ipv4}:38300 开始使用！"
   echo "管理员后台地址: http://${local_ipv4}:38300/shareadmin"
-  echo "后台管理员账号/密码:【 admin/123456 】,请及时修改管理员密码"
+  echo "后台管理员账号/密码:【admin/123456】,请及时修改管理员密码"
   echo "现在，还有很多个性化的配置，请登陆后台，在【工作台-系统配置】里根据实际情况进行设置。"
   echo "通过反代服务器的38300端口，即可使用域名访问您的服务。"
-  echo "您可以在任何目录使用'sharectl'命令来管理服务，例如：sharectl restart"
+  echo "您可以在任何目录使用'sharectl'命令来管理服务，例如使用 'sharectl restart' 来重启服务"
   echo "有任何问题请加入TG群: https://t.me/chatgpt_share_web 或添加作者v：asd0999701"
   echo ""
   echo "==================================================================== "
@@ -74,8 +74,9 @@ function main() {
   if [ -d "$SHAREDIR" ]; then
     # 目录存在，询问是否覆盖
     read -p "目录 '$SHAREDIR' 已存在。是否覆盖安装？(y/n): " choice
-    if [[ $choice == "y" || $choice == "Y" ]]; then
-      rm -rf $SHAREDIR
+    choice=$(echo "$choice" | tr '[:upper:]' '[:lower:]') # 将输入转化为小写
+    if [ "$choice" == "y" ]; then
+      rm -rf "$SHAREDIR"
       Install_Share
     else
       echo "不进行覆盖，安装已取消。如有需要请重新执行安装脚本。"
