@@ -7,7 +7,8 @@
 **❤ 本项目已支持 GPTS 隔离**  
 **❤ 本项目已支持 Claude**  
 **❤ 本项目已适配 Remix**  
-**❤ 本项目已支持 代理分站**
+**❤ 本项目已支持 代理分站**    
+**❤ 本项目已支持 linuxdo一键登录**  
 
 [加入交流群](https://t.me/chatgpt_share_web)  
 本项目的 docker 镜像为：[docker 镜像](https://hub.docker.com/r/jurieo/gpt-share-server)  
