@@ -1,11 +1,12 @@
 # chatgpt-share-web
 
-## Share = Claude + ChatGPT
+## Share = ChatGPT + Claude + Midjourney
 
 **❤ 本项目已支持高级实时语音**  
 **❤ 本项目已支持跨车聊天**  
 **❤ 本项目已支持 GPTS 隔离**  
 **❤ 本项目已支持 Claude**  
+**❤ 本项目已支持 Midjourney**  
 **❤ 本项目已适配 Remix**  
 **❤ 本项目已支持 代理分站**  
 **❤ 本项目已支持 linuxdo 一键登录**
