@@ -8,6 +8,7 @@
 **❤ 本项目已支持 Claude**  
 **❤ 本项目已支持 Midjourney**  
 **❤ 本项目已支持 DeepSeek**  
+**❤ 本项目已支持 第三方API(oneapi,newapi,shellapi)**  
 **❤ 本项目已支持 代理分站**  
 **❤ 本项目已支持 linuxdo 一键登录**
 
@@ -119,6 +120,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 **后台管理**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config1.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config2.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/thirdapi.jpg" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/store.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/claude.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/claude-artifacts.png" width="640">
@@ -127,8 +129,11 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/editSubtype.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/addUser.png" width="640">
 
+**柔和主题**  
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/pastel-carlist.png" width="640">  
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/pastel-buy.png" width="640">  
 **流行主题**  
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-login.png" width="640">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-login.png" width="640">  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-carlist.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-claude.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-invite.png" width="640">
