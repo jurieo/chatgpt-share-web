@@ -1,6 +1,6 @@
 # chatgpt-share-web
 
-## Share = ChatGPT + Claude + Midjourney + DeepSeek
+## Share = ChatGPT + Claude + Midjourney + DeepSeek + 第三方API
 
 **❤ 本项目已支持高级实时语音**  
 **❤ 本项目已支持跨车聊天**  
