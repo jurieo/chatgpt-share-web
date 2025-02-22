@@ -1001,7 +1001,7 @@ CREATE TABLE `base_sys_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `base_sys_user` (`id`, `createTime`, `updateTime`, `deleted_at`, `departmentId`, `name`, `username`, `password`, `passwordV`, `nickName`, `headImg`, `phone`, `email`, `status`, `remark`, `socketId`) VALUES
-(1,	'2024-01-01 13:14:56.871',	'2024-03-23 10:25:11.566',	NULL,	1,	'超级管理员',	'admin',	'3ba3a8acfa337bd2e46126da108affd4',	5,	'管理员',	'https://cool-admin-pro.oss-cn-shanghai.aliyuncs.com/app/c8128c24-d0e9-4e07-9c0d-6f65446e105b.png',	'18000000000',	'team@cool-js.com',	1,	'拥有最高权限的用户',	NULL);
+(1,	'2024-01-01 13:14:56.871',	'2024-03-23 10:25:11.566',	NULL,	1,	'超级管理员',	'admin',	'e10adc3949ba59abbe56e057f20f883e',	5,	'管理员',	'https://cool-admin-pro.oss-cn-shanghai.aliyuncs.com/app/c8128c24-d0e9-4e07-9c0d-6f65446e105b.png',	'18000000000',	'team@cool-js.com',	1,	'拥有最高权限的用户',	NULL);
 
 DROP TABLE IF EXISTS `base_sys_user_role`;
 CREATE TABLE `base_sys_user_role` (
