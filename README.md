@@ -1,6 +1,7 @@
 # chatgpt-share-web
 
 ## Share = ChatGPT+Claude+Midjourney+Grok+DeepSeek+API
+[![Docker](https://img.shields.io/docker/pulls/jurieo/gpt-share-server?label=ChatGPT-share-web&logo=docker)](https://hub.docker.com/r/jurieo/gpt-share-server)
 
 **❤ 本项目已支持高级实时语音**  
 **❤ 本项目已支持跨车聊天**  
