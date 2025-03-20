@@ -1,8 +1,7 @@
-
 server:
   clientMaxBodySize: "200MB" # 上传文件大小限制
-  sessionMaxAge: "10d" #登陆cookie有效期，两个同时设置
-  sessionCookieMaxAge: "10d" #登陆cookie有效期，两个同时设置
+  sessionMaxAge: "1d" #登陆cookie有效期，两个同时设置
+  sessionCookieMaxAge: "1d" #登陆cookie有效期，两个同时设置
 
 database:
   default: # 数据源名称,当不指定数据源时 default 为默认数据源
