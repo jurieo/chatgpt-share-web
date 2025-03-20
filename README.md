@@ -1,8 +1,10 @@
 # chatgpt-share-web
 
 ## Share = ChatGPT+Claude+Midjourney+Grok+DeepSeek+API
+
 [![Docker](https://img.shields.io/docker/pulls/jurieo/gpt-share-server?label=ChatGPT-share-web&logo=docker)](https://hub.docker.com/r/jurieo/gpt-share-server)
 
+**❤ 本项目已支持高级视频通话**  
 **❤ 本项目已支持高级实时语音**  
 **❤ 本项目已支持跨车聊天**  
 **❤ 本项目已支持 GPTS 隔离**  
@@ -33,7 +35,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 >
 > 根据[《生成式人工智能服务管理暂行办法》](http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm)的要求，请勿对中国地区公众提供一切未经备案的生成式人工智能服务。
 
-## 点点 Star 送 4 天授权+1 天网关 ❤ 有问题请联系 TG
+## 点点 Star 送 3 天 Share 授权 ❤ 有问题请联系 TG 或 VX：asd0999701
 
 [加入 TG 交流群](https://t.me/chatgpt_share_web)
 
@@ -41,7 +43,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 本项目包含完善的用户系统和流量变现系统，具有注册，登陆，推广，返佣，提现，购买，使用等一条龙使用的全部功能，安心做你的甩手掌柜。功能强大，日常更新。  
 镜像为：https://hub.docker.com/r/jurieo/gpt-share-server  
-主要实现了以下功能：（新功能可能没有及时更新到 github 上，可通过一键部署脚本体验最新系统。）
+截止 2024.10，已经实现以下功能：（每天都在更新，新功能没有及时更新到 github 上，可通过一键部署脚本体验最新系统）
 
 - ✅ 官网 UI 一比一还原。
 - ✅ 可使用官网的所有功能，GPTs，画图，高级代码分析，画图，插件，gpt-4-all 等。
