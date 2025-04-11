@@ -1,6 +1,6 @@
 # chatgpt-share-web
 
-## Share = ChatGPT+Claude+Midjourney+Grok+DeepSeek+API
+## Share = ChatGPT+Claude+Midjourney+Grok+Sora+DeepSeek+API
 
 [![Docker](https://img.shields.io/docker/pulls/jurieo/gpt-share-server?label=ChatGPT-share-web&logo=docker)](https://hub.docker.com/r/jurieo/gpt-share-server)
 
@@ -11,8 +11,9 @@
 **❤ 本项目已支持 Claude**  
 **❤ 本项目已支持 Grok**  
 **❤ 本项目已支持 Midjourney**  
+**❤ 本项目已支持 Sora**  
 **❤ 本项目已支持 DeepSeek**  
-**❤ 本项目已支持 第三方 API(oneapi,newapi,shellapi)**  
+**❤ 本项目已支持 第三方 API(oneapi,newapi,shellapi 等)**  
 **❤ 本项目已支持 代理分站**  
 **❤ 本项目已支持 linuxdo 一键登录**
 
