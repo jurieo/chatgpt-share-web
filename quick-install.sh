@@ -24,10 +24,11 @@ function Install_Share() {
   chmod +x ./deploy.sh
   chmod +x ./restart.sh
   chmod +x ./backup.sh
+  chmod +x ./stop.sh
 
   docker compose pull
   docker compose up -d --remove-orphans
-  Show_Result
+  Install_Result
 }
 
 function Install_Docker() {
@@ -49,7 +50,7 @@ function Install_Docker() {
   fi
 }
 
-function Show_Result() {
+function Install_Result() {
   ## 提示信息
   local_ipv4=$(curl -s4m8 http://ip.sb)
   echo ""
@@ -58,9 +59,11 @@ function Show_Result() {
   echo "请访问: http://${local_ipv4}:38300 开始使用！"
   echo "管理员后台地址: http://${local_ipv4}:38300/shareadmin"
   echo "后台管理员账号/密码:【admin/123456】,请及时修改管理员密码"
+  echo "系统已新增一个前端管理员账号/密码:【admin/123456】,请及时修改管理员密码，注意此账号和后台管理员账号独立"
   echo "现在，还有很多个性化的配置，请登陆后台，在【工作台-系统配置】里根据实际情况进行设置。"
   echo "通过反代服务器的38300端口，即可使用域名访问您的服务。"
-  echo "您可以在任何目录使用'sharectl'命令来管理服务，例如使用 'sharectl restart' 来重启服务"
+  echo "您可以在任何目录使用'sharectl'命令来管理服务，例如使用 'sharectl help' 来查看帮助"
+  echo "本系统已集成ChatGPT、Claude、Midjourney、Grok、Sora、DeepSeek、API等AI产品"
   echo "有任何问题请加入TG群: https://t.me/chatgpt_share_web 或添加作者v：asd0999701"
   echo ""
   echo "==================================================================== "

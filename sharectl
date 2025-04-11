@@ -15,6 +15,7 @@ function usage() {
     echo "Commands: "
     echo "  update              更新share，会拉取最新镜像"
     echo "  restart             强制重启share服务，会拉取最新镜像"
+    echo "  stop                停止share服务"
 }
 function update() {
     cd $BASE_DIR
@@ -28,6 +29,10 @@ function restart() {
     docker compose pull
     docker compose up -d --remove-orphans --force-recreate
 }
+function stop() {
+    cd $BASE_DIR
+    docker compose down
+}
 
 function main() {
     case "${action}" in
@@ -36,6 +41,9 @@ function main() {
         ;;
     restart)
         restart
+        ;;
+    stop)
+        stop
         ;;
     help)
         usage

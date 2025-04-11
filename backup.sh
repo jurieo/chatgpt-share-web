@@ -25,8 +25,8 @@ echo "检测定时任务"
 # 确保备份目录存在
 mkdir -p "${BACKUP}"
 
-# 保留最新的5份备份，删除其余的
-(cd "./mysql-backup" && ls -t | grep "db_backup_" | tail -n +6 | xargs rm -f)
+# 保留最新的5份备份，删除其余的,已作废
+# (cd "./mysql-backup" && ls -t | grep "db_backup_" | tail -n +6 | xargs rm -f)
 
 echo "正在压缩文件"
 # 创建备份

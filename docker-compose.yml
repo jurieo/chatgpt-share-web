@@ -1,7 +1,7 @@
 services:
   mysql:
     image: mysql:8
-    command: --mysql-native-password=ON --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --binlog-expire-logs-seconds=25920
+    command: --mysql-native-password=ON --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --binlog-expire-logs-seconds=2592
     restart: always
     volumes:
       - ./data/mysql/:/var/lib/mysql/
