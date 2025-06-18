@@ -1,6 +1,7 @@
 # chatgpt-share-web
 
 ## Share = ChatGPT+Claude+Midjourney+Grok+Sora+DeepSeek+API
+❤ Claude的套餐已经支持按token计费。
 
 [![Docker](https://img.shields.io/docker/pulls/jurieo/gpt-share-server?label=ChatGPT-share-web&logo=docker)](https://hub.docker.com/r/jurieo/gpt-share-server)
 
