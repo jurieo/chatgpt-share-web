@@ -1,10 +1,12 @@
 # chatgpt-share-web
 
 ## Share = ChatGPT+Claude+Midjourney+Grok+Sora+DeepSeek+API
-❤ Claude的套餐已经支持按token计费。
+
 
 [![Docker](https://img.shields.io/docker/pulls/jurieo/gpt-share-server?label=ChatGPT-share-web&logo=docker)](https://hub.docker.com/r/jurieo/gpt-share-server)
 
+**❤ 本项目ChatGpt,Claude,Grok套餐已经支持按token计费**
+**❤ 本项目Claude已经支持claude2api**
 **❤ 本项目已支持高级视频通话**  
 **❤ 本项目已支持高级实时语音**  
 **❤ 本项目已支持跨车聊天**  
@@ -17,6 +19,8 @@
 **❤ 本项目已支持 第三方 API(oneapi,newapi,shellapi 等)**  
 **❤ 本项目已支持 代理分站**  
 **❤ 本项目已支持 linuxdo 一键登录**
+**❤ 本项目已支持 Github 一键登录**
+**❤ 本项目已支持 微信 一键登录**
 
 [加入交流群](https://t.me/chatgpt_share_web)  
 本项目的 docker 镜像为：[docker 镜像](https://hub.docker.com/r/jurieo/gpt-share-server)  
