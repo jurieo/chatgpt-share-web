@@ -5,8 +5,8 @@
 
 [![Docker](https://img.shields.io/docker/pulls/jurieo/gpt-share-server?label=ChatGPT-share-web&logo=docker)](https://hub.docker.com/r/jurieo/gpt-share-server)
 
-**❤ 本项目ChatGpt,Claude,Grok套餐已经支持按token计费**
-**❤ 本项目Claude已经支持claude2api**
+**❤ 本项目ChatGpt,Claude,Grok套餐已经支持按token计费**  
+**❤ 本项目Claude已经支持claude2api**  
 **❤ 本项目已支持高级视频通话**  
 **❤ 本项目已支持高级实时语音**  
 **❤ 本项目已支持跨车聊天**  
