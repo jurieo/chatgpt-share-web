@@ -27,7 +27,7 @@ services:
     image: jurieo/gpt-share-server:undefined #商业版标签是undefined
     restart: always
     ports:
-      - 38300:8001
+      - 127.0.0.1:38300:8001
     environment:
       TZ: Asia/Shanghai # 指定时区
     volumes:
