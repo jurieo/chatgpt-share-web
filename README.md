@@ -1,7 +1,7 @@
 # chatgpt-share-web
 
-## Share = ChatGPT+Claude+Midjourney+Grok+Sora+DeepSeek+API+Claude2Api
-Claude2Api支持返回Openai Api和Claude Api两种格式。Claude Code使用的是Claude Api格式，通过claude号池实现了claude code自由。
+## Share = ChatGPT+Claude+Midjourney+Grok+Sora+DeepSeek+API+Claude Code
+Claude2Api支持2种模式，一种是2api，用于第三方网关，一种是用户模式，用于claude code。和其他镜像站一样，用户配置即用。
 
 
 [![Docker](https://img.shields.io/docker/pulls/jurieo/gpt-share-server?label=ChatGPT-share-web&logo=docker)](https://hub.docker.com/r/jurieo/gpt-share-server)
