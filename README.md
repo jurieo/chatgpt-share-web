@@ -19,9 +19,10 @@ Claude2Api支持2种模式，一种是2api，用于第三方网关，一种是�
 **❤ 本项目已支持 DeepSeek**  
 **❤ 本项目已支持 第三方 API(oneapi,newapi,shellapi 等)**  
 **❤ 本项目已支持 代理分站**  
-**❤ 本项目已支持 linuxdo 一键登录**
-**❤ 本项目已支持 Github 一键登录**
-**❤ 本项目已支持 微信 一键登录**
+**❤ 本项目已支持 linuxdo 一键登录**  
+**❤ 本项目已支持 Github 一键登录**  
+**❤ 本项目已支持 微信 一键登录**  
+**❤ 本项目已支持 谷歌 一键登录**  
 
 [加入交流群](https://t.me/chatgpt_share_web)  
 本项目的 docker 镜像为：[docker 镜像](https://hub.docker.com/r/jurieo/gpt-share-server)  
