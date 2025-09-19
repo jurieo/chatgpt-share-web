@@ -1,13 +1,14 @@
 # chatgpt-share-web
 
-## Share = ChatGPT+Claude+Midjourney+Grok+Sora+DeepSeek+API+Claude Code
+## Share = ChatGPT+Claude+Midjourney+Grok+Sora+DeepSeek+API+Claude Code+Codex
 Claude2Api支持2种模式，一种是2api，用于第三方网关，一种是用户模式，用于claude code。和其他镜像站一样，用户配置即用。
 
 
 [![Docker](https://img.shields.io/docker/pulls/jurieo/gpt-share-server?label=ChatGPT-share-web&logo=docker)](https://hub.docker.com/r/jurieo/gpt-share-server)
 
+**❤ 本项目已支持Codex**  
+**❤ 本项目已经支持claude2api、claude code**  
 **❤ 本项目ChatGpt,Claude,Grok套餐已经支持按token计费**  
-**❤ 本项目Claude已经支持claude2api**  
 **❤ 本项目已支持高级视频通话**  
 **❤ 本项目已支持高级实时语音**  
 **❤ 本项目已支持跨车聊天**  
