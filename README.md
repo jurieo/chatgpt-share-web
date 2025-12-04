@@ -34,7 +34,8 @@ vibe coding重写了UI [点击体验](https://aiok.me/pastel#/vibe-code)
 有任何使用问题或者合作交流，请加我微信：asd0999701
 
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/wx.png" width="200">
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/qyweichat.jpeg" width="200">
+同行交流群  
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/qyweichat.png" width="200">
 
 ### 一键部署脚本
 
