@@ -51,7 +51,7 @@ services:
       - redis
 
   watchtower:
-    image: containrrr/watchtower
+    image: ghcr.io/nicholas-fedor/watchtower:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     command: --scope jurieo-chatgpt-share-web --cleanup --interval 600
