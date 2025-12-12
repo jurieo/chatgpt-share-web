@@ -33,7 +33,7 @@ vibe coding重写了UI [点击体验](https://aiok.me/pastel#/vibe-code)
 本项目需要网关才能正常使用，新部署的服务器，后台会自动生成一个体验网关，欢迎使用。  
 有任何使用问题或者合作交流，请加我微信：asd0999701
 
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/wx.png" width="200">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/wx.png" width="">
 同行交流群  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/qyweichat.png" width="200">
 
@@ -123,7 +123,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 访问后台管理系统，`http://ip:38300/shareadmin`，使用`admin`/`123456`登陆之后，及时修改密码。新建一个用户，将这个用户设置为管理员，可以在前端生成兑换码，审核用户提现等操作。  
 有很多个性化的配置，请登陆后台，【工作台-系统配置】根据实际情况进行设置。  
 更多使用技巧，尽情探索吧。  
-可有偿部署 200 元/次。
+有偿部署400元/次。
 
 ## 授权联系
 
