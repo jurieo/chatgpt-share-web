@@ -33,7 +33,7 @@ vibe coding重写了UI [点击体验](https://aiok.me/pastel#/vibe-code)
 本项目需要网关才能正常使用，新部署的服务器，后台会自动生成一个体验网关，欢迎使用。  
 有任何使用问题或者合作交流，请加我微信：asd0999701
 
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/wx.png" width="">
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/wx.png" width="200">
 同行交流群  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/qyweichat.png" width="200">
 
