@@ -66,28 +66,6 @@ services:
     labels:
       - "com.centurylinklabs.watchtower.scope=jurieo-chatgpt-share-web"
 
-  # mysql定时备份,有需要可以开启，建议单独开个compose，不然每次重启都会花30s左右的时间
-  # mysql-backup:
-  #   image: databack/mysql-backup
-  #   restart: always
-  #   user: root
-  #   volumes:
-  #     - ./mysql-backup:/db # 备份文件存放目录
-  #   environment:
-  #     TZ: Asia/Shanghai
-  #     DB_SERVER: "mysql"
-  #     DB_PORT: "3306"
-  #     DB_USER: "root"
-  #     DB_PASS: "123456" # root密码
-  #     DB_HOST: "mysql"
-  #     DB_NAMES: "cool" # 备份数据库名，多个库名用,分隔
-  #     DB_DUMP_FREQ: "60" # 每60分钟一次
-  #     DB_DUMP_BEGIN: "+1" # 什么时间进行第一次转储，这里是启动后一分钟开始第一次备份
-  #     DB_DUMP_DEBUG: "false"
-  #     DB_DUMP_TARGET: "/db"
-  #   depends_on:
-  #     - mysql
-
   # 管理mysql，非必要不开启
   # adminer:
   #   image: adminer
