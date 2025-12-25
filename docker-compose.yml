@@ -3,6 +3,7 @@ services:
     image: mysql:8.4.5
     command: --mysql-native-password=ON --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --binlog-expire-logs-seconds=2592
     restart: always
+    container_name: share-mysql
     volumes:
       - ./data/mysql/:/var/lib/mysql/
       - ./docker-entrypoint-initdb.d/:/docker-entrypoint-initdb.d/
@@ -17,6 +18,7 @@ services:
     image: redis
     # command: --requirepass "12345678" # redis库密码,不需要密码注释本行
     restart: always
+    container_name: share-redis
     environment:
       TZ: Asia/Shanghai # 指定时区
     volumes:
@@ -26,6 +28,7 @@ services:
   gpt-share-server:
     image: jurieo/gpt-share-server:undefined #商业版标签是undefined
     restart: always
+    container_name: share-main
     ports:
       - 127.0.0.1:38300:8001
     environment:
@@ -53,6 +56,7 @@ services:
   watchtower:
     # image: ghcr.io/nicholas-fedor/watchtower:latest
     image: nickfedor/watchtower #两者都行
+    container_name: share-watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     command: --scope jurieo-chatgpt-share-web --cleanup --interval 600
