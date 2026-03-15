@@ -111,7 +111,7 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 > 如果你的用户较多(超过 50 人)，性能和速度稳定必不可少，可选择[高性能 VPS 推荐 1](https://bandwagonhost.com/aff.php?aff=74796&pid=88)，[高性能 VPS 推荐 2](https://bandwagonhost.com/aff.php?aff=74796&pid=87)。  
 > [更多优秀的 VPS](https://bwh88.net/aff.php?aff=74796)
 
-### 一键部署脚本
+### Docker一键部署脚本
 
 ```bash
 curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/quick-install.sh -o share-quick-install.sh && bash share-quick-install.sh
