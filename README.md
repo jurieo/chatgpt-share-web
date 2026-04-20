@@ -1,4 +1,4 @@
-# chatgpt-share-web
+# AI-share-web
 
 ## Share = ChatGPT+Claude+Midjourney+Grok+Sora1/2+DeepSeek+API+Claude Code+Codex+Gemini
 Claude2Api和Codex支持2种模式，一种是2api，用于第三方网关，一种是用户模式，用于终端cli。和其他镜像站一样，用户配置即用。  
