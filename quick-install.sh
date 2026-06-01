@@ -31,12 +31,19 @@ function Install_Share() {
     exit 1
   fi
 
+  # 生成16位随机密码并同步到两个配置文件
+  DB_PASS=$(tr -dc 'A-Za-z0-9' </dev/urandom | head -c 16)
+  sed -i "s/MYSQL_ROOT_PASSWORD: \".*\"/MYSQL_ROOT_PASSWORD: \"${DB_PASS}\"/" docker-compose.yml
+  sed -i "s/MYSQL_PASSWORD: \".*\"/MYSQL_PASSWORD: \"${DB_PASS}\"/" docker-compose.yml
+  sed -i "s/pass: \".*\"/pass: \"${DB_PASS}\"/" config.yaml
+  echo "数据库密码已随机生成并写入配置文件。"
+
   if ! docker compose up -d --remove-orphans; then
     echo "容器启动失败，请执行 'docker compose logs' 查看详细错误。"
     exit 1
   fi
 
-  Install_Result
+  Install_Result "$DB_PASS"
 }
 
 function Install_Docker() {
@@ -60,6 +67,7 @@ function Install_Docker() {
 }
 
 function Install_Result() {
+  local db_pass="$1"
   ## 提示信息
   local_ipv4=$(curl -s4m8 http://ip.sb)
   echo ""
@@ -69,6 +77,7 @@ function Install_Result() {
   echo "管理员后台地址: https://[您的域名]/shareadmin"
   echo "后台管理员账号/密码:【admin/123456】,请及时修改管理员密码"
   
+  echo "数据库密码: ${db_pass},后续也可以直接进入部署目录的config.yaml查看"
   echo "系统已新增一个前端管理员账号/密码:【admin/123456】,请及时修改管理员密码，注意此账号和后台管理员账号独立"
   echo "现在，还有很多个性化的配置，请登陆后台，在【工作台-系统配置】里根据实际情况进行设置。"
   echo "您可以在任何目录使用'sharectl'命令来管理服务，使用 'sharectl help' 来查看帮助"
