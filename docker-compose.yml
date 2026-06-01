@@ -58,12 +58,11 @@ services:
     container_name: share-watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: --scope jurieo-chatgpt-share-web --cleanup --interval 600
-    restart: always
+    command: --scope jurieo-chatgpt-share-web --cleanup --interval 600 --http-api-update --http-api-periodic-polls
     environment:
       - TZ=Asia/Shanghai
-    labels:
       - "com.centurylinklabs.watchtower.scope=jurieo-chatgpt-share-web"
+    restart: always
 
   # 管理mysql，非必要不开启
   # adminer:

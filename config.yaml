@@ -51,3 +51,5 @@ logger:
   stdout: true
   rotateSize: 50 * 1024 * 1024
   rotateExpire: 90 * 24 * 3600
+
+WATCHTOWER_HTTP_API_TOKEN: "1234567890"
