@@ -26,8 +26,16 @@ function Install_Share() {
   chmod +x ./backup.sh
   chmod +x ./stop.sh
 
-  docker compose pull
-  docker compose up -d --remove-orphans
+  if ! docker compose pull; then
+    echo "镜像拉取失败，请检查网络或 docker-compose.yml 配置后重试。"
+    exit 1
+  fi
+
+  if ! docker compose up -d --remove-orphans; then
+    echo "容器启动失败，请执行 'docker compose logs' 查看详细错误。"
+    exit 1
+  fi
+
   Install_Result
 }
 
@@ -44,6 +52,7 @@ function Install_Docker() {
       echo "Docker 安装成功."
     else
       echo "Docker 安装失败，请执行 curl -fsSL https://get.docker.com | sh 手动安装 Docker 后再试一次."
+      exit 1
     fi
   else
     echo "Docker 已安装。开始克隆仓库..."
