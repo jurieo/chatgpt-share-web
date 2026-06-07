@@ -23,7 +23,11 @@ services:
       TZ: Asia/Shanghai # 指定时区
     volumes:
       - ./data/redis/:/data/
-    command: redis-server --appendonly yes
+    # 持久化策略：仅 AOF，关闭 RDB 定时快照，降低高并发下 bgsave fork 造成的卡顿
+    #   --appendonly yes        开启 AOF（崩溃/重启后会话基本不丢）
+    #   --save ""               关闭 RDB 定时存盘（默认内置 save 60 10000 等存盘点，高并发频繁触发 fork）
+    #   --appendfsync everysec  每秒刷盘，崩溃最多丢 1 秒（默认值，此处显式声明）
+    command: redis-server --appendonly yes --save "" --appendfsync everysec
 
   gpt-share-server:
     image: jurieo/gpt-share-server:undefined #商业版标签是undefined
