@@ -65,6 +65,7 @@ services:
     command: --scope jurieo-chatgpt-share-web --cleanup --interval 600 --http-api-update --http-api-periodic-polls
     environment:
       - TZ=Asia/Shanghai
+      - WATCHTOWER_HTTP_API_TOKEN=1234567890
       - "com.centurylinklabs.watchtower.scope=jurieo-chatgpt-share-web"
     restart: always
 
