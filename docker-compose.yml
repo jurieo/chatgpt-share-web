@@ -13,6 +13,14 @@ services:
       MYSQL_DATABASE: "cool" # 业务库名
       MYSQL_USER: "cool" # 业务库用户名
       MYSQL_PASSWORD: "123123" # 业务库密码
+    healthcheck:
+      # 用容器自身的 MYSQL_ROOT_PASSWORD 做认证：quick-install.sh 随机生成密码时改的是同一个值，自动同步
+      # （compose 中的 $$ 会被转义成单个 $，最终在容器内由 shell 展开为真实密码）
+      test: 'mysqladmin ping -uroot -p"$$MYSQL_ROOT_PASSWORD" --silent'
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
 
   redis:
     image: redis
@@ -28,6 +36,11 @@ services:
     #   --save ""               关闭 RDB 定时存盘（默认内置 save 60 10000 等存盘点，高并发频繁触发 fork）
     #   --appendfsync everysec  每秒刷盘，崩溃最多丢 1 秒（默认值，此处显式声明）
     command: redis-server --appendonly yes --save "" --appendfsync everysec
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
 
   gpt-share-server:
     image: jurieo/gpt-share-server:undefined #商业版标签是undefined
@@ -48,13 +61,15 @@ services:
       - ./data/chatgptExtend.js:/app/resource/public/chatgptExtend.js # 在chatgpt页需额外执行的脚本
       - ./data/midjourneyExtend.js:/app/resource/public/midjourney/midjourneyExtend.js # 在mj页需额外执行的脚本
       - ./data/grokExtend.js:/app/resource/public/grok/grokExtend.js # 在grok页需额外执行的脚本
+      - ./data/geminiExtend.js:/app/resource/public/gemini/geminiExtend.js # 在gemini页需额外执行的脚本
       # 如需其他映射，请在此后继续添加。
-
     labels:
       - "com.centurylinklabs.watchtower.scope=jurieo-chatgpt-share-web"
     depends_on:
-      - mysql
-      - redis
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
 
   watchtower:
     # image: ghcr.io/nicholas-fedor/watchtower:latest
@@ -65,7 +80,8 @@ services:
     command: --scope jurieo-chatgpt-share-web --cleanup --interval 600 --http-api-update --http-api-periodic-polls
     environment:
       - TZ=Asia/Shanghai
-      - WATCHTOWER_HTTP_API_TOKEN=1234567890
+      - WATCHTOWER_HTTP_API_TOKEN=1234567890 # HTTP API 触发更新所需 token
+    labels:
       - "com.centurylinklabs.watchtower.scope=jurieo-chatgpt-share-web"
     restart: always
 
