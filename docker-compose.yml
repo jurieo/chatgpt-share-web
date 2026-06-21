@@ -23,7 +23,7 @@ services:
       start_period: 30s
 
   redis:
-    image: redis
+    image: redis:8.8
     # command: --requirepass "12345678" # redis库密码,不需要密码注释本行
     restart: always
     container_name: share-redis
@@ -35,7 +35,10 @@ services:
     #   --appendonly yes        开启 AOF（崩溃/重启后会话基本不丢）
     #   --save ""               关闭 RDB 定时存盘（默认内置 save 60 10000 等存盘点，高并发频繁触发 fork）
     #   --appendfsync everysec  每秒刷盘，崩溃最多丢 1 秒（默认值，此处显式声明）
-    command: redis-server --appendonly yes --save "" --appendfsync everysec
+    #   --aof-load-corrupt-tail-max-size 262144  兜底：万一仍被强杀导致 AOF 尾部损坏，启动时自动截断坏尾，不再 crash loop
+    command: redis-server --appendonly yes --save "" --appendfsync everysec --aof-load-corrupt-tail-max-size 262144
+    # 给 Redis 足够时间在 停止/重建/更新 时把 AOF flush 干净，避免被 SIGKILL 打断写坏 AOF（Docker 默认只等 10s）
+    stop_grace_period: 1m
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 10s
