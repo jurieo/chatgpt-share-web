@@ -73,7 +73,8 @@ function Install_Result() {
   echo ""
   echo "================= 感谢您的耐心等待，部署已完成！====================== "
   echo ""
-  echo "请反代服务器的38300端口（反代地址：http://127.0.0.1:38300)，使用域名访问share服务。"
+  echo "请反代服务器的38300端口（反代地址：http://127.0.0.1:38300)，发送域名填写【$host】使用域名访问share服务。"
+  echo "本系统必须使用【域名+SSL】才能正常使用。"
   echo "管理员后台地址: https://[您的域名]/shareadmin"
   echo "后台管理员账号/密码:【admin/123456】,请及时修改管理员密码"
   
@@ -83,7 +84,7 @@ function Install_Result() {
   echo "您可以在任何目录使用'sharectl'命令来管理服务，使用 'sharectl help' 来查看帮助"
   echo "特别说明：为了安全，我们已经禁止服务器ip+端口直接访问share服务"
   echo "若您需要使用ip访问，请删除部署目录docker-comnpose.yml文件的ip端口映射的127.0.0.1，然后重启share服务"
-  echo "本系统已集成ChatGPT、Claude、Midjourney、Grok、Sora、DeepSeek、API，Claude2api等AI服务"
+  echo "本系统已集成ChatGPT、Claude、Midjourney、Grok、Gemini、DeepSeek、API，ClaudeCode、Codex、绘图站等AI镜像服务"
   echo "有任何问题请加入TG群: https://t.me/chatgpt_share_web 或添加作者v：asd0999701"
   echo ""
   echo "==================================================================== "
