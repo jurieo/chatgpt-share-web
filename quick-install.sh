@@ -26,17 +26,17 @@ function Install_Share() {
   chmod +x ./backup.sh
   chmod +x ./stop.sh
 
-  if ! docker compose pull; then
-    echo "镜像拉取失败，请检查网络或 docker-compose.yml 配置后重试。"
-    exit 1
-  fi
-
   # 生成16位随机密码并同步到两个配置文件
   DB_PASS=$(tr -dc 'A-Za-z0-9' </dev/urandom | head -c 16)
   sed -i "s/MYSQL_ROOT_PASSWORD: \".*\"/MYSQL_ROOT_PASSWORD: \"${DB_PASS}\"/" docker-compose.yml
   sed -i "s/MYSQL_PASSWORD: \".*\"/MYSQL_PASSWORD: \"${DB_PASS}\"/" docker-compose.yml
   sed -i "s/pass: \".*\"/pass: \"${DB_PASS}\"/" config.yaml
   echo "数据库密码已随机生成并写入配置文件。"
+
+  if ! docker compose pull; then
+    echo "镜像拉取失败，请检查网络或 docker-compose.yml 配置后重试。"
+    exit 1
+  fi
 
   if ! docker compose up -d --remove-orphans; then
     echo "容器启动失败，请执行 'docker compose logs' 查看详细错误。"
