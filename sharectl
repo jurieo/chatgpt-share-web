@@ -16,6 +16,7 @@ function usage() {
     echo "  update              更新share，会拉取最新镜像"
     echo "  restart             强制重启share服务，会拉取最新镜像"
     echo "  stop                停止share服务"
+    echo "  fix-redis           修复redis的AOF损坏（redis反复崩溃重启时使用）"
 }
 function update() {
     cd $BASE_DIR
@@ -33,6 +34,10 @@ function stop() {
     cd $BASE_DIR
     docker compose down
 }
+function fix_redis() {
+    cd $BASE_DIR
+    ./fix-redis-aof.sh
+}
 
 function main() {
     case "${action}" in
@@ -44,6 +49,9 @@ function main() {
         ;;
     stop)
         stop
+        ;;
+    fix-redis)
+        fix_redis
         ;;
     help)
         usage

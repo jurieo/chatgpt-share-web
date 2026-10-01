@@ -24,6 +24,7 @@ function Install_Share() {
   chmod +x ./deploy.sh
   chmod +x ./restart.sh
   chmod +x ./backup.sh
+  chmod +x ./fix-redis-aof.sh
   chmod +x ./stop.sh
 
   # 生成16位随机密码并同步到两个配置文件
