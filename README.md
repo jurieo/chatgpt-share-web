@@ -145,11 +145,12 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/editSubtype.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/addUser.png" width="640">
 
-**莱克主题**
+**莱克主题**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/laike-carlist.png" width="640">  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/laike-buy.png" width="640">  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/laike-mine.png" width="640">  
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/laike-vibe.png" width="640">  
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/laike-vibe.png" width="640">
+
 **柔和主题**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/pastel-carlist.png" width="640">  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/pastel-buy.png" width="640">  
