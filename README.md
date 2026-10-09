@@ -1,9 +1,9 @@
 # AI-share-web
 
 ## Share = ChatGPT+Claude+Midjourney+Grok+DeepSeek+API+Claude Code+Codex+Gemini+图像/视频生成
+
 Claude2Api和Codex支持2种模式，一种是2api，用于第三方网关，一种是用户模式，用于终端cli。和其他镜像站一样，用户配置即用。  
 vibe coding重写了UI [点击体验](https://aiok.me/pastel#/vibe-code)
-
 
 [![Docker](https://img.shields.io/docker/pulls/jurieo/gpt-share-server?label=ChatGPT-share-web&logo=docker)](https://hub.docker.com/r/jurieo/gpt-share-server)
 
@@ -26,7 +26,7 @@ vibe coding重写了UI [点击体验](https://aiok.me/pastel#/vibe-code)
 **❤ 本项目已支持 linuxdo 一键登录**  
 **❤ 本项目已支持 Github 一键登录**  
 **❤ 本项目已支持 微信 一键登录**  
-**❤ 本项目已支持 谷歌 一键登录**  
+**❤ 本项目已支持 谷歌 一键登录**
 
 [加入交流群](https://t.me/chatgpt_share_web)  
 本项目的 docker 镜像为：[docker 镜像](https://hub.docker.com/r/jurieo/gpt-share-server)  
@@ -126,13 +126,13 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 ## 授权联系
 
-[TG 联系我](https://t.me/jurieo_bot)，微信联系我：asd0999701(注明 share)。  
+[TG 联系我](https://t.me/ddjjsv)，微信联系我：asd0999701(注明 share)。  
 有任何问题欢迎[加入 TG 交流群](https://t.me/chatgpt_share_web)
 
 ## 项目预览
 
 可访问[君临驿站](https://aiok.me/user/#/register?i=4ME9Z)注册体验。  
-本项目可配置选择 3 个主题：柔和、流行和经典(经典主题不再新增功能)。如果你有开发能力，你可开发出更多主题。  
+本项目可配置选择 4 个主题：莱克、柔和、流行和经典(经典主题不再新增功能)。如果你有开发能力，你可开发出更多主题。  
 **后台管理**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config1.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config2.png" width="640">
@@ -145,16 +145,18 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/editSubtype.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/addUser.png" width="640">
 
+**莱克主题**
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/laike-carlist.png" width="640">  
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/laike-buy.png" width="640">  
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/laike-mine.png" width="640">  
+<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/laike-vibe.png" width="640">  
 **柔和主题**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/pastel-carlist.png" width="640">  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/pastel-buy.png" width="640">  
 **流行主题**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-login.png" width="640">  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-carlist.png" width="640">
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-claude.png" width="640">
-<img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-invite.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/theme2-pay.png" width="640">
-
 
 ### 特别说明
 
