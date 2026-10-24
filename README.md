@@ -131,8 +131,8 @@ curl -sSfL https://raw.githubusercontent.com/jurieo/chatgpt-share-web/deploy/qui
 
 ## 项目预览
 
-可访问[君临驿站](https://aiok.me/user/#/register?i=4ME9Z)注册体验。  
-本项目可配置选择 4 个主题：莱克、柔和、流行和经典(经典主题不再新增功能)。如果你有开发能力，你可开发出更多主题。  
+可访问[我的演示站](https://aiok.me/user/#/register?i=4ME9Z)注册体验。  
+本项目可配置选择 4 个主题：莱克、柔和、流行和经典(经典主题不再新增功能)。如果你有开发能力，你可开发出自己独特的主题。  
 **后台管理**  
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config1.png" width="640">
 <img src="https://raw.githubusercontent.com/jurieo/chatgpt-share-web/main/assets/config2.png" width="640">
