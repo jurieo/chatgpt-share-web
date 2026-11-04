@@ -2,8 +2,7 @@
 
 ## Share = ChatGPT+Claude+Midjourney+Grok+DeepSeek+API+Claude Code+Codex+Gemini+图像/视频生成
 
-Claude2Api和Codex支持2种模式，一种是2api，用于第三方网关，一种是用户模式，用于终端cli。和其他镜像站一样，用户配置即用。  
-vibe coding重写了UI [点击体验](https://aiok.me/pastel#/vibe-code)
+### [使用教程](https://docs.openoai.net/) | [演示站](https://aiok.me/laike)
 
 [![Docker](https://img.shields.io/docker/pulls/jurieo/gpt-share-server?label=ChatGPT-share-web&logo=docker)](https://hub.docker.com/r/jurieo/gpt-share-server)
 
