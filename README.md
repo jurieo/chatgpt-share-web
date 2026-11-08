@@ -4,7 +4,7 @@
 
 ### [使用教程](https://docs.openoai.net/) | [演示站](https://aiok.me/laike)
 
-[![Docker](https://img.shields.io/docker/pulls/jurieo/gpt-share-server?label=ChatGPT-share-web&logo=docker)](https://hub.docker.com/r/jurieo/gpt-share-server)
+[![Docker](https://img.shields.io/docker/pulls/jurieo/gpt-share-server?label=ai-share-web&logo=docker)](https://hub.docker.com/r/jurieo/gpt-share-server)
 
 **❤ 本项目已支持独立绘图站**  
 **❤ 本项目已支持Gemini**  
