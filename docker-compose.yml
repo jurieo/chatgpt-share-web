@@ -80,7 +80,7 @@ services:
     container_name: share-watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: --scope jurieo-chatgpt-share-web --cleanup --interval 600 --http-api-update --http-api-periodic-polls
+    command: --scope jurieo-chatgpt-share-web --cleanup --interval 600 --http-api-update --http-api-periodic-polls --include-restarting
     environment:
       - TZ=Asia/Shanghai
       - WATCHTOWER_HTTP_API_TOKEN=1234567890 # HTTP API 触发更新所需 token
