@@ -18,7 +18,6 @@
 **❤ 本项目已支持 Claude**  
 **❤ 本项目已支持 Grok**  
 **❤ 本项目已支持 Midjourney**  
-**❤ 本项目已支持 Sora**  
 **❤ 本项目已支持 DeepSeek**  
 **❤ 本项目已支持 第三方 API(oneapi,newapi,shellapi 等)**  
 **❤ 本项目已支持 代理分站**  
